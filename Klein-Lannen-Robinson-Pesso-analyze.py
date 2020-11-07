@@ -113,7 +113,7 @@ def static_analysis (base_path, input_name, output_name):
     if package_name[-1] == '"':
         package_name = package_name[:-1]
     package_name = package_name.split('.')
-   
+
     if package_name == "":
         return
 
@@ -142,8 +142,7 @@ def static_analysis (base_path, input_name, output_name):
         print("Path is not valid")
 
 def decompile_apk(input):
-    #os.system("apktool d " + input_path)
-    subprocess.run(args=["apktool", "d", input], shell=True)
+    subprocess.run(args=["apktool", "d", input], capture_output=True)
 
 if __name__ == "__main__":
     parser= argparse.ArgumentParser(description='Takes in an apk file name/path relative to the current directory and an output text file, '
