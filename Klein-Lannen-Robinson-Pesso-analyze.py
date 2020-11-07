@@ -30,7 +30,7 @@ def checkSmali(file_path, name):
 
     f = open(file_path, "r")
     for line in f:
-        if '"http:' in line:
+        if '"http:' in line and ("#process-namespaces" not in line):
             out.append("Potential http usage on line "+str(line_number))
             out.append("    Line: "+line)
             out.append("")
