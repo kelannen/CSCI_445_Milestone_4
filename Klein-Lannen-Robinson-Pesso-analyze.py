@@ -63,7 +63,7 @@ def checkSmali(file_path, name):
             output_list.append(x)
 
 def checkManifest(manifest):
-    line_number = 0
+    line_number = 1
     out = []
     out.append("AndroidManifest.xml")
     out.append("=======================")
@@ -71,7 +71,7 @@ def checkManifest(manifest):
     package_name = ""
     f = open(manifest, "r")
     for line in f:
-        if line_number == 0:
+        if line_number == 1:
             for text in line.split():
                 if "package" in text:
                     package_name = text
@@ -82,10 +82,10 @@ def checkManifest(manifest):
                 f.close()
                 return package_name
         else:
-            #if '"http:' in line:
-            #    out.append("Potential http usage on line "+str(line_number))
-            #    out.append("    Line: "+line)
-            #    out.append("")
+            if 'android:allowBackup="true"' in line:
+                out.append("Potential allow backup and restore vulnerability on line "+str(line_number))
+                out.append("    Line: "+line)
+                out.append("")
             line_number += 1
     f.close()
     if len(out) > 3:
