@@ -38,10 +38,6 @@ def checkSmali(file_path, name):
             out.append("Potential AllowAllHostnameVerifier usage on line "+str(line_number))
             out.append("    Line: "+line)
             out.append("")
-        if "SslErrorHandler" in line:
-            out.append("Potential SslErrorHandler usage on line "+str(line_number))
-            out.append("    Line: "+line)
-            out.append("")
         for tm in trust_managers:
             if tm in line:
                 out.append("Potential "+tm+" usage on line "+str(line_number))
@@ -58,14 +54,6 @@ def checkSmali(file_path, name):
             out.append("")
         if "TrustManager" in line:
             out.append("Potential TrustManager usage on line "+str(line_number))
-            out.append("    Line: "+line)
-            out.append("")
-        if "checkServerTrusted" in line:
-            out.append("Potential checkServerTrusted usage on line "+str(line_number))
-            out.append("    Line: "+line)
-            out.append("")
-        if "checkClientTrusted" in line:
-            out.append("Potential checkClientTrusted usage on line "+str(line_number))
             out.append("    Line: "+line)
             out.append("")
         line_number += 1
@@ -94,28 +82,10 @@ def checkManifest(manifest):
                 f.close()
                 return package_name
         else:
-            if '"http:' in line:
-                out.append("Potential http usage on line "+str(line_number))
-                out.append("    Line: "+line)
-                out.append("")
-            if 'AllowAllHostnameVerifier' in line or 'allow_all_hostname_verifier' in line.lower():
-                out.append("Potential AllowAllHostnameVerifier usage on line "+str(line_number))
-                out.append("    Line: "+line)
-                out.append("")
-            if "SslErrorHandler" in line:
-                out.append("Potential SslErrorHandler usage on line "+str(line_number))
-                out.append("    Line: "+line)
-                out.append("")               
-            for tm in trust_managers:
-                if tm in line:
-                    out.append("Potential "+tm+" usage on line "+str(line_number))
-                    out.append("    Line: "+line)
-                    out.append("")
-            for sf in socket_factories:
-                if sf in line:
-                    out.append("Potential "+sf+" usage on line "+str(line_number))
-                    out.append("    Line: "+line)
-                    out.append("")
+            #if '"http:' in line:
+            #    out.append("Potential http usage on line "+str(line_number))
+            #    out.append("    Line: "+line)
+            #    out.append("")
             line_number += 1
     f.close()
     if len(out) > 3:
@@ -171,7 +141,7 @@ def static_analysis (base_path, input_name, output_name):
     else:
         print("Path is not valid")
 
-def decompile_apk(input): #, base_path, input_path):
+def decompile_apk(input):
     #os.system("apktool d " + input_path)
     subprocess.run(args=["apktool", "d", input], shell=True)
 
@@ -189,7 +159,7 @@ if __name__ == "__main__":
     if (args.i == None or args.o == None):
         print("Missing input and/or output files. Please make sure both are given.")
     elif os.path.isfile(input_path):
-        decompile_apk(args.i)#, base_path, input_path)
+        decompile_apk(args.i)
         static_analysis(base_path, args.i, args.o)
     else:
         print("Invalid input file, please try again.")
