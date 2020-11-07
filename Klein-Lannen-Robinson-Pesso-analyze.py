@@ -153,12 +153,14 @@ if __name__ == "__main__":
     parser.add_argument('-o', help='Designate an output file for the analysis results.')
     args = parser.parse_args()
 
+    if (args.i == None or args.o == None):
+        print("Missing input and/or output files. Please make sure both are given.")
+        sys.exit()
+
     base_path = os.path.dirname(os.path.abspath(__file__))
     input_path = os.path.join(base_path, args.i)
 
-    if (args.i == None or args.o == None):
-        print("Missing input and/or output files. Please make sure both are given.")
-    elif os.path.isfile(input_path):
+    if os.path.isfile(input_path):
         decompile_apk(args.i)
         static_analysis(base_path, args.i, args.o)
     else:
