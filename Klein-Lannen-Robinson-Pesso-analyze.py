@@ -86,7 +86,7 @@ def checkManifest(manifest):
             if 'android:allowBackup="true"' in line:
                 out.append("Potential allow backup and restore vulnerability on line "+str(line_number))
                 out.append("    Line: "+line)
-                out.append("")  
+                out.append("")
             if(len(exported) != 0):
                 if '<intent-filter android:priority' not in line:
                     out.append(exported[0]+" and line "+str(line_number))
@@ -98,7 +98,7 @@ def checkManifest(manifest):
                 exported.append("Potential exported components outside of their main activity without limitations vulnerability on line "+str(line_number))
                 exported.append("    Line: "+line)
             line_number += 1
-            
+
     f.close()
     if len(out) > 3:
         for x in out:
@@ -154,7 +154,7 @@ def static_analysis (base_path, input_name, output_name):
         print("Path is not valid")
 
 def decompile_apk(input):
-    subprocess.run(args=["apktool", "d", input], capture_output=True)
+    subprocess.run(args=["apktool", "d", input])
 
 if __name__ == "__main__":
     parser= argparse.ArgumentParser(description='Takes in an apk file name/path relative to the current directory and an output text file, '

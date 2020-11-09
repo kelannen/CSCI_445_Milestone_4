@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="horizontal" android:id="@id/toolbar" android:background="@color/colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:popupTheme="@style/AppTheme.PopupOverlay"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_selection_10">
-        <ImageView android:layout_gravity="center_vertical" android:id="@id/imgBack" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/barrow" />
-        <TextView android:textSize="@dimen/TextSize20" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/txtHeading" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dimen_selection_10" android:text="My ToolBar" android:layout_toRightOf="@id/imgBack" />
-        <CheckBox android:textColorHint="@android:color/white" android:gravity="center" android:id="@id/chkSelectAll" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/dimen_selection_10" android:layout_weight="1.0" android:layout_alignParentRight="true" />
-    </RelativeLayout>
-</LinearLayout>

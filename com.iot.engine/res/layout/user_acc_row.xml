@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <LinearLayout android:orientation="horizontal" android:id="@id/linear" android:paddingLeft="@dimen/dimen_add_10" android:paddingTop="@dimen/dimen_add_10" android:paddingRight="@dimen/dimen_add_14" android:paddingBottom="@dimen/dimen_add_10" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <ImageView android:layout_gravity="center" android:id="@id/imgAdd" android:layout_width="@dimen/dimen_add" android:layout_height="@dimen/dimen_add" app:srcCompat="@drawable/ic_add" />
-        <TextView android:textSize="@dimen/TextSize13" android:textColor="@color/black" android:layout_gravity="center" android:id="@id/tvAccEmail" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:text="" android:layout_weight="5.0" />
-    </LinearLayout>
-    <View android:background="@color/softGray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="6.0dip" android:layout_marginRight="2.0dip" />
-</LinearLayout>

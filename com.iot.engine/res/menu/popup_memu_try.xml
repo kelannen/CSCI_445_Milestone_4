@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@id/item_hidden" android:visible="true" android:title="Hidden" android:showAsAction="ifRoom|withText" />
-    <item android:id="@id/item_turn" android:visible="true" android:title="Turn OFF All" android:showAsAction="ifRoom|withText" />
-    <item android:id="@id/item_turn_on" android:visible="true" android:title="Turn ON All" android:showAsAction="ifRoom|withText" />
-</menu>
