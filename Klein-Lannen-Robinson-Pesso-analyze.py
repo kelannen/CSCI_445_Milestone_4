@@ -70,6 +70,7 @@ def checkManifest(manifest):
     out.append("")
     package_name = ""
     f = open(manifest, "r")
+    exported = []
     for line in f:
         if line_number == 1:
             for text in line.split():
@@ -85,8 +86,19 @@ def checkManifest(manifest):
             if 'android:allowBackup="true"' in line:
                 out.append("Potential allow backup and restore vulnerability on line "+str(line_number))
                 out.append("    Line: "+line)
-                out.append("")
+                out.append("")  
+            if(len(exported) != 0):
+                if '<intent-filter android:priority' not in line:
+                    out.append(exported[0]+" and line "+str(line_number))
+                    out.append(exported[1])
+                    out.append("    Line: "+line)
+                    out.append("")
+                exported = []
+            elif('android:exported="true"' in line and 'android:permission=' not in line):
+                exported.append("Potential exported components outside of their main activity without limitations vulnerability on line "+str(line_number))
+                exported.append("    Line: "+line)
             line_number += 1
+            
     f.close()
     if len(out) > 3:
         for x in out:

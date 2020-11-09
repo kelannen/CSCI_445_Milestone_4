@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/nav_header" android:background="@color/colorPrimaryDark" android:paddingTop="@dimen/Size20" android:layout_width="fill_parent" android:layout_height="@dimen/Size230"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <de.hdodenhof.circleimageview.CircleImageView android:layout_gravity="center" android:id="@id/imgProfileImage" android:layout_width="@dimen/profile_img" android:layout_height="@dimen/profile_img" android:layout_marginTop="10.0dip" android:src="@drawable/profile" app:civ_border_width="2.0dip" app:civ_border_color="#ffffffff" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <TextView android:textSize="@dimen/Heading2" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="left" android:id="@id/username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="@dimen/Size20" android:text="Jenifar Sam" android:maxLines="1" />
+    <LinearLayout android:id="@id/llAccountChange" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="8.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/acc_type" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/Size2" android:text="abc@gmail.com" android:maxLines="1" android:layout_weight="9.0" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/acc_nav_arrow" android:layout_width="14.0dip" android:layout_height="14.0dip" android:src="@drawable/down_arrow" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/toolbar" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/Size20">
+        <android.support.v7.widget.CardView android:orientation="horizontal" android:id="@id/cardTelevision" android:layout_width="fill_parent" android:layout_height="140.0dip" android:layout_marginLeft="@dimen/Size5" android:layout_marginRight="@dimen/Size5" android:layout_weight="1.0" card_view:cardCornerRadius="3.0dip" card_view:cardUseCompatPadding="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:padding="@dimen/Size10" android:layout_width="120.0dip" android:layout_height="80.0dip" android:src="@drawable/televisions" android:layout_weight="1.0" />
+                <TextView android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="20.0dip" android:text="Television" android:layout_weight="1.0" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView android:orientation="horizontal" android:id="@id/cardAc" android:layout_width="fill_parent" android:layout_height="140.0dip" android:layout_marginLeft="@dimen/Size5" android:layout_marginRight="@dimen/Size5" android:layout_weight="1.0" card_view:cardCornerRadius="3.0dip" card_view:cardUseCompatPadding="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:padding="@dimen/Size10" android:layout_width="120.0dip" android:layout_height="80.0dip" android:layout_marginTop="@dimen/Size10" android:src="@drawable/ac" android:layout_weight="1.0" />
+                <TextView android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginBottom="@dimen/Size10" android:text="AC" android:layout_weight="1.0" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/Size10">
+        <android.support.v7.widget.CardView android:orientation="horizontal" android:id="@id/cardCdPlayer" android:layout_width="fill_parent" android:layout_height="140.0dip" android:layout_marginLeft="@dimen/Size5" android:layout_marginRight="@dimen/Size5" android:layout_weight="1.0" card_view:cardCornerRadius="3.0dip" card_view:cardUseCompatPadding="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:padding="@dimen/Size10" android:layout_width="120.0dip" android:layout_height="80.0dip" android:layout_marginTop="@dimen/Size10" android:src="@drawable/cdplayer" android:layout_weight="1.0" />
+                <TextView android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="20.0dip" android:text="CD Player" android:layout_weight="1.0" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView android:orientation="horizontal" android:id="@id/cardDish" android:layout_width="fill_parent" android:layout_height="140.0dip" android:layout_marginLeft="@dimen/Size5" android:layout_marginRight="@dimen/Size5" android:layout_weight="1.0" card_view:cardCornerRadius="3.0dip" card_view:cardUseCompatPadding="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:padding="@dimen/Size10" android:layout_width="120.0dip" android:layout_height="80.0dip" android:layout_marginTop="@dimen/Size10" android:src="@drawable/dishtv" android:layout_weight="1.0" />
+                <TextView android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginBottom="@dimen/Size10" android:text="Dish TV" android:layout_weight="1.0" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</LinearLayout>
