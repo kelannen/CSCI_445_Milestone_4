@@ -73,6 +73,7 @@ def checkManifest(manifest):
     package_name = ""
     f = open(manifest, "r")
     exported = []
+    receiver = []
     for line in f:
         if line_number == 1:
             for text in line.split():
@@ -99,6 +100,19 @@ def checkManifest(manifest):
             elif('android:exported="true"' in line and 'android:permission=' not in line):
                 exported.append("Potential exported components outside of their main activity without limitations vulnerability on line "+str(line_number))
                 exported.append("    Line: "+line)
+            if(len(receiver) !=0):
+                if "android:permission=" in line:
+                    receiver = []
+                elif "</receiver>" in line:
+                    out.append(receiver[0]+" and line "+str(line_number))
+                    out.append(receiver[1])
+                    out.append("    Line: "+line)
+                    out.append("")
+                    receiver = []
+            elif("<receiver" in line and "android:permission=" not in line):
+                receiver.append("Potential unprotected broadcast reciever on line "+str(line_number))
+                receiver.append("    Line: "+line)
+
             line_number += 1
 
     f.close()
