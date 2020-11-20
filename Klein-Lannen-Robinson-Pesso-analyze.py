@@ -4,11 +4,12 @@ import os
 import sys
 import argparse
 import subprocess
-#from androguard.core.bytecodes import apk
-#from androguard.core.bytecodes import dvm
 
 cwd = os.getcwd()
 sys.path.append(cwd + "/androguard")
+
+from androguard.core.bytecodes import apk
+from androguard.core.bytecodes import dvm
 
 output_list = []
 
