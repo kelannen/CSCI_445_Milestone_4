@@ -175,6 +175,7 @@ def static_analysis (base_path, input_name, output_name):
 
 def decompile_apk(input):
     subprocess.run(args=["apktool", "d", input])
+    #subprocess.run(args=["apktool", "d", input], shell=True)  # For Katherine
 
 if __name__ == "__main__":
     parser= argparse.ArgumentParser(description='Takes in an apk file name/path relative to the current directory and an output text file, '
@@ -191,9 +192,48 @@ if __name__ == "__main__":
     base_path = os.path.dirname(os.path.abspath(__file__))
     input_path = os.path.join(base_path, args.i)
 
-    #a = apk.APK(input_path)
-    #d = dvm.DalvikVMFormat(a.get_dex())
-    #print(a.get_permissions())
+    a = apk.APK(input_path)
+    d = dvm.DalvikVMFormat(a.get_dex())
+
+    permission_list = a.get_permissions()
+    dangerous_permissions1 = ["android.permission.INTERNET","android.permission.WRITE_EXTERNAL_STORAGE","android.permission.READ_EXTERNAL_STORAGE"]
+    dangerous_permissions2 = ["android.permission.INTERNET","android.permission.RECORD_AUDIO"]
+    dangerous_permissions3 = ["android.permission.INTERNET","android.permission.ACCESS_BACKGROUND_LOCATION","android.permisssion.ACCESS_COARSE_LOCATION","android.permission.FINE_LOCATION","android.permission.COARSE_LOCATION","android.permission.RECEIVE_BOOT_COMPLETED"]
+    rq1 = 0
+    rq1_str = ""
+    rq2 = 0
+    rq2_str = ""
+    rq3 = 0
+    rq3_str = ""
+
+    for permission in permission_list:
+        for dp1 in dangerous_permissions1:
+            if permission in dp1:
+                rq1 += 1
+                rq1_str += permission + ","
+        for dp2 in dangerous_permissions2:
+            if permission in dp2:
+                rq2 += 1
+                rq2_str += permission + ","
+        for dp3 in dangerous_permissions3:
+            if permission in dp3:
+                rq3 += 1
+                rq3_str += permission + ","
+
+    if rq1 >= 3:
+        output_list.append("Potential dangerous permission combo (broad storage permission and internet)")
+        output_list.append("    Permissions: "+rq1_str)
+        output_list.append("")
+
+    if rq2 >= 3:
+        output_list.append("Potential dangerous permission combo (broad storage permission and internet)")
+        output_list.append("    Permissions: "+rq2_str)
+        output_list.append("")
+
+    if rq3 >= 3:
+        output_list.append("Potential dangerous permission combo (broad storage permission and internet)")
+        output_list.append("    Permissions: "+rq3_str)
+        output_list.append("")
 
     if os.path.isfile(input_path):
         decompile_apk(args.i)
