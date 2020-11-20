@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="154.0dip" android:layout_marginLeft="6.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="6.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/cardView" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginRight="10.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="10.0">
+            <ImageView android:layout_gravity="bottom|center" android:id="@id/imgAddChannel" android:layout_width="30.0dip" android:layout_height="0.0dip" android:layout_marginTop="12.0dip" android:src="@drawable/add_mode_icon" android:layout_weight="9.0" />
+            <LinearLayout android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <LinearLayout android:orientation="vertical" android:id="@id/llChannelNumber" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/tvChannelName" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="" android:layout_weight="1.0" />
+                    <View android:background="@color/gray" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.1999817dip" />
+                    <TextView android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/tvChannelNumber" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="3030" android:layout_weight="1.4" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/llAddNew" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="12.0dip" android:layout_marginRight="10.0dip">
+        <ImageView android:layout_gravity="center" android:layout_width="40.0dip" android:layout_height="0.0dip" android:src="@drawable/new_add" android:layout_weight="9.0" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="right" android:id="@id/tab_badge_update" android:layout_width="26.0dip" android:layout_height="26.0dip" android:src="@drawable/delete_acc" />
+</FrameLayout>

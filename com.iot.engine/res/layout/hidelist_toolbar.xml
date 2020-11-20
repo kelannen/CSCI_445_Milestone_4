@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/toolbar" android:background="@color/colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:weightSum="5.0" app:popupTheme="@style/AppTheme.PopupOverlay"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/imgBack" android:padding="@dimen/Size5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/barrow" android:layout_weight="2.2" />
+    <TextView android:textSize="@dimen/TextSize20" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/txtHeading" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="My ToolBar" android:maxLines="1" android:layout_weight="0.8" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/imgOption" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/menuicon" android:layout_weight="1.8" />
+</LinearLayout>

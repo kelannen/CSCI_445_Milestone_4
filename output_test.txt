@@ -1,0 +1,111 @@
+APK: com.iot.engine
+
+AndroidManifest.xml
+=======================
+
+Potential allow backup and restore vulnerability on line 19
+    Line:     <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="app.AppController" android:supportsRtl="true" android:theme="@style/Base.Theme.Deholtmans">
+
+
+Smali File Location: /media/psf/Home/CSCI_445_Milestone_4-1/com.iot.engine/smali/com/iot/engine
+
+Smali Files with Potential Vulnerabilities
+
+/AboutUs.smali
+=======================
+
+Potential http usage on line 170
+    Line:     const-string v1, "http://gsmarthome.com/"
+
+
+/BlankScreen$AsyncHubIP.smali
+=======================
+
+Potential http usage on line 217
+    Line:     const-string v16, "http://www.macvendorlookup.com/api/v2/"
+
+
+/BlankScreen$AsyncUserDataTask.smali
+=======================
+
+Potential http usage on line 353
+    Line:     const-string v7, "http://"
+
+
+/Faq.smali
+=======================
+
+Potential http usage on line 150
+    Line:     const-string v1, "http://gsmarthome.com/app/faq.html"
+
+
+/LivingRoom.smali
+=======================
+
+Potential http usage on line 933
+    Line:     const-string v6, "http://odoo.trynoise.com:65000/share/mklsdhufnkjf34nckjsklnckldnkkjnculsdkkcnd/"
+
+
+Potential http usage on line 1069
+    Line:     const-string v6, "http://odoo.trynoise.com:65000/share/mklsdhufnkjf34nckjsklnckldnkkjnculsdkkcnd/"
+
+
+/MainActivity$AsyncCheckHubNew.smali
+=======================
+
+Potential http usage on line 103
+    Line:     const-string v5, "http://"
+
+
+Potential http usage on line 435
+    Line:     const-string v2, "http://"
+
+
+/MainActivity.smali
+=======================
+
+Potential http usage on line 5282
+    Line:     const-string v3, "http://odoo.trynoise.com:65000/share/mklsdhufnkjf34nckjsklnckldnkkjnculsdkkcnd/"
+
+
+Potential http usage on line 6272
+    Line:     const-string v5, "http://play.google.com/store/apps/details?id=com.iot.engine"
+
+
+Potential http usage on line 6614
+    Line:     const-string v4, "http://"
+
+
+/UserProfileNew$AsyncUserDataTask.smali
+=======================
+
+Potential http usage on line 265
+    Line:     const-string v5, "http://"
+
+
+/UserProfileNew.smali
+=======================
+
+Potential http usage on line 1177
+    Line:     const-string v5, "http://odoo.trynoise.com:65000/share/mklsdhufnkjf34nckjsklnckldnkkjnculsdkkcnd/"
+
+
+Potential http usage on line 1208
+    Line:     const-string v5, "http://odoo.trynoise.com:65000/share/mklsdhufnkjf34nckjsklnckldnkkjnculsdkkcnd/"
+
+
+Potential http usage on line 1472
+    Line:     const-string v3, "http://odoo.trynoise.com:65000/share/mklsdhufnkjf34nckjsklnckldnkkjnculsdkkcnd/"
+
+
+/GoVideoPlayer/CameraVideoPlayActivity.smali
+=======================
+
+Potential http usage on line 216
+    Line:     const-string v4, "http://"
+
+
+Potential http usage on line 487
+    Line:     const-string v4, "http://"
+
+

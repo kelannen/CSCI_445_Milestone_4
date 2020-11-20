@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="10.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0">
+        <ImageView android:textSize="@dimen/TextSize40" android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:id="@id/txtHeading" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/Size30" android:layout_marginRight="@dimen/Size30" android:src="@drawable/go_home" android:text="Pongo Home" />
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="4.2" />
+    <LinearLayout android:orientation="vertical" android:id="@id/lay" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/login_edt_margin" android:layout_marginRight="@dimen/login_edt_margin" android:layout_weight="2.8">
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/border" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="22.0dip" android:layout_marginLeft="@dimen/Size10" android:layout_marginTop="@dimen/Size10" android:layout_marginBottom="@dimen/Size10" android:src="@drawable/userotpsend" android:layout_weight="1.0" />
+            <View android:background="@color/colorPrimary" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/Size10" />
+            <EditText android:textSize="@dimen/NormalText" android:textColor="@color/black" android:textColorHint="@color/darkGray" android:id="@id/edtOTP" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/Size10" android:hint="Enter OTP" android:singleLine="true" android:maxLength="30" android:digits="@string/namevalid" android:layout_weight="9.0" android:inputType="number" android:imeOptions="actionDone" android:textCursorDrawable="@drawable/color_cursor" android:fontFamily="sans-serif" />
+        </LinearLayout>
+        <Button android:textSize="@dimen/NormalText" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/btnSubmit" android:background="@drawable/mybutton" android:layout_width="@dimen/login_btn_width" android:layout_height="0.0dip" android:layout_marginTop="@dimen/Size20" android:text="Confirm" android:layout_weight="1.0" android:textAllCaps="false" />
+        <TextView android:textSize="@dimen/NormalText" android:textStyle="bold" android:textColor="@color/colorPrimary" android:gravity="center" android:layout_gravity="center" android:id="@id/resendOTP" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="Resend OTP" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

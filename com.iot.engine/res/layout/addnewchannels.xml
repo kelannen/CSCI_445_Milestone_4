@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/toolbar" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="5.0">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="240.0dip" android:layout_height="0.0dip" android:layout_marginTop="@dimen/Size30" android:layout_marginBottom="@dimen/Size20" android:layout_weight="5.0">
+            <ImageView android:layout_gravity="center" android:id="@id/imgAddChannelImage" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginBottom="@dimen/Size10" android:src="@drawable/new_add" android:layout_weight="2.5" />
+            <EditText android:enabled="false" android:textSize="@dimen/Size12" android:textColor="@color/black" android:textColorHint="@color/dGrey" android:gravity="center" android:id="@id/etChannelName" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/Size20" android:layout_marginRight="@dimen/Size20" android:layout_marginBottom="@dimen/Size5" android:hint="Set Channel Name" android:layout_weight="1.3" />
+            <View android:background="@color/softGray" android:layout_width="fill_parent" android:layout_height="0.20000005dip" android:layout_marginBottom="@dimen/Size10" />
+            <EditText android:textSize="@dimen/Size12" android:textColor="@color/black" android:textColorHint="@color/dGrey" android:gravity="center" android:id="@id/edtChannelNumber" android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/Size20" android:layout_marginRight="@dimen/Size20" android:layout_marginBottom="@dimen/Size5" android:hint="Set Channel Number" android:maxLength="5" android:layout_weight="1.4" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/Size20" android:layout_marginRight="@dimen/Size20" android:layout_marginBottom="@dimen/Size10" android:layout_weight="1.0">
+        <Button android:textStyle="bold" android:id="@id/btnCancel" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/Size5" android:layout_marginRight="@dimen/Size5" android:text="Cancel" android:layout_weight="1.0" />
+        <Button android:textStyle="bold" android:id="@id/btnSave" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/Size5" android:layout_marginRight="@dimen/Size5" android:text="Save" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="5.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="4.0" android:layout_weight="1.0">
+            <Button android:textStyle="bold" android:textColor="@color/black" android:id="@id/btnOne" android:background="@drawable/bgblack" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="1" android:layout_weight="1.0" />
+            <Button android:textStyle="bold" android:textColor="@color/black" android:id="@id/btnFour" android:background="@drawable/bgblack" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="4" android:layout_weight="1.0" />
+            <Button android:textStyle="bold" android:textColor="@color/black" android:id="@id/btnSeven" android:background="@drawable/bgblack" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="7" android:layout_weight="1.0" />
+            <Button android:textStyle="bold" android:textColor="@color/black" android:id="@id/btnMinus" android:background="@drawable/bgblack" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="-" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="4.0" android:layout_weight="1.0">
+            <Button android:textStyle="bold" android:textColor="@color/black" android:id="@id/btnTwo" android:background="@drawable/bgblack" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="2" android:layout_weight="1.0" />
+            <Button android:textStyle="bold" android:textColor="@color/black" android:id="@id/btnFive" android:background="@drawable/bgblack" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="5" android:layout_weight="1.0" />
+            <Button android:textStyle="bold" android:textColor="@color/black" android:id="@id/btnEight" android:background="@drawable/bgblack" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="8" android:layout_weight="1.0" />
+            <Button android:textStyle="bold" android:textColor="@color/black" android:id="@id/btnZero" android:background="@drawable/bgblack" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="0" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="4.0" android:layout_weight="1.0">
+            <Button android:textStyle="bold" android:textColor="@color/black" android:id="@id/btnThree" android:background="@drawable/bgblack" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="3" android:layout_weight="1.0" />
+            <Button android:textStyle="bold" android:textColor="@color/black" android:id="@id/btnSix" android:background="@drawable/bgblack" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="6" android:layout_weight="1.0" />
+            <Button android:textStyle="bold" android:textColor="@color/black" android:id="@id/btnNine" android:background="@drawable/bgblack" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="9" android:layout_weight="1.0" />
+            <Button android:textStyle="bold" android:textColor="@color/black" android:id="@id/btnOk" android:background="@drawable/bgblack" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="OK" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="4.0" android:layout_weight="1.0">
+            <Button android:layout_gravity="center" android:id="@id/btnCut" android:background="@drawable/bgblack" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="Clear" android:layout_weight="1.0" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/channelmenu" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0">
+                <View android:id="@id/channelup" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <View android:id="@id/channeldown" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

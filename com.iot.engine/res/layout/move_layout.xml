@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/llLinear" android:paddingTop="@dimen/Size5" android:paddingBottom="@dimen/Size5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="6.0dip">
+        <ImageView android:id="@id/imgSwitchImage" android:layout_width="@dimen/living_image_width" android:layout_height="@dimen/living_image_width" android:layout_marginLeft="@dimen/living_left" android:layout_marginTop="@dimen/Size5" android:src="@drawable/on_television" />
+        <TextView android:textSize="@dimen/TextSize15" android:textColor="@color/black" android:gravity="center|left" android:id="@id/tvSwitchName" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:text="TV" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center" android:id="@id/imgMove" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/move_icon" android:layout_weight="4.0" />
+    </LinearLayout>
+    <View android:background="@color/softGray" android:layout_width="fill_parent" android:layout_height="0.70000005dip" />
+</LinearLayout>
