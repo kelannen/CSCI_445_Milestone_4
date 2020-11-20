@@ -226,12 +226,12 @@ if __name__ == "__main__":
         output_list.append("")
 
     if rq2 >= 3:
-        output_list.append("Potential dangerous permission combo (broad storage permission and internet)")
+        output_list.append("Potential dangerous permission combo (audio recording and internet)")
         output_list.append("    Permissions: "+rq2_str)
         output_list.append("")
 
     if rq3 >= 3:
-        output_list.append("Potential dangerous permission combo (broad storage permission and internet)")
+        output_list.append("Potential dangerous permission combo (start on boot, location, and internet)")
         output_list.append("    Permissions: "+rq3_str)
         output_list.append("")
 
