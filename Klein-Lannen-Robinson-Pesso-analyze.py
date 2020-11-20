@@ -5,6 +5,9 @@ import sys
 import argparse
 import subprocess
 
+cwd = os.getcwd()
+sys.path.append(cwd + "/androguard")
+
 output_list = []
 
 # Trust Managers and Socket Factories that trust all certificates
