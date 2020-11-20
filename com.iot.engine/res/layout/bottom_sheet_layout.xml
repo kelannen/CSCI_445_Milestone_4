@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/RelativeLayoutSheet" android:background="#ff2196f3" android:layout_width="fill_parent" android:layout_height="250.0dip" app:behavior_hideable="true" app:layout_behavior="@string/bottom_sheet_behavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Button android:id="@id/buttonSheet1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Button 1 on Bottom Sheet" android:layout_centerHorizontal="true" />
+    <Button android:id="@id/buttonSheet2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Button 2 on Bottom Sheet" android:layout_below="@id/buttonSheet1" android:layout_alignParentLeft="true" />
+    <Button android:id="@id/buttonSheet3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Button 3 on Bottom Sheet" android:layout_below="@id/buttonSheet2" android:layout_alignParentLeft="true" />
+    <Button android:id="@id/buttonSheet4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Button 4 on Bottom Sheet" android:layout_below="@id/buttonSheet3" android:layout_alignParentLeft="true" />
+    <Button android:id="@id/buttonSheet5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Button 5 on Bottom Sheet" android:layout_below="@id/buttonSheet4" android:layout_alignParentLeft="true" />
+    <Button android:id="@id/buttonSheet6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Button 6 on Bottom Sheet" android:layout_below="@id/buttonSheet5" android:layout_alignParentLeft="true" />
+</RelativeLayout>

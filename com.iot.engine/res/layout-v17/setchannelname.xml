@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/alert_dialog" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/NormalText" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:padding="@dimen/Size5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/Size20" android:layout_marginTop="@dimen/Size10" android:text="CHANNEL NAME" />
+    <View android:background="@color/gray" android:padding="@dimen/Size5" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/Size10" android:layout_marginTop="@dimen/Size5" android:layout_marginRight="@dimen/Size20" />
+    <EditText android:textSize="@dimen/NormalText" android:textColor="@color/black" android:textColorHint="@color/darkGray" android:layout_gravity="center" android:id="@id/edtChannelName" android:background="@drawable/underline" android:padding="@dimen/Size10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/Size30" android:layout_marginTop="20.0dip" android:layout_marginRight="@dimen/Size30" android:hint="Set Channel Name" android:ems="10" android:inputType="textPassword" android:imeOptions="actionDone" android:textCursorDrawable="@drawable/color_cursor" android:fontFamily="sans-serif" android:textAlignment="center" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@color/softGray" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="10.0dip" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textStyle="bold" android:textColor="@color/orange" android:gravity="center" android:id="@id/txtCancel" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cancel" android:layout_weight="1.0" />
+                <View android:background="@color/softGray" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                <TextView android:textStyle="bold" android:textColor="@color/orange" android:gravity="center" android:id="@id/txtOk" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="OK" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

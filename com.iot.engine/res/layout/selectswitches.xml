@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/Size2"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView android:padding="@dimen/Size5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/Size5" android:layout_marginTop="@dimen/Size5" android:layout_marginRight="@dimen/Size5">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/llLinear" android:paddingTop="@dimen/Size5" android:paddingBottom="@dimen/Size5" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="7.0">
+                <ImageView android:layout_gravity="center" android:id="@id/imgItemSwitch" android:layout_width="@dimen/living_image_width" android:layout_height="@dimen/living_image_width" android:src="@drawable/on_television" android:layout_weight="1.0" />
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="5.0">
+                    <TextView android:textSize="@dimen/TextSize15" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@id/txtItemSwitch" android:padding="@dimen/Size2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Fan" android:layout_weight="1.0" />
+                    <TextView android:textSize="@dimen/TextSize15" android:textColor="@color/colorPrimary" android:gravity="center" android:id="@id/txtItemRoom" android:padding="@dimen/Size2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Hall" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <android.support.v7.widget.AppCompatCheckBox android:layout_gravity="center|right" android:id="@id/cbSwitchSelect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" app:buttonTint="@color/colorPrimaryDark" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@id/llHideDimmer" android:padding="3.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="5.0" />
+                <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar android:layout_gravity="left" android:id="@id/seekDimmer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_weight="1.0" app:dsb_allowTrackClickToDrag="false" app:dsb_progressColor="@color/my_progress_color" app:dsb_indicatorTextAppearance="@style/CustomFloaterTextAppearance" app:dsb_indicatorColor="@color/my_floater_color" app:dsb_indicatorFormatter="%1d" app:dsb_rippleColor="@color/colorPrimary" app:dsb_trackHeight="2.5dip" app:dsb_thumbSize="19.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

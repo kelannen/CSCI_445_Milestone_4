@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/llBottom">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/Size10">
+                <TextView android:textSize="@dimen/Size20" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="User Authorities" />
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/Size5" android:layout_marginTop="@dimen/Size10" android:layout_marginRight="@dimen/Size5" android:layout_marginBottom="@dimen/Size5" android:weightSum="10.0">
+                    <ImageView android:layout_width="0.0dip" android:layout_height="20.0dip" android:layout_marginTop="@dimen/Size10" android:layout_marginBottom="@dimen/Size5" android:src="@drawable/chirak" android:layout_weight="1.0" />
+                    <TextView android:textSize="@dimen/TextSize13" android:textColor="@color/black_light" android:id="@id/adminUser" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/Size5" android:layout_marginTop="@dimen/Size5" android:layout_marginBottom="@dimen/Size5" android:text="Admin User : This user have authority to do any oparation such as Edit ROOM,SWITCH,SHARE CONTROL,SCHEDULE ETC." android:layout_weight="9.0" android:lineSpacingExtra="@dimen/Size5" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/Size5" android:layout_marginTop="@dimen/Size5" android:layout_marginRight="@dimen/Size5" android:layout_marginBottom="@dimen/Size5" android:weightSum="10.0">
+                    <ImageView android:layout_width="0.0dip" android:layout_height="20.0dip" android:layout_marginTop="@dimen/Size10" android:layout_marginBottom="@dimen/Size5" android:src="@drawable/chirak" android:layout_weight="1.0" />
+                    <TextView android:textSize="@dimen/TextSize13" android:textColor="@color/black_light" android:id="@id/moderateUser" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/Size5" android:layout_marginTop="@dimen/Size5" android:layout_marginBottom="@dimen/Size5" android:text="Moderate User : This user can perform all the oparations as like admin user excluding Share Control." android:layout_weight="9.0" android:lineSpacingExtra="@dimen/Size5" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/Size5" android:layout_marginTop="@dimen/Size5" android:layout_marginRight="@dimen/Size5" android:layout_marginBottom="@dimen/Size5" android:weightSum="10.0">
+                    <ImageView android:layout_width="0.0dip" android:layout_height="20.0dip" android:layout_marginTop="@dimen/Size10" android:layout_marginBottom="@dimen/Size5" android:src="@drawable/chirak" android:layout_weight="1.0" />
+                    <TextView android:textSize="@dimen/TextSize13" android:textColor="@color/black_light" android:id="@id/normalUser" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/Size5" android:layout_marginTop="@dimen/Size5" android:layout_marginBottom="@dimen/Size5" android:text="Normal User : This user can perform operations like Turn ON/OFF switch,TURN_ON_ALL,TURN_OFF_ALL etc.\nNormal User don't have authority to SHARE CONTROL,SCHEDULE SWITCHH,LOCK,EDIT ROOM,SWITCH" android:layout_weight="9.0" android:lineSpacingExtra="@dimen/Size5" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/Size5" android:layout_marginTop="@dimen/Size5" android:layout_marginRight="@dimen/Size5" android:layout_marginBottom="@dimen/Size5" android:weightSum="10.0">
+                    <ImageView android:layout_width="0.0dip" android:layout_height="20.0dip" android:layout_marginTop="@dimen/Size10" android:layout_marginBottom="@dimen/Size5" android:src="@drawable/chirak" android:layout_weight="1.0" />
+                    <TextView android:textSize="@dimen/TextSize13" android:textColor="@color/black_light" android:id="@id/guestUser" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/Size5" android:layout_marginTop="@dimen/Size5" android:layout_marginBottom="@dimen/Size5" android:text="Guest User : This user can have authorities like NORMAL USER. \nGuest User can have certain time to used this application\nAdmin user decide that upto how much days Guest User can have access to use it." android:layout_weight="9.0" android:lineSpacingExtra="@dimen/Size5" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/llBottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:background="@color/softGray" android:layout_width="fill_parent" android:layout_height="@dimen/Size1" android:layout_above="@id/btnClose" />
+        <TextView android:textSize="@dimen/NormalText" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@id/btnClose" android:layout_width="fill_parent" android:layout_height="@dimen/login_btn_height" android:text="Close" />
+    </LinearLayout>
+</RelativeLayout>

@@ -4,6 +4,8 @@ import os
 import sys
 import argparse
 import subprocess
+#from androguard.core.bytecodes import apk
+#from androguard.core.bytecodes import dvm
 
 cwd = os.getcwd()
 sys.path.append(cwd + "/androguard")
@@ -173,6 +175,10 @@ if __name__ == "__main__":
 
     base_path = os.path.dirname(os.path.abspath(__file__))
     input_path = os.path.join(base_path, args.i)
+
+    #a = apk.APK(input_path)
+    #d = dvm.DalvikVMFormat(a.get_dex())
+    #print(a.get_permissions())
 
     if os.path.isfile(input_path):
         decompile_apk(args.i)
