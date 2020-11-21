@@ -1,0 +1,6 @@
+APK: air.pokemonquiz
+
+Smali File Location: C:\Users\User\Documents\WM_Classes\CSCI445\Homework_5\CSCI_445_Milestone_4\air.pokemonquiz\smali\air\pokemonquiz
+
+Smali Files with Potential Vulnerabilities
+

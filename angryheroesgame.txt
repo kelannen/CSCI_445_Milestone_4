@@ -1,0 +1,39 @@
+APK: com.angryheroesgame.halloween
+
+AndroidManifest.xml
+=======================
+
+Potential unprotected broadcast reciever on line 24 and line 30
+    Line:         <receiver android:name="net.armobi.angryheroes.notifications.RepeatingAlarmService" android:process=":remote"/>
+
+    Line:         </receiver>
+
+
+Potential unprotected broadcast reciever on line 31 and line 35
+    Line:         <receiver android:exported="true" android:name="net.armobi.angryheroes.notifications.RefReceiver">
+
+    Line:         </receiver>
+
+
+Smali File Location: C:\Users\User\Documents\WM_Classes\CSCI445\Homework_5\CSCI_445_Milestone_4\com.angryheroesgame.halloween\smali\com\angryheroesgame\halloween
+
+Smali Files with Potential Vulnerabilities
+
+\amazon\inapp\purchasing\FailurePrompt.smali
+=======================
+
+Potential http usage on line 6
+    Line: .field private static final LINK:Ljava/lang/String; = "http://www.amazon.com/gp/mas/get-appstore/android/ref=mas_mx_mba_iap_dl"
+
+
+Potential http usage on line 104
+    Line:     const-string v3, "http://www.amazon.com/gp/mas/get-appstore/android/ref=mas_mx_mba_iap_dl"
+
+
+\sgiggle\ipc\CommunicatorToService.smali
+=======================
+
+Potential http usage on line 289
+    Line:     const-string v3, "http://install.tango.me/?src=sdk-android"
+
+

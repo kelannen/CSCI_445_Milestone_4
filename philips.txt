@@ -1,0 +1,1073 @@
+Potential dangerous permission combo (broad storage permission and internet)
+    Permissions: android.permission.READ_EXTERNAL_STORAGE,android.permission.INTERNET,android.permission.WRITE_EXTERNAL_STORAGE,
+
+APK: com.philips.hueswitcher.quickstart
+
+AndroidManifest.xml
+=======================
+
+Potential allow backup and restore vulnerability on line 15
+    Line:     <application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+
+
+Smali File Location: C:\Users\User\Documents\WM_Classes\CSCI445\Homework_5\CSCI_445_Milestone_4\com.philips.hueswitcher.quickstart\smali\com\philips\hueswitcher\quickstart
+
+Smali Files with Potential Vulnerabilities
+
+\ColorGeneratorChooseColors$5$1$2.smali
+=======================
+
+Potential http usage on line 50
+    Line:     const-string v2, "http://iotswitcher.weebly.com/uploads/9/4/0/6/94063013/xy-color-space_orig.png"
+
+
+\NewSwitchThree$5$1$2.smali
+=======================
+
+Potential http usage on line 50
+    Line:     const-string v2, "http://iotswitcher.weebly.com/uploads/9/4/0/6/94063013/xy-color-space_orig.png"
+
+
+\ProgramDaylightSensorFragment$2$2$2$4$3$1.smali
+=======================
+
+Potential http usage on line 72
+    Line:     const-string v6, "http://"
+
+
+\ProgramDaylightSensorFragment$2$2$2$4$3.smali
+=======================
+
+Potential http usage on line 574
+    Line:     const-string v17, "http://"
+
+
+\ProgramDaylightSensorFragment$2$3$1$4$3$1.smali
+=======================
+
+Potential http usage on line 72
+    Line:     const-string v6, "http://"
+
+
+\ProgramDaylightSensorFragment$2$3$1$4$3.smali
+=======================
+
+Potential http usage on line 574
+    Line:     const-string v17, "http://"
+
+
+\ProgramDaylightSensorFragment$3$5$2$1$1$1.smali
+=======================
+
+Potential http usage on line 53
+    Line:     const-string v3, "http://"
+
+
+\ProgramDaylightSensorFragment$3$5$2$1$2$1.smali
+=======================
+
+Potential http usage on line 53
+    Line:     const-string v3, "http://"
+
+
+\ProgramDaylightSensorFragment$3$5$2$1$3$1.smali
+=======================
+
+Potential http usage on line 53
+    Line:     const-string v3, "http://"
+
+
+\ProgramDaylightSensorFragment$3$5$2$1$4$1.smali
+=======================
+
+Potential http usage on line 53
+    Line:     const-string v3, "http://"
+
+
+\ProgramDaylightSensorFragment$3$5$2$1.smali
+=======================
+
+Potential http usage on line 460
+    Line:     const-string v13, "http://"
+
+
+Potential http usage on line 1040
+    Line:     const-string v13, "http://"
+
+
+Potential http usage on line 1445
+    Line:     const-string v13, "http://"
+
+
+Potential http usage on line 1826
+    Line:     const-string v13, "http://"
+
+
+\ProgramDaylightSensorFragment$3$6$2$1$1$1.smali
+=======================
+
+Potential http usage on line 53
+    Line:     const-string v3, "http://"
+
+
+\ProgramDaylightSensorFragment$3$6$2$1.smali
+=======================
+
+Potential http usage on line 276
+    Line:     const-string v6, "http://"
+
+
+\ProgramDaylightSensorFragment$3$7$2$1$1$1.smali
+=======================
+
+Potential http usage on line 53
+    Line:     const-string v3, "http://"
+
+
+\ProgramDaylightSensorFragment$3$7$2$1.smali
+=======================
+
+Potential http usage on line 292
+    Line:     const-string v6, "http://"
+
+
+\ProgramDaylightSensorFragment$3.smali
+=======================
+
+Potential http usage on line 490
+    Line:     const-string v3, "http://"
+
+
+\ProgramDaylightSensorFragment$4$5$2$1$1$1.smali
+=======================
+
+Potential http usage on line 53
+    Line:     const-string v3, "http://"
+
+
+\ProgramDaylightSensorFragment$4$5$2$1$2$1.smali
+=======================
+
+Potential http usage on line 53
+    Line:     const-string v3, "http://"
+
+
+\ProgramDaylightSensorFragment$4$5$2$1$3$1.smali
+=======================
+
+Potential http usage on line 53
+    Line:     const-string v3, "http://"
+
+
+\ProgramDaylightSensorFragment$4$5$2$1$4$1.smali
+=======================
+
+Potential http usage on line 53
+    Line:     const-string v3, "http://"
+
+
+\ProgramDaylightSensorFragment$4$5$2$1.smali
+=======================
+
+Potential http usage on line 460
+    Line:     const-string v13, "http://"
+
+
+Potential http usage on line 1040
+    Line:     const-string v13, "http://"
+
+
+Potential http usage on line 1445
+    Line:     const-string v13, "http://"
+
+
+Potential http usage on line 1826
+    Line:     const-string v13, "http://"
+
+
+\ProgramDaylightSensorFragment$4$6$2$1$1$1.smali
+=======================
+
+Potential http usage on line 53
+    Line:     const-string v3, "http://"
+
+
+\ProgramDaylightSensorFragment$4$6$2$1.smali
+=======================
+
+Potential http usage on line 276
+    Line:     const-string v6, "http://"
+
+
+\ProgramDaylightSensorFragment$4$7$2$1$1$1.smali
+=======================
+
+Potential http usage on line 53
+    Line:     const-string v3, "http://"
+
+
+\ProgramDaylightSensorFragment$4$7$2$1.smali
+=======================
+
+Potential http usage on line 292
+    Line:     const-string v6, "http://"
+
+
+\ProgramDaylightSensorFragment$4.smali
+=======================
+
+Potential http usage on line 535
+    Line:     const-string v3, "http://"
+
+
+\ProgramDaylightSensorFragment$5$1$1$2$3$1$1$1.smali
+=======================
+
+Potential http usage on line 524
+    Line:     const-string v6, "http://"
+
+
+\ProgramDaylightSensorFragment$5$1$1$2$3$1.smali
+=======================
+
+Potential http usage on line 150
+    Line:     const-string v3, "http://"
+
+
+\ProgramDaylightSensorFragment$5$1$1$2$4$1$1$1.smali
+=======================
+
+Potential http usage on line 524
+    Line:     const-string v7, "http://"
+
+
+\ProgramDaylightSensorFragment$5$1$1$2$4$1.smali
+=======================
+
+Potential http usage on line 150
+    Line:     const-string v3, "http://"
+
+
+\ProgramDaylightSensorFragment$5.smali
+=======================
+
+Potential http usage on line 102
+    Line:     const-string v2, "http://"
+
+
+\ProgramDaylightSensorFragment$8$3$1.smali
+=======================
+
+Potential http usage on line 72
+    Line:     const-string v6, "http://"
+
+
+\ProgramDaylightSensorFragment$8$3.smali
+=======================
+
+Potential http usage on line 376
+    Line:     const-string v17, "http://"
+
+
+\ProgramDaylightSensorFragment.smali
+=======================
+
+Potential http usage on line 13147
+    Line:     const-string v27, "http://"
+
+
+\ProgramDimmerSwitchFragment$10$1$1$1$1$1$1$1$1$1.smali
+=======================
+
+Potential http usage on line 49
+    Line:     const-string v3, "http://"
+
+
+\ProgramDimmerSwitchFragment$10$1$1$1$1$1$1$1.smali
+=======================
+
+Potential http usage on line 49
+    Line:     const-string v3, "http://"
+
+
+\ProgramDimmerSwitchFragment$10$1$1$1$1$1.smali
+=======================
+
+Potential http usage on line 49
+    Line:     const-string v3, "http://"
+
+
+\ProgramDimmerSwitchFragment$10$1$1$1.smali
+=======================
+
+Potential http usage on line 74
+    Line:     const-string v5, "http://"
+
+
+\ProgramDimmerSwitchFragment$10$1.smali
+=======================
+
+Potential http usage on line 81
+    Line:     const-string v5, "http://"
+
+
+\ProgramDimmerSwitchFragment$11$1$1$1$1$1$1$1$1$1$1$1.smali
+=======================
+
+Potential http usage on line 49
+    Line:     const-string v3, "http://"
+
+
+\ProgramDimmerSwitchFragment$11$1$1$1$1$1$1$1$1$1.smali
+=======================
+
+Potential http usage on line 49
+    Line:     const-string v3, "http://"
+
+
+\ProgramDimmerSwitchFragment$11$1$1$1$1$1$1$1.smali
+=======================
+
+Potential http usage on line 49
+    Line:     const-string v3, "http://"
+
+
+\ProgramDimmerSwitchFragment$11$1$1$1$1$1.smali
+=======================
+
+Potential http usage on line 49
+    Line:     const-string v3, "http://"
+
+
+\ProgramDimmerSwitchFragment$11$1$1$1.smali
+=======================
+
+Potential http usage on line 74
+    Line:     const-string v5, "http://"
+
+
+\ProgramDimmerSwitchFragment$11$1.smali
+=======================
+
+Potential http usage on line 81
+    Line:     const-string v5, "http://"
+
+
+\ProgramDimmerSwitchFragment$12$1$1$1$1$1$1$1$1$1$1$1$1$1.smali
+=======================
+
+Potential http usage on line 49
+    Line:     const-string v3, "http://"
+
+
+\ProgramDimmerSwitchFragment$12$1$1$1$1$1$1$1$1$1$1$1.smali
+=======================
+
+Potential http usage on line 49
+    Line:     const-string v3, "http://"
+
+
+\ProgramDimmerSwitchFragment$12$1$1$1$1$1$1$1$1$1.smali
+=======================
+
+Potential http usage on line 49
+    Line:     const-string v3, "http://"
+
+
+\ProgramDimmerSwitchFragment$12$1$1$1$1$1$1$1.smali
+=======================
+
+Potential http usage on line 49
+    Line:     const-string v3, "http://"
+
+
+\ProgramDimmerSwitchFragment$12$1$1$1$1$1.smali
+=======================
+
+Potential http usage on line 49
+    Line:     const-string v3, "http://"
+
+
+\ProgramDimmerSwitchFragment$12$1$1$1.smali
+=======================
+
+Potential http usage on line 74
+    Line:     const-string v5, "http://"
+
+
+\ProgramDimmerSwitchFragment$12$1.smali
+=======================
+
+Potential http usage on line 81
+    Line:     const-string v5, "http://"
+
+
+\ProgramDimmerSwitchFragment$2$23$1.smali
+=======================
+
+Potential http usage on line 826
+    Line:     const-string v3, "http://"
+
+
+\ProgramDimmerSwitchFragment$3$5$1$1$1.smali
+=======================
+
+Potential http usage on line 246
+    Line:     const-string v3, "http://"
+
+
+\ProgramDimmerSwitchFragment$3$5$1$1.smali
+=======================
+
+Potential http usage on line 572
+    Line:     const-string v11, "http://"
+
+
+\ProgramDimmerSwitchFragment$3$5.smali
+=======================
+
+Potential http usage on line 686
+    Line:     const-string v7, "http://"
+
+
+\ProgramDimmerSwitchFragment$4$5$1$1$1.smali
+=======================
+
+Potential http usage on line 246
+    Line:     const-string v3, "http://"
+
+
+\ProgramDimmerSwitchFragment$4$5$1$1.smali
+=======================
+
+Potential http usage on line 572
+    Line:     const-string v11, "http://"
+
+
+\ProgramDimmerSwitchFragment$4$5.smali
+=======================
+
+Potential http usage on line 686
+    Line:     const-string v7, "http://"
+
+
+\ProgramDimmerSwitchFragment$5$5$1$1$1.smali
+=======================
+
+Potential http usage on line 246
+    Line:     const-string v3, "http://"
+
+
+\ProgramDimmerSwitchFragment$5$5$1$1.smali
+=======================
+
+Potential http usage on line 572
+    Line:     const-string v11, "http://"
+
+
+\ProgramDimmerSwitchFragment$5$5.smali
+=======================
+
+Potential http usage on line 686
+    Line:     const-string v7, "http://"
+
+
+\ProgramDimmerSwitchFragment$6$1.smali
+=======================
+
+Potential http usage on line 122
+    Line:     const-string v3, "http://"
+
+
+\ProgramDimmerSwitchFragment$7$1$1$2$3$1$1$1.smali
+=======================
+
+Potential http usage on line 524
+    Line:     const-string v6, "http://"
+
+
+\ProgramDimmerSwitchFragment$7$1$1$2$3$1.smali
+=======================
+
+Potential http usage on line 150
+    Line:     const-string v3, "http://"
+
+
+\ProgramDimmerSwitchFragment$7$1$1$2$4$1$1$1.smali
+=======================
+
+Potential http usage on line 524
+    Line:     const-string v6, "http://"
+
+
+\ProgramDimmerSwitchFragment$7$1$1$2$4$1.smali
+=======================
+
+Potential http usage on line 150
+    Line:     const-string v3, "http://"
+
+
+\ProgramDimmerSwitchFragment$7.smali
+=======================
+
+Potential http usage on line 102
+    Line:     const-string v2, "http://"
+
+
+\ProgramDimmerSwitchFragment$9$1$1$1$1$1$1$1.smali
+=======================
+
+Potential http usage on line 49
+    Line:     const-string v3, "http://"
+
+
+\ProgramDimmerSwitchFragment$9$1$1$1$1$1.smali
+=======================
+
+Potential http usage on line 49
+    Line:     const-string v3, "http://"
+
+
+\ProgramDimmerSwitchFragment$9$1$1$1.smali
+=======================
+
+Potential http usage on line 74
+    Line:     const-string v5, "http://"
+
+
+\ProgramDimmerSwitchFragment$9$1.smali
+=======================
+
+Potential http usage on line 81
+    Line:     const-string v5, "http://"
+
+
+\ProgramDimmerSwitchFragment.smali
+=======================
+
+Potential http usage on line 17656
+    Line:     const-string v3, "http://"
+
+
+Potential http usage on line 17933
+    Line:     const-string v3, "http://"
+
+
+Potential http usage on line 18207
+    Line:     const-string v3, "http://"
+
+
+Potential http usage on line 18541
+    Line:     const-string v3, "http://"
+
+
+Potential http usage on line 18885
+    Line:     const-string v3, "http://"
+
+
+\ProgramHueTapFragment$10$1$1$1$1$1$1$1$1$1.smali
+=======================
+
+Potential http usage on line 49
+    Line:     const-string v3, "http://"
+
+
+\ProgramHueTapFragment$10$1$1$1$1$1$1$1.smali
+=======================
+
+Potential http usage on line 49
+    Line:     const-string v3, "http://"
+
+
+\ProgramHueTapFragment$10$1$1$1$1$1.smali
+=======================
+
+Potential http usage on line 49
+    Line:     const-string v3, "http://"
+
+
+\ProgramHueTapFragment$10$1$1$1.smali
+=======================
+
+Potential http usage on line 74
+    Line:     const-string v5, "http://"
+
+
+\ProgramHueTapFragment$10$1.smali
+=======================
+
+Potential http usage on line 81
+    Line:     const-string v5, "http://"
+
+
+\ProgramHueTapFragment$11$1$1$1$1$1$1$1$1$1$1$1.smali
+=======================
+
+Potential http usage on line 49
+    Line:     const-string v3, "http://"
+
+
+\ProgramHueTapFragment$11$1$1$1$1$1$1$1$1$1.smali
+=======================
+
+Potential http usage on line 49
+    Line:     const-string v3, "http://"
+
+
+\ProgramHueTapFragment$11$1$1$1$1$1$1$1.smali
+=======================
+
+Potential http usage on line 49
+    Line:     const-string v3, "http://"
+
+
+\ProgramHueTapFragment$11$1$1$1$1$1.smali
+=======================
+
+Potential http usage on line 49
+    Line:     const-string v3, "http://"
+
+
+\ProgramHueTapFragment$11$1$1$1.smali
+=======================
+
+Potential http usage on line 74
+    Line:     const-string v5, "http://"
+
+
+\ProgramHueTapFragment$11$1.smali
+=======================
+
+Potential http usage on line 81
+    Line:     const-string v5, "http://"
+
+
+\ProgramHueTapFragment$12$1$1$1$1$1$1$1$1$1$1$1$1$1.smali
+=======================
+
+Potential http usage on line 49
+    Line:     const-string v3, "http://"
+
+
+\ProgramHueTapFragment$12$1$1$1$1$1$1$1$1$1$1$1.smali
+=======================
+
+Potential http usage on line 49
+    Line:     const-string v3, "http://"
+
+
+\ProgramHueTapFragment$12$1$1$1$1$1$1$1$1$1.smali
+=======================
+
+Potential http usage on line 49
+    Line:     const-string v3, "http://"
+
+
+\ProgramHueTapFragment$12$1$1$1$1$1$1$1.smali
+=======================
+
+Potential http usage on line 49
+    Line:     const-string v3, "http://"
+
+
+\ProgramHueTapFragment$12$1$1$1$1$1.smali
+=======================
+
+Potential http usage on line 49
+    Line:     const-string v3, "http://"
+
+
+\ProgramHueTapFragment$12$1$1$1.smali
+=======================
+
+Potential http usage on line 74
+    Line:     const-string v5, "http://"
+
+
+\ProgramHueTapFragment$12$1.smali
+=======================
+
+Potential http usage on line 81
+    Line:     const-string v5, "http://"
+
+
+\ProgramHueTapFragment$2$23$1.smali
+=======================
+
+Potential http usage on line 826
+    Line:     const-string v3, "http://"
+
+
+\ProgramHueTapFragment$3$5$1$1$1.smali
+=======================
+
+Potential http usage on line 246
+    Line:     const-string v3, "http://"
+
+
+\ProgramHueTapFragment$3$5$1$1.smali
+=======================
+
+Potential http usage on line 496
+    Line:     const-string v11, "http://"
+
+
+\ProgramHueTapFragment$3$5.smali
+=======================
+
+Potential http usage on line 686
+    Line:     const-string v7, "http://"
+
+
+\ProgramHueTapFragment$4$5$1$1$1.smali
+=======================
+
+Potential http usage on line 246
+    Line:     const-string v3, "http://"
+
+
+\ProgramHueTapFragment$4$5$1$1.smali
+=======================
+
+Potential http usage on line 496
+    Line:     const-string v11, "http://"
+
+
+\ProgramHueTapFragment$4$5.smali
+=======================
+
+Potential http usage on line 686
+    Line:     const-string v7, "http://"
+
+
+\ProgramHueTapFragment$5$5$1$1$1.smali
+=======================
+
+Potential http usage on line 246
+    Line:     const-string v3, "http://"
+
+
+\ProgramHueTapFragment$5$5$1$1.smali
+=======================
+
+Potential http usage on line 496
+    Line:     const-string v11, "http://"
+
+
+\ProgramHueTapFragment$5$5.smali
+=======================
+
+Potential http usage on line 686
+    Line:     const-string v7, "http://"
+
+
+\ProgramHueTapFragment$6$1.smali
+=======================
+
+Potential http usage on line 122
+    Line:     const-string v3, "http://"
+
+
+\ProgramHueTapFragment$7$1$1$2$3$1$1$1.smali
+=======================
+
+Potential http usage on line 524
+    Line:     const-string v6, "http://"
+
+
+\ProgramHueTapFragment$7$1$1$2$3$1.smali
+=======================
+
+Potential http usage on line 150
+    Line:     const-string v3, "http://"
+
+
+\ProgramHueTapFragment$7$1$1$2$4$1$1$1.smali
+=======================
+
+Potential http usage on line 524
+    Line:     const-string v6, "http://"
+
+
+\ProgramHueTapFragment$7$1$1$2$4$1.smali
+=======================
+
+Potential http usage on line 150
+    Line:     const-string v3, "http://"
+
+
+\ProgramHueTapFragment$7.smali
+=======================
+
+Potential http usage on line 102
+    Line:     const-string v2, "http://"
+
+
+\ProgramHueTapFragment$9$1$1$1$1$1$1$1.smali
+=======================
+
+Potential http usage on line 49
+    Line:     const-string v3, "http://"
+
+
+\ProgramHueTapFragment$9$1$1$1$1$1.smali
+=======================
+
+Potential http usage on line 49
+    Line:     const-string v3, "http://"
+
+
+\ProgramHueTapFragment$9$1$1$1.smali
+=======================
+
+Potential http usage on line 74
+    Line:     const-string v5, "http://"
+
+
+\ProgramHueTapFragment$9$1.smali
+=======================
+
+Potential http usage on line 81
+    Line:     const-string v5, "http://"
+
+
+\ProgramHueTapFragment.smali
+=======================
+
+Potential http usage on line 17533
+    Line:     const-string v3, "http://"
+
+
+Potential http usage on line 17810
+    Line:     const-string v3, "http://"
+
+
+Potential http usage on line 18084
+    Line:     const-string v3, "http://"
+
+
+Potential http usage on line 18418
+    Line:     const-string v3, "http://"
+
+
+Potential http usage on line 18762
+    Line:     const-string v3, "http://"
+
+
+\ProgramMotionSensorFragment$2$3$1$1.smali
+=======================
+
+Potential http usage on line 49
+    Line:     const-string v3, "http://"
+
+
+\ProgramMotionSensorFragment$2$3.smali
+=======================
+
+Potential http usage on line 122
+    Line:     const-string v3, "http://"
+
+
+\ProgramMotionSensorFragment$2.smali
+=======================
+
+Potential http usage on line 325
+    Line:     const-string v10, "http://"
+
+
+\ProgramMotionSensorFragment$3$1$1$2$3$1$1$1.smali
+=======================
+
+Potential http usage on line 524
+    Line:     const-string v6, "http://"
+
+
+\ProgramMotionSensorFragment$3$1$1$2$3$1.smali
+=======================
+
+Potential http usage on line 150
+    Line:     const-string v3, "http://"
+
+
+\ProgramMotionSensorFragment$3$1$1$2$4$1$1$1.smali
+=======================
+
+Potential http usage on line 524
+    Line:     const-string v6, "http://"
+
+
+\ProgramMotionSensorFragment$3$1$1$2$4$1.smali
+=======================
+
+Potential http usage on line 150
+    Line:     const-string v3, "http://"
+
+
+\ProgramMotionSensorFragment$3.smali
+=======================
+
+Potential http usage on line 102
+    Line:     const-string v2, "http://"
+
+
+\ProgramMotionSensorFragment$4$7$2$1.smali
+=======================
+
+Potential http usage on line 394
+    Line:     const-string v13, "http://"
+
+
+Potential http usage on line 770
+    Line:     const-string v13, "http://"
+
+
+Potential http usage on line 1213
+    Line:     const-string v13, "http://"
+
+
+Potential http usage on line 1590
+    Line:     const-string v13, "http://"
+
+
+Potential http usage on line 1936
+    Line:     const-string v13, "http://"
+
+
+Potential http usage on line 2155
+    Line:     const-string v13, "http://"
+
+
+Potential http usage on line 2478
+    Line:     const-string v13, "http://"
+
+
+Potential http usage on line 2659
+    Line:     const-string v13, "http://"
+
+
+\ProgramMotionSensorFragment$4$8$2$1.smali
+=======================
+
+Potential http usage on line 217
+    Line:     const-string v5, "http://"
+
+
+Potential http usage on line 422
+    Line:     const-string v5, "http://"
+
+
+\ProgramMotionSensorFragment$4$9$2$1.smali
+=======================
+
+Potential http usage on line 232
+    Line:     const-string v5, "http://"
+
+
+Potential http usage on line 438
+    Line:     const-string v5, "http://"
+
+
+\ProgramMotionSensorFragment$5$5$2$1.smali
+=======================
+
+Potential http usage on line 403
+    Line:     const-string v9, "http://"
+
+
+Potential http usage on line 700
+    Line:     const-string v9, "http://"
+
+
+Potential http usage on line 1095
+    Line:     const-string v9, "http://"
+
+
+Potential http usage on line 1356
+    Line:     const-string v9, "http://"
+
+
+\ProgramMotionSensorFragment$5$6$2$1.smali
+=======================
+
+Potential http usage on line 225
+    Line:     const-string v5, "http://"
+
+
+Potential http usage on line 482
+    Line:     const-string v5, "http://"
+
+
+\ProgramSwitchesFragment$1$3$1$2$3$1$1$1.smali
+=======================
+
+Potential http usage on line 524
+    Line:     const-string v6, "http://"
+
+
+\ProgramSwitchesFragment$1$3$1$2$3$1.smali
+=======================
+
+Potential http usage on line 150
+    Line:     const-string v3, "http://"
+
+
+\ProgramSwitchesFragment$1$3$1$2$4$1$1$1.smali
+=======================
+
+Potential http usage on line 524
+    Line:     const-string v6, "http://"
+
+
+\ProgramSwitchesFragment$1$3$1$2$4$1.smali
+=======================
+
+Potential http usage on line 150
+    Line:     const-string v3, "http://"
+
+
+\ProgramSwitchesFragment$1.smali
+=======================
+
+Potential http usage on line 304
+    Line:     const-string v11, "http://"
+
+
+Potential http usage on line 385
+    Line:     const-string v11, "http://"
+
+
+\ProgramSwitchesFragment$3$3$1$2$3$1$1$1.smali
+=======================
+
+Potential http usage on line 524
+    Line:     const-string v6, "http://"
+
+
+\ProgramSwitchesFragment$3$3$1$2$3$1.smali
+=======================
+
+Potential http usage on line 150
+    Line:     const-string v3, "http://"
+
+
+\ProgramSwitchesFragment$3$3$1$2$4$1$1$1.smali
+=======================
+
+Potential http usage on line 524
+    Line:     const-string v6, "http://"
+
+
+\ProgramSwitchesFragment$3$3$1$2$4$1.smali
+=======================
+
+Potential http usage on line 150
+    Line:     const-string v3, "http://"
+
+
+\ProgramSwitchesFragment$3.smali
+=======================
+
+Potential http usage on line 1183
+    Line:     const-string v16, "http://"
+
+

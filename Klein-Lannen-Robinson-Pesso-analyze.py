@@ -181,7 +181,26 @@ def static_analysis (base_path, input_name, output_name):
         else:
             print("Path is not a directory")
     else:
-        print("Path is not valid")
+        found_path = True
+        while (not os.path.exists(smali_folder_path)):
+            if apk_folder_path == smali_folder_path:
+                print("No valid path exists.")
+                found_path = False
+                break
+            print("Path is not valid, trying the level above it.")
+            smali_folder_path = smali_folder_path.rsplit(char, 1)[0]  
+        if found_path:
+            if os.path.isdir(smali_folder_path):
+                for root, folders, files in os.walk(smali_folder_path):
+                    for file in files:
+                        file_path = os.path.join(root, file)
+                        extension = os.path.splitext(file_path)[1]
+                        if extension == ".smali":
+                            name = file
+                            checkSmali(file_path, root[len(smali_folder_path):]+char+name)
+                write_output(base_path, output_name)
+            else:
+                print("Path is not a directory")   
 
 def decompile_apk(input):
     subprocess.run(args=["apktool", "d", input])

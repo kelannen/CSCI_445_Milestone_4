@@ -1,0 +1,32 @@
+APK: com.alonsoruibal.chessdroid.lite
+
+Smali File Location: C:\Users\User\Documents\WM_Classes\CSCI445\Homework_5\CSCI_445_Milestone_4\com.alonsoruibal.chessdroid.lite\smali\com\alonsoruibal\chessdroid\lite
+
+Smali Files with Potential Vulnerabilities
+
+\b.smali
+=======================
+
+Potential http usage on line 34
+    Line:     const-string v3, "http://market.android.com/details?id="
+
+
+\ChessDroidActivity.smali
+=======================
+
+Potential http usage on line 134
+    Line:     const-string v2, "http://www.mobialia.com/chess/"
+
+
+Potential http usage on line 166
+    Line:     const-string v2, "http://play.google.com/store/apps/details?id=com.chessclub.android"
+
+
+Potential http usage on line 318
+    Line:     const-string v2, "http://play.google.com/store/apps/details?id=com.alonsoruibal.chessdroid"
+
+
+Potential http usage on line 583
+    Line:     const-string v2, "http://www.freechess.org/Register/index.html"
+
+

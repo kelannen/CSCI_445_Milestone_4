@@ -1,0 +1,18 @@
+Potential dangerous permission combo (broad storage permission and internet)
+    Permissions: android.permission.INTERNET,android.permission.READ_EXTERNAL_STORAGE,android.permission.WRITE_EXTERNAL_STORAGE,
+
+APK: co.kr.medialog.swatandzombie
+
+AndroidManifest.xml
+=======================
+
+Potential unprotected broadcast reciever on line 26 and line 32
+    Line:         <receiver android:name="BillingReceiver">
+
+    Line:         </receiver>
+
+
+Smali File Location: C:\Users\User\Documents\WM_Classes\CSCI445\Homework_5\CSCI_445_Milestone_4\co.kr.medialog.swatandzombie\smali\co\kr\medialog\swatandzombie
+
+Smali Files with Potential Vulnerabilities
+

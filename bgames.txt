@@ -1,0 +1,17 @@
+APK: com.bgames.android.bikerun
+
+AndroidManifest.xml
+=======================
+
+Potential allow backup and restore vulnerability on line 18
+    Line:     <application android:allowBackup="true" android:icon="@drawable/icon" android:label="@string/app_name">
+
+
+Potential exported components outside of their main activity without limitations vulnerability on line 56 and line 56
+    Line:         <activity android:exported="true" android:label="@string/app_name" android:name=".wxapi.WXEntryActivity"/>
+
+
+Smali File Location: C:\Users\User\Documents\WM_Classes\CSCI445\Homework_5\CSCI_445_Milestone_4\com.bgames.android.bikerun\smali\com\bgames\android\bikerun
+
+Smali Files with Potential Vulnerabilities
+

@@ -1,0 +1,6 @@
+APK: com.seoby.smarthome.thermostat
+
+Smali File Location: C:\Users\User\Documents\WM_Classes\CSCI445\Homework_5\CSCI_445_Milestone_4\com.seoby.smarthome.thermostat\smali\com\seoby\smarthome\thermostat
+
+Smali Files with Potential Vulnerabilities
+

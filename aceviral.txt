@@ -1,0 +1,22 @@
+APK: com.aceviral.speedboat
+
+AndroidManifest.xml
+=======================
+
+Potential unprotected broadcast reciever on line 36 and line 42
+    Line:         <receiver android:name="com.aceviral.dungeons.BillingReceiver">
+
+    Line:         </receiver>
+
+
+Smali File Location: C:\Users\User\Documents\WM_Classes\CSCI445\Homework_5\CSCI_445_Milestone_4\com.aceviral.speedboat\smali\com\aceviral\speedboat
+
+Smali Files with Potential Vulnerabilities
+
+\screens\PreLoader.smali
+=======================
+
+Potential http usage on line 94
+    Line:     const-string v0, "http://aceviral.com/a/ad/50015"
+
+
