@@ -1,0 +1,42 @@
+APK: com.bpl.homecenter.ui
+
+AndroidManifest.xml
+=======================
+
+Potential allow backup and restore vulnerability on line 21
+    Line:     <application android:allowBackup="true" android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name">
+
+    [TRUE POSITIVE]
+Potential unprotected broadcast reciever on line 80 and line 156
+    Line:         <receiver android:name="com.bpl.homecenter.ui.RefreshUIListener">
+
+    Line:         </receiver>
+
+    [TRUE POSITIVE]
+Smali File Location: /media/psf/Home/CSCI_445_Milestone_4/com.bpl.homecenter.ui/smali/com/bpl/homecenter/ui
+
+Smali Files with Potential Vulnerabilities
+
+/IPCameraActivity.smali
+=======================
+
+Potential http usage on line 433
+    Line:     const-string v2, "http://plazacam.studentaffairs.duke.edu/view/viewer_index.shtml?id=287931/nphMotionJpeg?Resolution=320x240&Quality=Standard"
+
+    [TRUE POSITIVE]
+Potential http usage on line 453
+    Line:     const-string v3, "http://rax1.bsn.net/view/viewer_index.shtml?id=7458"
+
+    [TRUE POSITIVE]
+Potential http usage on line 473
+    Line:     const-string v4, "http://96.10.1.168/view/viewer_index.shtml?id=5924840"
+
+    [TRUE POSITIVE]
+/RefreshUIListener$HttpServerString.smali
+=======================
+
+Potential http usage on line 108
+    Line:     const-string v9, "http://182.74.44.194/dynip/getdynip.php?uid="
+ 
+    [FALSE POSITIVE]
+

@@ -1,0 +1,13 @@
+APK: com.advancedquonsettechnology.hcaapp
+
+AndroidManifest.xml
+=======================
+
+Potential allow backup and restore vulnerability on line 6
+    Line:     <application android:allowBackup="true" android:icon="@drawable/hcaglove2" android:label="@string/app_name" android:name="com.advancedquonsettechnology.hcaapp.HCAApplication" android:persistent="false" android:theme="@android:style/Theme.Holo">
+
+    [TRUE POSITIVE]
+Smali File Location: /media/psf/Home/CSCI_445_Milestone_4/com.advancedquonsettechnology.hcaapp/smali/com/advancedquonsettechnology/hcaapp
+
+Smali Files with Potential Vulnerabilities
+

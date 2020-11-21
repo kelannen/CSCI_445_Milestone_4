@@ -1,0 +1,34 @@
+
+qAPK: com.abode.abode
+
+AndroidManifest.xml
+=======================
+
+Potential unprotected broadcast reciever on line 81 and line 93
+    Line:         <receiver android:enabled="true" android:name="com.abode.abode.AbodeWidgetProvider">
+
+    Line:         </receiver>
+
+    [TRUE POSITIVE]
+Potential unprotected broadcast reciever on line 94 and line 103
+    Line:         <receiver android:label="widgetBroadcastReceiver" android:name="com.abode.abode.AbodeWidgetIntentReceiver">
+
+    Line:         </receiver>
+
+    [TRUE POSITIVE]
+Potential unprotected broadcast reciever on line 104 and line 108
+    Line:         <receiver android:exported="true" android:name="io.branch.referral.InstallListener">
+
+    Line:         </receiver>
+
+    [TRUE POSITIVE]
+Potential unprotected broadcast reciever on line 127 and line 134
+    Line:         <receiver android:name="com.transistorsoft.locationmanager.BootReceiver">
+
+    Line:         </receiver>
+
+    [TRUE POSITIVE]
+Smali File Location: /media/psf/Home/CSCI_445_Milestone_4/com.abode.abode/smali/com/abode/abode
+
+Smali Files with Potential Vulnerabilities
+

@@ -1,0 +1,28 @@
+Potential dangerous permission combo (broad storage permission and internet)
+    Permissions: android.permission.WRITE_EXTERNAL_STORAGE,android.permission.INTERNET,android.permission.READ_EXTERNAL_STORAGE,
+
+APK: com.bkav.smarthome.ariel
+
+AndroidManifest.xml
+=======================
+
+Potential allow backup and restore vulnerability on line 24
+    Line:     <application android:allowBackup="true" android:fullBackupContent="false" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.bkav.view3d.util.GlobalManager3D" android:supportsRtl="true" android:theme="@style/AppTheme">
+
+    [TRUE POSITIVE]
+Potential unprotected broadcast reciever on line 93 and line 97
+    Line:         <receiver android:name="com.bkav.service.ConnectionReceiver">
+
+    Line:         </receiver>
+
+    [TRUE POSITIVE]
+Potential unprotected broadcast reciever on line 109 and line 113
+    Line:         <receiver android:enabled="true" android:name="com.google.android.gms.measurement.AppMeasurementReceiver">
+
+    Line:         </receiver>
+
+    [TRUE POSITIVE]
+Smali File Location: /media/psf/Home/CSCI_445_Milestone_4/com.bkav.smarthome.ariel/smali/com/bkav/smarthome/ariel
+
+Smali Files with Potential Vulnerabilities
+

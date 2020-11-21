@@ -1,0 +1,19 @@
+APK: com.abb.domustech
+
+AndroidManifest.xml
+=======================
+
+Potential allow backup and restore vulnerability on line 7
+    Line:     <application android:allowBackup="true" android:icon="@drawable/icondomustechnew" android:label="ABB DomusTech" android:largeHeap="true" android:name="android.app.Application">
+
+    [TRUE POSITIVE]
+Potential unprotected broadcast reciever on line 17 and line 21
+    Line:     <receiver android:enabled="true" android:exported="true" android:name="DomusTech_Shared.Droid.SmsReceiver">
+
+    Line:     </receiver>
+
+    [TRUE POSITIVE]
+Smali File Location: /media/psf/Home/CSCI_445_Milestone_4/com.abb.domustech/smali/com/abb/domustech
+
+Smali Files with Potential Vulnerabilities
+

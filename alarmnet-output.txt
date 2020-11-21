@@ -1,0 +1,56 @@
+Potential dangerous permission combo (broad storage permission and internet)
+    Permissions: android.permission.INTERNET,android.permission.READ_EXTERNAL_STORAGE,android.permission.WRITE_EXTERNAL_STORAGE,
+
+APK: com.alarmnet.tc2
+
+AndroidManifest.xml
+=======================
+
+Potential unprotected broadcast reciever on line 58 and line 62
+    Line:         <receiver android:exported="false" android:name="com.alarmnet.tc2.common.controller.InactivityTimeoutReceiver">
+
+    Line:         </receiver>
+
+    [TRUE POSITIVE]	
+Potential unprotected broadcast reciever on line 94 and line 100
+    Line:         <receiver android:exported="false" android:name="com.alarmnet.tc2.geofence.core.DeviceRebootReceiver">
+
+    Line:         </receiver>
+
+    [TRUE POSITIVE]
+Potential unprotected broadcast reciever on line 101 and line 105
+    Line:         <receiver android:exported="false" android:name="com.alarmnet.tc2.geofence.core.LocationServicesChangedReceiver">
+
+    Line:         </receiver>
+
+    [TRUE POSITIVE]
+Potential unprotected broadcast reciever on line 106 and line 110
+    Line:         <receiver android:exported="false" android:name="com.alarmnet.tc2.common.notification.PushNotificationReceiver">
+
+    Line:         </receiver>
+
+    [TRUE POSITIVE]
+Potential unprotected broadcast reciever on line 161 and line 165
+    Line:         <receiver android:enabled="true" android:name="com.google.android.gms.measurement.AppMeasurementReceiver">
+
+    Line:         </receiver>
+
+    [TRUE POSITIVE]
+Smali File Location: /media/psf/Home/CSCI_445_Milestone_4/com.alarmnet.tc2/smali/com/alarmnet/tc2
+
+Smali Files with Potential Vulnerabilities
+
+/home/controller/l$1.smali
+=======================
+
+Potential http usage on line 51
+    Line:     const-string/jumbo v2, "http://www.accuweather.com"
+
+    [TRUE POSITIVE]
+/video/controller/legacy/watchlive/d.smali
+=======================
+
+Potential http usage on line 329
+    Line:     const-string/jumbo v0, "http://%s/util/query.cgi"
+
+    [TRUE POSITIVE]

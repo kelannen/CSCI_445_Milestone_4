@@ -1,0 +1,29 @@
+APK: com.cloudblocks.android.user
+
+AndroidManifest.xml
+=======================
+
+Potential allow backup and restore vulnerability on line 17
+    Line:     <application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.cloudblocks.android.user.MainApplication" android:persistent="true" android:supportsRtl="true" android:theme="@style/AppTheme">
+
+    [TRUE POSITIVE]
+Potential unprotected broadcast reciever on line 24 and line 28
+    Line:         <receiver android:name="com.cloudblocks.android.user.boot.OnBootReceiver">
+
+    Line:         </receiver>
+
+    [TRUE POSITIVE]
+Potential unprotected broadcast reciever on line 29 and line 33
+    Line:         <receiver android:name="com.cloudblocks.android.core.network.NetworkReceiver">
+
+    Line:         </receiver>
+
+    [TRUE POSITIVE]
+Potential exported components outside of their main activity without limitations vulnerability on line 67 and line 74
+    Line:         <activity android:exported="true" android:name="com.facebook.CustomTabActivity">
+
+    [TRUE POSITIVE]
+Smali File Location: /media/psf/Home/CSCI_445_Milestone_4/com.cloudblocks.android.user/smali/com/cloudblocks/android/user
+
+Smali Files with Potential Vulnerabilities
+

@@ -1,0 +1,164 @@
+Potential dangerous permission combo (broad storage permission and internet)
+    Permissions: android.permission.INTERNET,android.permission.WRITE_EXTERNAL_STORAGE,android.permission.READ_EXTERNAL_STORAGE,
+
+APK: com.anchor.anchorsmarthomes
+
+AndroidManifest.xml
+=======================
+
+Potential allow backup and restore vulnerability on line 16
+    Line:     <application android:allowBackup="true" android:hardwareAccelerated="false" android:icon="@mipmap/vetaar_launcher_icon" android:label="@string/app_name" android:largeHeap="true" android:name="com.anchor.anchorsmarthomes.helper.MyApplication" android:supportsRtl="true" android:theme="@style/AppTheme" android:windowSoftInputMode="adjustPan">
+
+    [TRUE POSITIVE]
+Potential unprotected broadcast reciever on line 48 and line 63
+    Line:         <receiver android:name="com.anchor.anchorsmarthomes.helper.OnOffAlarmReceiver"/>
+
+    Line:         </receiver>
+
+    [TRUE POSITIVE]
+Potential unprotected broadcast reciever on line 64 and line 68
+    Line:         <receiver android:name="com.anchor.anchorsmarthomes.helper.IncomingSMSReceiver">
+
+    Line:         </receiver>
+
+    [TRUE POSITIVE]
+Potential exported components outside of their main activity without limitations vulnerability on line 113 and line 118
+    Line:         <activity android:exported="true" android:name="com.google.android.gms.appinvite.PreviewActivity" android:theme="@style/Theme.AppInvite.Preview">
+
+    [TRUE POSITIVE]
+Potential exported components outside of their main activity without limitations vulnerability on line 121 and line 128
+    Line:         <activity android:exported="true" android:name="com.google.android.gms.tagmanager.TagManagerPreviewActivity" android:noHistory="true">
+
+    [TRUE POSITIVE]
+Smali File Location: /media/psf/Home/CSCI_445_Milestone_4/com.anchor.anchorsmarthomes/smali/com/anchor/anchorsmarthomes
+
+Smali Files with Potential Vulnerabilities
+
+/activities/GatewayDiscoveryActivity.smali
+=======================
+
+Potential http usage on line 406
+    Line:     const-string v2, "http://[ENTER-YOUR-URL-HERE]"
+
+    [TRUE POSITIVE]
+Potential http usage on line 426
+    Line:     const-string v2, "http://schema.org/ViewAction"
+
+    [TRUE POSITIVE]
+Potential http usage on line 435
+    Line:     const-string v2, "http://schema.org/CompletedActionStatus"
+
+    [TRUE POSITIVE]
+/activities/InviteUserActivity$GetInvitedUserStatus.smali
+=======================
+
+Potential http usage on line 94
+    Line:     const-string v8, "http://35.154.123.160:8080/Anchor-Vetaar/GetInviteeList?serial_number="
+
+    [FALSE POSITIVE]
+/activities/InviteUserActivity$InviteUserTask.smali
+=======================
+
+Potential http usage on line 77
+    Line:     const-string v5, "http://35.154.123.160:8080/Anchor-Vetaar/SetInvite?to="
+
+
+/helper/Util.smali
+=======================
+
+Potential http usage on line 22
+    Line: .field public static final SERVLET_URL2:Ljava/lang/String; = "http://192.168.0.101:8080/Anchor-Vetaar/"
+
+
+Potential http usage on line 26
+    Line: .field public static final TEMP_URL3:Ljava/lang/String; = "http://35.154.123.160:8080/Anchor-Vetaar/"
+
+
+Potential TrustManager usage on line 360
+    Line:     invoke-static {}, Ljavax/net/ssl/TrustManagerFactory;->getDefaultAlgorithm()Ljava/lang/String;
+
+
+Potential TrustManager usage on line 366
+    Line:     invoke-static {v10}, Ljavax/net/ssl/TrustManagerFactory;->getInstance(Ljava/lang/String;)Ljavax/net/ssl/TrustManagerFactory;
+
+
+Potential TrustManager usage on line 371
+    Line:     .local v9, "tmf":Ljavax/net/ssl/TrustManagerFactory;
+
+
+Potential TrustManager usage on line 372
+    Line:     invoke-virtual {v9, v5}, Ljavax/net/ssl/TrustManagerFactory;->init(Ljava/security/KeyStore;)V
+
+
+Potential TrustManager usage on line 377
+    Line:     invoke-virtual {v9}, Ljavax/net/ssl/TrustManagerFactory;->getTrustManagers()[Ljavax/net/ssl/TrustManager;
+
+
+Potential TrustManager usage on line 383
+    Line:     invoke-virtual {v7, v11, v12, v13}, Ljavax/net/ssl/SSLContext;->init([Ljavax/net/ssl/KeyManager;[Ljavax/net/ssl/TrustManager;Ljava/security/SecureRandom;)V
+
+
+Potential TrustManager usage on line 398
+    Line:     .end local v9    # "tmf":Ljavax/net/ssl/TrustManagerFactory;
+
+
+Potential TrustManager usage on line 570
+    Line:     invoke-static {}, Ljavax/net/ssl/TrustManagerFactory;->getDefaultAlgorithm()Ljava/lang/String;
+
+
+Potential TrustManager usage on line 576
+    Line:     invoke-static {v10}, Ljavax/net/ssl/TrustManagerFactory;->getInstance(Ljava/lang/String;)Ljavax/net/ssl/TrustManagerFactory;
+
+
+Potential TrustManager usage on line 581
+    Line:     .local v9, "tmf":Ljavax/net/ssl/TrustManagerFactory;
+
+
+Potential TrustManager usage on line 582
+    Line:     invoke-virtual {v9, v5}, Ljavax/net/ssl/TrustManagerFactory;->init(Ljava/security/KeyStore;)V
+
+
+Potential TrustManager usage on line 587
+    Line:     invoke-virtual {v9}, Ljavax/net/ssl/TrustManagerFactory;->getTrustManagers()[Ljavax/net/ssl/TrustManager;
+
+
+Potential TrustManager usage on line 593
+    Line:     invoke-virtual {v7, v11, v12, v13}, Ljavax/net/ssl/SSLContext;->init([Ljavax/net/ssl/KeyManager;[Ljavax/net/ssl/TrustManager;Ljava/security/SecureRandom;)V
+
+
+Potential TrustManager usage on line 608
+    Line:     .end local v9    # "tmf":Ljavax/net/ssl/TrustManagerFactory;
+
+
+Potential TrustManager usage on line 780
+    Line:     invoke-static {}, Ljavax/net/ssl/TrustManagerFactory;->getDefaultAlgorithm()Ljava/lang/String;
+
+
+Potential TrustManager usage on line 786
+    Line:     invoke-static {v10}, Ljavax/net/ssl/TrustManagerFactory;->getInstance(Ljava/lang/String;)Ljavax/net/ssl/TrustManagerFactory;
+
+
+Potential TrustManager usage on line 791
+    Line:     .local v9, "tmf":Ljavax/net/ssl/TrustManagerFactory;
+
+
+Potential TrustManager usage on line 792
+    Line:     invoke-virtual {v9, v5}, Ljavax/net/ssl/TrustManagerFactory;->init(Ljava/security/KeyStore;)V
+
+
+Potential TrustManager usage on line 797
+    Line:     invoke-virtual {v9}, Ljavax/net/ssl/TrustManagerFactory;->getTrustManagers()[Ljavax/net/ssl/TrustManager;
+
+
+Potential TrustManager usage on line 803
+    Line:     invoke-virtual {v7, v11, v12, v13}, Ljavax/net/ssl/SSLContext;->init([Ljavax/net/ssl/KeyManager;[Ljavax/net/ssl/TrustManager;Ljava/security/SecureRandom;)V
+
+
+Potential TrustManager usage on line 818
+    Line:     .end local v9    # "tmf":Ljavax/net/ssl/TrustManagerFactory;
+
+
+Potential http usage on line 4443
+    Line:     const-string v11, "http://alerts.valueleaf.com/api/v4/?api_key="
+
+

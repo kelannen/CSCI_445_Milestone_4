@@ -1,0 +1,32 @@
+APK: air.com.crestron.andros
+
+AndroidManifest.xml
+=======================
+
+Potential exported components outside of their main activity without limitations vulnerability on line 97 and line 97
+    Line:         <activity android:exported="true" android:label="Crestron Mobile Settings" android:name="com.crestron.mobile.android.SettingsActivity" android:windowSoftInputMode="stateHidden"/>
+
+    [TRUE POSITIVE]
+Potential unprotected broadcast reciever on line 103 and line 109
+    Line:         <receiver android:name="org.altbeacon.beacon.startup.StartupBroadcastReceiver">
+
+    Line:         </receiver>
+
+    [TRUE POSITIVE]
+Potential unprotected broadcast reciever on line 116 and line 121
+    Line:         <receiver android:name="com.crestron.mobile.android.GCMBroadcastReceiver">
+
+    Line:         </receiver>
+
+    [TRUE POSITIVE]
+Smali File Location: /media/psf/Home/CSCI_445_Milestone_4/air.com.crestron.andros/smali/air/com/crestron/andros
+
+Smali Files with Potential Vulnerabilities
+
+/AppEntry.smali
+=======================
+
+Potential http usage on line 65
+    Line:     const-string v0, "http://airdownload2.adobe.com/air?"
+
+    [TRUE POSITIVE]

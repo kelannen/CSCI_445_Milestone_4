@@ -1,0 +1,66 @@
+Potential dangerous permission combo (broad storage permission and internet)
+    Permissions: android.permission.INTERNET,android.permission.WRITE_EXTERNAL_STORAGE,android.permission.READ_EXTERNAL_STORAGE,
+
+    [TRUE POSITIVE] 
+
+APK: allterco.bg.shelly
+
+AndroidManifest.xml
+=======================
+
+Potential allow backup and restore vulnerability on line 22
+    Line:     <application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="allterco.bg.shelly.ShellyApplication" android:supportsRtl="true" android:theme="@style/AppTheme">
+
+    [TRUE POSITIVE]
+
+Smali File Location: /media/psf/Home/CSCI_445_Milestone_4/allterco.bg.shelly/smali/allterco/bg/shelly
+
+Smali Files with Potential Vulnerabilities
+
+/MainActivity.smali
+=======================
+
+Potential http usage on line 4456
+    Line:     const-string v26, "http://p-sf1.pcloud.com/cfZVPsxoXZAAGLXVZfriqZZSVpTE7Zb5ZZpf5ZZ19pbZ9VZEZTkZTXZykZ2XZfVZyXZcZYZl7ZhVZkkZUVZqVIDcICGka7IEtvyYor8WYtcVuXk/big_buck_bunny_trailer_480p_logo_opus.webm"
+
+    [FALSE POSITIVE]
+
+/Ping.smali
+=======================
+
+Potential http usage on line 81
+    Line:     const-string v5, "http://"
+
+    [FALSE POSITIVE]
+/GCM/NotificationManager.smali
+=======================
+
+Potential http usage on line 17
+    Line: .field static final REGISTRATION_URL:Ljava/lang/String; = "http://notifications2.teracomm.bg/shelly/user/register/"
+
+    [FALSE POSITIVE]
+
+Potential http usage on line 584
+    Line:     const-string v7, "http://notifications2.teracomm.bg/shelly/user/register/"
+
+    [FALSE POSITIVE]
+/inclusion/IncludeShellyDevices.smali
+=======================
+
+Potential http usage on line 2394
+    Line:     const-string v5, "http://"
+
+    [TRUE POSITIVE]
+
+/update/UpdateDeviceWithPost.smali
+=======================
+
+Potential http usage on line 97
+    Line:     const-string v3, "http://"
+
+    [TRUE POSITIVE]
+
+Potential http usage on line 238
+    Line:     const-string v14, "http://"
+
+    [FALSE POSITIVE]

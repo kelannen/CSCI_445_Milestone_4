@@ -1,0 +1,6 @@
+APK: appinventor.ai_digitalartsmind.SmartHome
+
+Smali File Location: /media/psf/Home/CSCI_445_Milestone_4/appinventor.ai_digitalartsmind.SmartHome/smali/appinventor/ai_digitalartsmind/SmartHome
+
+Smali Files with Potential Vulnerabilities
+
