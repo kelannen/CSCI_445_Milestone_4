@@ -102,13 +102,17 @@ def checkManifest(manifest):
                 if '</activity>' in line:
                     out.append(exported[0]+" and line "+str(line_number))
                     out.append(exported[1])
-                    out.append("    Line: "+line)
                     out.append("")
                     exported = []
             elif('android:exported="true"' in line and '<activity' in line and 'android:permission=' not in line):
                 exported.append("Potential exported components outside of their main activity without limitations vulnerability on line "+str(line_number))
                 exported.append("    Line: "+line)
-                if('/>' in line or 'android:protectionLevel' in line):
+                if('android:protectionLevel' in line):
+                    exported = []
+                if('/>' in line):
+                    out.append(exported[0]+" and line "+str(line_number))
+                    out.append(exported[1])
+                    out.append("")
                     exported = []
             if(len(receiver) !=0):
                 if "android:permission=" in line:
