@@ -1,0 +1,18 @@
+Potential dangerous permission combo (broad storage permission and internet)
+    Permissions: android.permission.INTERNET,android.permission.WRITE_EXTERNAL_STORAGE,android.permission.READ_EXTERNAL_STORAGE,
+
+    [TRUE POSITIVE]
+APK: com.mpesmarthome.bluetoothlight
+
+AndroidManifest.xml
+=======================
+
+Potential exported components outside of their main activity without limitations vulnerability on line 15 and line 20
+    Line:         <activity android:configChanges="keyboard|keyboardHidden|locale|orientation|screenSize" android:exported="true" android:label="@string/activity_name" android:launchMode="singleTop" android:name="com.jbtled.bluetoothlight.MainActivity" android:theme="@android:style/Theme.Black.NoTitleBar" android:windowSoftInputMode="adjustResize">
+
+
+    [TRUE POSITIVE]
+Smali File Location: /media/psf/Home/CSCI_445_Milestone_4/com.mpesmarthome.bluetoothlight/smali/com/mpesmarthome/bluetoothlight
+
+Smali Files with Potential Vulnerabilities
+

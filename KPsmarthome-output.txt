@@ -1,0 +1,17 @@
+Potential dangerous permission combo (broad storage permission and internet)
+    Permissions: android.permission.WRITE_EXTERNAL_STORAGE,android.permission.READ_EXTERNAL_STORAGE,android.permission.WRITE_EXTERNAL_STORAGE,android.permission.WRITE_EXTERNAL_STORAGE,android.permission.INTERNET,
+
+    [TRUE POSITIVE]
+APK: com.keeproduct.smartHome
+
+AndroidManifest.xml
+=======================
+
+Potential allow backup and restore vulnerability on line 22
+    Line:     <application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:name="com.keeproduct.smartHome.MyApplication" android:screenOrientation="portrait" android:supportsRtl="true" android:theme="@style/AppTheme">
+
+    [TRUE POSITIVE]
+Smali File Location: /media/psf/Home/CSCI_445_Milestone_4/com.keeproduct.smartHome/smali/com/keeproduct/smartHome
+
+Smali Files with Potential Vulnerabilities
+

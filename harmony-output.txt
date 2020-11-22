@@ -1,0 +1,42 @@
+APK: com.logitech.harmonyhub
+
+Smali File Location: /media/psf/Home/CSCI_445_Milestone_4/com.logitech.harmonyhub/smali/com/logitech/harmonyhub
+
+Smali Files with Potential Vulnerabilities
+
+/common/DiscoveryInfoTask.smali
+=======================
+
+Potential http usage on line 90
+    Line:     const-string/jumbo v6, "http://%s:8088"
+
+    [TRUE POSITIVE]
+/common/Session.smali
+=======================
+
+Potential http usage on line 453
+    Line:     const-string/jumbo v0, "http://sl.dhg.myharmony.com/mobile/2/production/"
+
+    [TRUE POSITIVE]
+/sdk/core/fastsetup/communication/JavaScriptInterface.smali
+=======================
+
+Potential http usage on line 112
+    Line:     const-string/jumbo v0, "http://svcs-dev02.myharmony.com/Discovery/Discovery.svc"
+
+    [TRUE POSITIVE]
+Potential http usage on line 784
+    Line:     const-string/jumbo v3, "http://svcs-dev02.myharmony.com/Discovery/Discovery.svc"
+
+    [TRUE POSITIVE]
+/sdk/core/util/HarmonyWebServices.smali
+=======================
+
+Potential http usage on line 735
+    Line:     const-string/jumbo v6, "http://"
+
+    [TRUE POSITIVE]
+Potential http usage on line 858
+    Line:     const-string/jumbo v5, "http://"
+
+    [FALSE POSITIVE]

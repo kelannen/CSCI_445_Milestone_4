@@ -1,0 +1,138 @@
+APK: com.google.android.tv.remote
+
+AndroidManifest.xml
+=======================
+
+Potential allow backup and restore vulnerability on line 15
+    Line:     <application android:allowBackup="true" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher_tvremote" android:label="@string/android_tv" android:name="com.google.android.tv.remote.RemoteApplication" android:resizeableActivity="false" android:supportsRtl="true" android:theme="@style/Theme.AtvRemote">
+
+   [TP]
+Potential exported components outside of their main activity without limitations vulnerability on line 24 and line 24
+    Line:         <activity android:exported="true" android:name="com.google.android.tv.remote.LicenseActivity"/>
+
+   [TP]
+Potential unprotected broadcast reciever on line 31 and line 36
+    Line:         <receiver android:name="com.google.android.tv.remote.WifiStateChangeReceiver">
+
+    Line:         </receiver>
+
+   [TP]
+Smali File Location: /media/psf/Home/CSCI_445_Milestone_4/com.google.android.tv.remote/smali/com/google/android/tv/remote
+
+Smali Files with Potential Vulnerabilities
+
+/pairing/KeyStoreManager$DynamicTrustManager.smali
+=======================
+
+Potential TrustManager usage on line 1
+    Line: .class public Lcom/google/android/tv/remote/pairing/KeyStoreManager$DynamicTrustManager;
+
+    [FP]
+Potential TrustManager usage on line 6
+    Line: .implements Ljavax/net/ssl/X509TrustManager;
+
+    [FP]
+Potential TrustManager usage on line 16
+    Line:     name = "DynamicTrustManager"
+
+    [FP]
+Potential TrustManager usage on line 21
+    Line: .field private trustManager:Ljavax/net/ssl/X509TrustManager;
+
+    [FP]
+Potential TrustManager usage on line 30
+    Line:     invoke-virtual {p0, p1}, Lcom/google/android/tv/remote/pairing/KeyStoreManager$DynamicTrustManager;->reloadTrustManager(Ljava/security/KeyStore;)V
+
+    [FP]
+Potential TrustManager usage on line 45
+    Line:     iget-object v0, p0, Lcom/google/android/tv/remote/pairing/KeyStoreManager$DynamicTrustManager;->trustManager:Ljavax/net/ssl/X509TrustManager;
+
+    [FP]
+Potential TrustManager usage on line 47
+    Line:     invoke-interface {v0, p1, p2}, Ljavax/net/ssl/X509TrustManager;->checkClientTrusted([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V
+
+    [FP]
+Potential TrustManager usage on line 60
+    Line:     iget-object v0, p0, Lcom/google/android/tv/remote/pairing/KeyStoreManager$DynamicTrustManager;->trustManager:Ljavax/net/ssl/X509TrustManager;
+
+    [FP]
+Potential TrustManager usage on line 62
+    Line:     invoke-interface {v0, p1, p2}, Ljavax/net/ssl/X509TrustManager;->checkServerTrusted([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V
+
+    [FP]
+Potential TrustManager usage on line 77
+    Line: .method public reloadTrustManager(Ljava/security/KeyStore;)V
+
+    [FP]
+Potential TrustManager usage on line 83
+    Line:     invoke-static {}, Ljavax/net/ssl/TrustManagerFactory;->getDefaultAlgorithm()Ljava/lang/String;
+
+    [FP]
+Potential TrustManager usage on line 87
+    Line:     invoke-static {v1}, Ljavax/net/ssl/TrustManagerFactory;->getInstance(Ljava/lang/String;)Ljavax/net/ssl/TrustManagerFactory;
+
+    [FP]
+Potential TrustManager usage on line 91
+    Line:     invoke-virtual {v1, p1}, Ljavax/net/ssl/TrustManagerFactory;->init(Ljava/security/KeyStore;)V
+
+    [FP]
+Potential TrustManager usage on line 93
+    Line:     invoke-virtual {v1}, Ljavax/net/ssl/TrustManagerFactory;->getTrustManagers()[Ljavax/net/ssl/TrustManager;
+
+    [FP]
+Potential TrustManager usage on line 119
+    Line:     instance-of v2, v2, Ljavax/net/ssl/X509TrustManager;
+
+    [FP]
+Potential TrustManager usage on line 130
+    Line:     check-cast v0, Ljavax/net/ssl/X509TrustManager;
+
+    [FP]
+Potential TrustManager usage on line 132
+    Line:     iput-object v0, p0, Lcom/google/android/tv/remote/pairing/KeyStoreManager$DynamicTrustManager;->trustManager:Ljavax/net/ssl/X509TrustManager;
+
+    [FP]
+/pairing/KeyStoreManager.smali
+=======================
+
+Potential TrustManager usage on line 9
+    Line:         Lcom/google/android/tv/remote/pairing/KeyStoreManager$DynamicTrustManager;
+
+    [FP]
+Potential TrustManager usage on line 35
+    Line: .field private final mDynamicTrustManager:Lcom/google/android/tv/remote/pairing/KeyStoreManager$DynamicTrustManager;
+
+    [FP]
+Potential TrustManager usage on line 72
+    Line:     new-instance v0, Lcom/google/android/tv/remote/pairing/KeyStoreManager$DynamicTrustManager;
+
+    [FP]
+Potential TrustManager usage on line 76
+    Line:     invoke-direct {v0, v1}, Lcom/google/android/tv/remote/pairing/KeyStoreManager$DynamicTrustManager;-><init>(Ljava/security/KeyStore;)V
+
+    [FP]
+Potential TrustManager usage on line 78
+    Line:     iput-object v0, p0, Lcom/google/android/tv/remote/pairing/KeyStoreManager;->mDynamicTrustManager:Lcom/google/android/tv/remote/pairing/KeyStoreManager$DynamicTrustManager;
+
+    [FP]
+Potential TrustManager usage on line 726
+    Line: .method public getTrustManagers()[Ljavax/net/ssl/TrustManager;
+
+    [FP]
+Potential TrustManager usage on line 737
+    Line:     new-array v0, v0, [Lcom/google/android/tv/remote/pairing/KeyStoreManager$DynamicTrustManager;
+
+    [FP]
+Potential TrustManager usage on line 741
+    Line:     iget-object v2, p0, Lcom/google/android/tv/remote/pairing/KeyStoreManager;->mDynamicTrustManager:Lcom/google/android/tv/remote/pairing/KeyStoreManager$DynamicTrustManager;
+
+    [FP]
+Potential TrustManager usage on line 859
+    Line:     iget-object v0, p0, Lcom/google/android/tv/remote/pairing/KeyStoreManager;->mDynamicTrustManager:Lcom/google/android/tv/remote/pairing/KeyStoreManager$DynamicTrustManager;
+
+    [FP]
+Potential TrustManager usage on line 863
+    Line:     invoke-virtual {v0, v1}, Lcom/google/android/tv/remote/pairing/KeyStoreManager$DynamicTrustManager;->reloadTrustManager(Ljava/security/KeyStore;)V
+    
+    [FP]
+

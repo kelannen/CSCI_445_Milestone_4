@@ -1,0 +1,134 @@
+Potential dangerous permission combo (broad storage permission and internet)
+    Permissions: android.permission.INTERNET,android.permission.WRITE_EXTERNAL_STORAGE,android.permission.READ_EXTERNAL_STORAGE,
+
+APK: com.alarm.alarmmobile.android.cpi
+
+AndroidManifest.xml
+=======================
+
+Potential unprotected broadcast reciever on line 94 and line 98
+    Line:         <receiver android:name="com.alarm.alarmmobile.android.BootReceiver">
+
+    Line:         </receiver>
+
+    [TRUE POSITIVE]
+Potential unprotected broadcast reciever on line 99 and line 103
+    Line:         <receiver android:name="com.alarm.alarmmobile.android.LanguageChangeReceiver">
+
+    Line:         </receiver>
+
+    [TRUE POSITIVE]
+Potential unprotected broadcast reciever on line 104 and line 109
+    Line:         <receiver android:label="@string/app_name" android:name="com.alarm.alarmmobile.android.WidgetProvider">
+
+    Line:         </receiver>
+
+    [TRUE POSITIVE]
+Potential unprotected broadcast reciever on line 110 and line 115
+    Line:         <receiver android:exported="false" android:name="com.alarm.alarmmobile.android.UserAccountChangeReceiver">
+
+    Line:         </receiver>
+
+    [TRUE POSITIVE]
+Potential unprotected broadcast reciever on line 116 and line 121
+    Line:         <receiver android:exported="false" android:name="com.alarm.alarmmobile.android.SceneChangeReceiver">
+
+    Line:         </receiver>
+
+    [TRUE POSITIVE]
+Smali File Location: /media/psf/Home/CSCI_445_Milestone_4/com.alarm.alarmmobile.android.cpi/smali/com/alarm/alarmmobile/android/cpi
+
+Smali Files with Potential Vulnerabilities
+
+/AlarmMobileSettings.smali
+=======================
+
+Potential http usage on line 234
+    Line:     const-string v1, "http://"
+
+    [TRUE POSITIVE]
+Potential http usage on line 273
+    Line:     const-string v1, "http://"
+
+    [TRUE POSITIVE]
+Potential http usage on line 770
+    Line:     const-string v0, "http://www.amazon.com/gp/mas/dl/android?p=com.alarm.alarmmobile.android.cpi"
+
+    [TRUE POSITIVE]
+/businessobject/BaseDeviceSettings.smali
+=======================
+
+Potential http usage on line 273
+    Line:     const-string v2, "<bds xmlns:xsd=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" did=\"%1$d\">"
+
+    [TRUE POSITIVE]
+/fragment/AlarmFragment.smali
+=======================
+
+Potential http usage on line 1929
+    Line:     const-string v2, "http://maps.google.com/maps"
+
+    [FALSE POSITIVE]
+/util/AlarmWebViewClient.smali
+=======================
+
+Potential http usage on line 724
+    Line:     const-string v2, "http:"
+
+    [FALSE POSITIVE]
+/util/DirectStreamRequesterNew$6.smali
+=======================
+
+Potential TrustManager usage on line 6
+    Line: .implements Ljavax/net/ssl/X509TrustManager;
+
+    [TRUE POSITIVE]
+Potential TrustManager usage on line 11
+    Line:     value = Lcom/alarm/alarmmobile/android/util/DirectStreamRequesterNew;->getNoCertTrustManager()[Ljavax/net/ssl/TrustManager;
+
+    [TRUE POSITIVE]
+/util/DirectStreamRequesterNew.smali
+=======================
+
+Potential TrustManager usage on line 835
+    Line:     invoke-static {}, Lcom/alarm/alarmmobile/android/util/DirectStreamRequesterNew;->getNoCertTrustManager()[Ljavax/net/ssl/TrustManager;
+
+    [TRUE POSITIVE]
+Potential TrustManager usage on line 839
+    Line:     invoke-static {v5}, Lcom/alarm/alarmmobile/android/util/DirectStreamRequesterNew;->getNoCertSSLSocketFactory([Ljavax/net/ssl/TrustManager;)Ljavax/net/ssl/SSLSocketFactory;
+
+    [TRUE POSITIVE]
+Potential TrustManager usage on line 918
+    Line: .method private static getNoCertSSLSocketFactory([Ljavax/net/ssl/TrustManager;)Ljavax/net/ssl/SSLSocketFactory;
+
+    [TRUE POSITIVE]
+Potential TrustManager usage on line 920
+    Line:     .param p0, "noCertTrustManager"    # [Ljavax/net/ssl/TrustManager;
+
+    [TRUE POSITIVE]
+Potential TrustManager usage on line 939
+    Line:     invoke-virtual {v1, v2, p0, v4}, Ljavax/net/ssl/SSLContext;->init([Ljavax/net/ssl/KeyManager;[Ljavax/net/ssl/TrustManager;Ljava/security/SecureRandom;)V
+
+    [TRUE POSITIVE]
+Potential TrustManager usage on line 968
+    Line: .method private static getNoCertTrustManager()[Ljavax/net/ssl/TrustManager;
+
+    [TRUE POSITIVE]
+Potential TrustManager usage on line 975
+    Line:     new-array v0, v0, [Ljavax/net/ssl/TrustManager;
+
+    [TRUE POSITIVE]
+/util/IntentUtils.smali
+=======================
+
+Potential http usage on line 23
+    Line:     const-string v0, "http://play.google.com/store/apps/details?id="
+
+    [TRUE POSITIVE]
+/webservice/response/ActionSet.smali
+=======================
+
+Potential http usage on line 3312
+    Line:     const-string v8, "<actnset xmlns:xsd=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" aid=\"%1$d\" aname=\"%2$s\" atype=\"%3$d\" in=\"%4$s\" ic=\"%5$s\"> "
+
+    [TRUE POSITIVE]
