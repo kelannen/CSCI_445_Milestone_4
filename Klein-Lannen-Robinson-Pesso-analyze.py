@@ -203,7 +203,6 @@ def static_analysis (base_path, input_name, output_name):
 
 def decompile_apk(input):
     subprocess.run(args=["apktool", "d", input])
-    #subprocess.run(args=["apktool", "d", input], shell=True)  # For Katherine
 
 if __name__ == "__main__":
     parser= argparse.ArgumentParser(description='Takes in an apk file name/path relative to the current directory and an output text file, '
