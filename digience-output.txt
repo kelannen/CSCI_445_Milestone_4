@@ -1,0 +1,66 @@
+Potential dangerous permission combo (broad storage permission and internet)
+    Permissions: android.permission.WRITE_EXTERNAL_STORAGE,android.permission.READ_EXTERNAL_STORAGE,android.permission.INTERNET,
+
+APK: com.digience.smartrental
+
+AndroidManifest.xml
+=======================
+
+Potential allow backup and restore vulnerability on line 36
+    Line:     <application android:allowBackup="true" android:allowClearUserData="true" android:hardwareAccelerated="true" android:icon="@drawable/app_icon" android:label="@string/app_name" android:largeHeap="true" android:name="com.digience.necon.ApplicationClass" android:theme="@style/AppTheme">
+
+[True Positive]
+
+
+Potential unprotected broadcast reciever on line 97 and line 107
+    Line:         <receiver android:name="com.digience.necon.widget.Widget4x1">
+
+    Line:         </receiver>
+
+[True Positive]
+
+
+Potential unprotected broadcast reciever on line 108 and line 120
+    Line:         <receiver android:name="com.digience.necon.widget.Widget4x3">
+
+    Line:         </receiver>
+
+[True Positive]
+
+
+Potential unprotected broadcast reciever on line 139 and line 143
+    Line:         <receiver android:exported="false" android:name="com.digience.necon.guide.GuideEventReceiver">
+
+    Line:         </receiver>
+
+[True Positive]
+
+
+Potential unprotected broadcast reciever on line 144 and line 150
+    Line:         <receiver android:name="com.digience.necon.BaiduPushMessageReceiver">
+
+    Line:         </receiver>
+
+[True Positive]
+
+
+Potential unprotected broadcast reciever on line 151 and line 162
+    Line:         <receiver android:name="com.baidu.android.pushservice.PushServiceReceiver" android:process=":bdservice_v1">
+
+    Line:         </receiver>
+
+[True Positive]
+
+
+Potential unprotected broadcast reciever on line 163 and line 172
+    Line:         <receiver android:name="com.baidu.android.pushservice.RegistrationReceiver" android:process=":bdservice_v1">
+
+    Line:         </receiver>
+
+[True Positive]
+
+
+Smali File Location: /Users/rjsp3/Documents/CS445/CSCI_445_Milestone_4/com.digience.smartrental/smali/com/digience/smartrental
+
+Smali Files with Potential Vulnerabilities
+

@@ -1,0 +1,25 @@
+APK: com.eezy.app
+
+AndroidManifest.xml
+=======================
+
+Potential unprotected broadcast reciever on line 65 and line 71
+    Line:         <receiver android:name="com.onesignal.BootUpReceiver">
+
+    Line:         </receiver>
+
+[True Positive]
+
+
+Potential unprotected broadcast reciever on line 72 and line 76
+    Line:         <receiver android:name="com.onesignal.UpgradeReceiver">
+
+    Line:         </receiver>
+
+[True Positive]
+
+
+Smali File Location: /Users/rjsp3/Documents/CS445/CSCI_445_Milestone_4/com.eezy.app/smali/com/eezy/app
+
+Smali Files with Potential Vulnerabilities
+

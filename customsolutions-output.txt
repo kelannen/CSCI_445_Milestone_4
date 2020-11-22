@@ -1,0 +1,80 @@
+Potential dangerous permission combo (broad storage permission and internet)
+    Permissions: android.permission.WRITE_EXTERNAL_STORAGE,android.permission.INTERNET,android.permission.READ_EXTERNAL_STORAGE,
+
+[True Positive]
+
+APK: com.customsolutions.android.alexa
+
+AndroidManifest.xml
+=======================
+
+Potential allow backup and restore vulnerability on line 21
+    Line:     <application android:allowBackup="true" android:icon="@mipmap/launcher_icon" android:label="@string/app_name" android:name="com.customsolutions.android.alexa.UltimateAlexa" android:roundIcon="@mipmap/launcher_icon_round" android:supportsRtl="true" android:theme="@style/AppTheme">
+
+[True Positive]
+
+
+Potential unprotected broadcast reciever on line 64 and line 74
+    Line:         <receiver android:exported="true" android:name="com.customsolutions.android.alexa.Notifier"/>
+
+    Line:         </receiver>
+
+[True Positive]
+
+
+Potential unprotected broadcast reciever on line 75 and line 80
+    Line:         <receiver android:name="com.customsolutions.android.alexa.Widget">
+
+    Line:         </receiver>
+
+[True Positive]
+
+
+Potential unprotected broadcast reciever on line 81 and line 85
+    Line:         <receiver android:exported="true" android:name="com.customsolutions.android.alexa.InstallReceiver">
+
+    Line:         </receiver>
+
+[True Positive]
+
+
+Smali File Location: /Users/rjsp3/Documents/CS445/CSCI_445_Milestone_4/com.customsolutions.android.alexa/smali/com/customsolutions/android/alexa
+
+Smali Files with Potential Vulnerabilities
+
+/o$7.smali
+=======================
+
+Potential http usage on line 51
+    Line:     const-string v1, "http://ultimatevoiceassistant.com/cancel"
+
+[False Positive]
+
+
+/HelpActivity$2.smali
+=======================
+
+Potential http usage on line 51
+    Line:     const-string v1, "http://ultimatevoiceassistant.com/voice"
+
+[True Positive]
+
+
+/HelpActivity$6.smali
+=======================
+
+Potential http usage on line 51
+    Line:     const-string v1, "http://ultimatevoiceassistant.com/privacy"
+
+[True Positive]
+
+
+/HelpActivity$8.smali
+=======================
+
+Potential http usage on line 115
+    Line:     const-string v1, "http://ultimatevoiceassistant.com/alexa_help"
+
+[True Positive]
+
+

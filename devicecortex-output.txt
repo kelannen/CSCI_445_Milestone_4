@@ -1,0 +1,121 @@
+APK: com.devicecortex.zcastle
+
+AndroidManifest.xml
+=======================
+
+Potential allow backup and restore vulnerability on line 10
+    Line:     <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:process="com.devicecortex.zcastle.castleApp" android:theme="@style/Theme.Blue">
+
+[True Positive]
+
+
+Potential unprotected broadcast reciever on line 19 and line 24
+    Line:         <receiver android:icon="@drawable/ic_launcher" android:label="@string/scene_widget" android:name="com.devicecortex.zcastle.widgets.SceneWidgetProvider" android:process="com.devicecortex.zcastle.widgets.SceneWidgetProvider">
+
+    Line:         </receiver>
+
+[True Positive]
+
+
+Potential unprotected broadcast reciever on line 25 and line 30
+    Line:         <receiver android:icon="@drawable/ic_launcher" android:label="@string/mode_widget" android:name="com.devicecortex.zcastle.widgets.ModeWidgetProvider" android:process="com.devicecortex.zcastle.widgets.ModeWidgetProvider">
+
+    Line:         </receiver>
+
+[True Positive]
+
+
+Smali File Location: /Users/rjsp3/Documents/CS445/CSCI_445_Milestone_4/com.devicecortex.zcastle/smali/com/devicecortex/zcastle
+
+Smali Files with Potential Vulnerabilities
+
+/vera/MiCasaDeviceConnection.smali
+=======================
+
+Potential http usage on line 653
+    Line:     const-string v3, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 1174
+    Line:     const-string v3, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 1363
+    Line:     const-string v3, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 1577
+    Line:     const-string v3, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 1766
+    Line:     const-string v3, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 2085
+    Line:     const-string v2, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 2490
+    Line:     const-string v2, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 2702
+    Line:     const-string v2, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 2883
+    Line:     const-string v1, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 3189
+    Line:     const-string v1, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 3390
+    Line:     const-string v2, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 3586
+    Line:     const-string v4, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 3959
+    Line:     const-string v2, "http://"
+
+[False Positive]
+
+
+/activities/fragments/vera/ManualAddAccountFragment$TestConnectionListener$1.smali
+=======================
+
+Potential http usage on line 54
+    Line:     const-string v7, "http://"
+
+[True Positive]
+
+

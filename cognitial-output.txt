@@ -1,0 +1,513 @@
+APK: com.cognitial.directvremote
+
+AndroidManifest.xml
+=======================
+
+Potential exported components outside of their main activity without limitations vulnerability on line 27 and line 27
+    Line:         <activity android:excludeFromRecents="true" android:exported="true" android:label="DirecTV Remote+" android:launchMode="singleTop" android:name=".favsguide" android:screenOrientation="unspecified" android:taskAffinity="" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"/>
+
+[True Positive]
+
+
+Smali File Location: /Users/rjsp3/Documents/CS445/CSCI_445_Milestone_4/com.cognitial.directvremote/smali/com/cognitial/directvremote
+
+Smali Files with Potential Vulnerabilities
+
+/quickvol.smali
+=======================
+
+Potential http usage on line 593
+    Line:     const-string v1, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 795
+    Line:     const-string v1, "http://"
+
+[False Positive]
+
+
+
+
+/common.smali
+=======================
+
+Potential http usage on line 2709
+    Line:     const-string v2, "http://www.amazon.com/gp/mas/dl/android?p="
+
+[False Positive]
+
+
+Potential http usage on line 7472
+    Line:     const-string v0, "http://www.cognitial.com/faq/index.php?action=artikel&cat=3&id=65&artlang=en"
+
+[False Positive]
+
+
+Potential http usage on line 8388
+    Line:     const-string v1, "http://www.google.com/search?q="
+
+[False Positive]
+
+
+Potential http usage on line 8431
+    Line:     const-string v1, "http://www.google.com/search?q="
+
+[False Positive]
+
+
+Potential http usage on line 8588
+    Line:     const-string v1, "http://m.imdb.com/find?s=all&q="
+
+[False Positive]
+
+
+Potential http usage on line 8610
+    Line:     const-string v1, "http://m.imdb.com/find?s=all&q="
+
+[False Positive]
+
+
+Potential http usage on line 8691
+    Line:     const-string v2, "http://www.amazon.com/gp/aw/s/ref=aa_sbox_dpt_filter?k="
+
+[False Positive]
+
+
+Potential http usage on line 8734
+    Line:     const-string v3, "http://www.amazon.com/gp/aw/s/ref=aa_sbox_dpt_filter?k="
+
+[False Positive]
+
+
+Potential http usage on line 8797
+    Line:     const-string v1, "http://www.google.com/search?q="
+
+[False Positive]
+
+
+Potential http usage on line 8819
+    Line:     const-string v1, "http://www.google.com/search?q="
+
+[False Positive]
+
+
+Potential http usage on line 10166
+    Line:     const-string v0, "http://www.google.com/search?q="
+
+[False Positive]
+
+
+Potential http usage on line 10303
+    Line:     const-string v1, "http://www.allmusic.com/search/album/"
+
+[False Positive]
+
+
+Potential http usage on line 10356
+    Line:     const-string v1, "http://www.allmusic.com/search/song/"
+
+[False Positive]
+
+
+Potential http usage on line 10396
+    Line:     const-string v4, "http://www.amazon.com/gp/aw/s/ref=aa_sbox_dpt_filter?k="
+
+[False Positive]
+
+
+Potential http usage on line 10464
+    Line:     const-string v0, "http://www.google.com/search?q="
+
+[False Positive]
+
+
+Potential http usage on line 10572
+    Line:     const-string v1, "http://www.google.com/search?q="
+
+[False Positive]
+
+
+Potential http usage on line 14680
+    Line:     const-string v0, "http://www.cognitial.com/android"
+
+[False Positive]
+
+
+Potential http usage on line 14814
+    Line:     const-string v0, "http://www.cognitial.com/faq/index.php?action=artikel&cat=3&id=25&artlang=en"
+
+[True Positive]
+
+
+Potential http usage on line 17739
+    Line:     const-string v4, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 17884
+    Line:     const-string v4, "http://"
+
+[False Positive]
+
+Potential http usage on line 17942
+    Line:     const-string v2, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 17984
+    Line:     const-string v2, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 20922
+    Line:     const-string v2, "http://www.amazon.com/gp/mas/dl/android?p="
+
+[True Positive]
+
+
+Potential http usage on line 21197
+    Line:     const-string v1, "http://www.amazon.com/gp/mas/dl/android?p="
+
+[True Positive]
+
+
+/notificationservice.smali
+=======================
+
+Potential http usage on line 273
+    Line:     const-string v1, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 341
+    Line:     const-string v1, "http://"
+
+[False Positive]
+
+
+/main.smali
+=======================
+
+Potential http usage on line 5800
+    Line:     const-string v2, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 5978
+    Line:     const-string v3, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 6140
+    Line:     const-string v3, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 10184
+    Line:     const-string v3, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 16002
+    Line:     const-string v3, "http://"
+
+[True Positive]
+
+
+Potential http usage on line 16092
+    Line:     const-string v3, "http://"
+
+[True Positive]
+
+
+Potential http usage on line 16178
+    Line:     const-string v4, "http://"
+
+[True Positive]
+
+
+Potential http usage on line 16296
+    Line:     const-string v5, "http://"
+
+[True Positive]
+
+
+Potential http usage on line 20554
+    Line:     const-string v2, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 20624
+    Line:     const-string v2, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 23722
+    Line:     const-string v2, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 23803
+    Line:     const-string v2, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 23902
+    Line:     const-string v2, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 23971
+    Line:     const-string v2, "http://"
+
+[False Postive]
+
+
+Potential http usage on line 25571
+    Line:     const-string v4, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 25662
+    Line:     const-string v4, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 25739
+    Line:     const-string v2, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 25811
+    Line:     const-string v2, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 25959
+    Line:     const-string v1, "http://"
+
+[True Positive]
+
+
+Potential http usage on line 26094
+    Line:     const-string v1, "http://"
+
+[True Positive]
+
+
+Potential http usage on line 33620
+    Line:     const-string v6, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 33758
+    Line:     const-string v5, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 33876
+    Line:     const-string v6, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 33914
+    Line:     const-string v5, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 34701
+    Line:     const-string v6, "http://"
+
+[True Positive]
+
+
+Potential http usage on line 34778
+    Line:     const-string v6, "http://"
+
+[True Positive]
+
+
+Potential http usage on line 34978
+    Line:     const-string v1, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 35079
+    Line:     const-string v1, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 36614
+    Line:     const-string v2, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 36699
+    Line:     const-string v2, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 59836
+    Line:     const-string v2, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 59918
+    Line:     const-string v2, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 60752
+    Line:     const-string v5, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 60878
+    Line:     const-string v5, "http://"
+
+[False Positive]
+
+
+/prefs.smali
+=======================
+
+Potential http usage on line 557
+    Line:     const-string v1, "http://www.cognitial.com/faq/index.php?action=show&cat=1"
+
+[False Positive]
+
+
+Potential http usage on line 613
+    Line:     const-string v1, "http://www.youtube.com/channel/UCLheJ-A9RE99lQYPTQYB08A"
+
+[False Positive]
+
+
+Potential http usage on line 5199
+    Line:     const-string v1, "http://www.cognitial.com/faq/index.php?action=show&cat=1"
+
+[False Positive]
+
+
+Potential http usage on line 5267
+    Line:     const-string v1, "http://www.cognitial.com/helpviewer_dtvremote.htm"
+
+[False Positive]
+
+
+
+
+/favsguide.smali
+=======================
+
+Potential http usage on line 7469
+    Line:     const-string v8, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 7601
+    Line:     const-string v7, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 7726
+    Line:     const-string v8, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 7914
+    Line:     const-string v7, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 8941
+    Line:     const-string v1, "http://0.0.0.0:8080/tv/getTuned"
+
+[True Positive]
+
+
+Potential http usage on line 9016
+    Line:     const-string v2, "http://"
+
+[True Positive]
+
+
+Potential http usage on line 9105
+    Line:     const-string v2, "http://"
+
+[True Positive]
+
+
+Potential http usage on line 9566
+    Line:     const-string v7, "http://"
+
+[True Positive]
+
+
+Potential http usage on line 9690
+    Line:     const-string v6, "http://"
+
+[True Positive]
+
+
+Potential http usage on line 9812
+    Line:     const-string v7, "http://"
+
+[True Positive]
+
+
+Potential http usage on line 9936
+    Line:     const-string v6, "http://"
+
+[True Positive]
+
+
+/gdservice.smali
+=======================
+
+Potential http usage on line 3494
+    Line:     const-string v3, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 5668
+    Line:     const-string v3, "http://"
+
+[False Positive]
+
+

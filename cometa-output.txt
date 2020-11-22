@@ -1,0 +1,65 @@
+APK: com.cometa.iot
+
+AndroidManifest.xml
+=======================
+
+Potential allow backup and restore vulnerability on line 5
+    Line:     <application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:name="com.ltech.comet.CometApplication" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true">
+
+[True Positive]
+
+Smali File Location: /Users/rjsp3/Documents/CS445/CSCI_445_Milestone_4/com.cometa.iot/smali/com/cometa/iot
+
+Smali Files with Potential Vulnerabilities
+
+/squareup/okhttp/Request$Builder.smali
+=======================
+
+Potential http usage on line 610
+    Line:     const-string v1, "http:"
+
+[True Positive]
+
+
+/squareup/okhttp/HttpUrl$Builder.smali
+=======================
+
+Potential http usage on line 2542
+    Line:     const-string v6, "http:"
+
+[True Positive]
+
+
+Potential http usage on line 2564
+    Line:     const-string v3, "http:"
+
+[True Positive]
+
+
+/squareup/okhttp/OkHttpClient.smali
+=======================
+
+Potential TrustManager usage on line 486
+    Line:     invoke-virtual {v1, v2, v3, v4}, Ljavax/net/ssl/SSLContext;->init([Ljavax/net/ssl/KeyManager;[Ljavax/net/ssl/TrustManager;Ljava/security/SecureRandom;)V
+
+[False Positive]
+
+
+/ltech/comet/utils/NetWorkUtils.smali
+=======================
+
+Potential TrustManager usage on line 296
+    Line:     invoke-virtual {v11, v14, v15, v0}, Ljavax/net/ssl/SSLContext;->init([Ljavax/net/ssl/KeyManager;[Ljavax/net/ssl/TrustManager;Ljava/security/SecureRandom;)V
+
+[False Positive]
+
+
+/ltech/comet/utils/okhttp3/UnsafeOkHttpGlideModule.smali
+=======================
+
+Potential TrustManager usage on line 88
+    Line:     invoke-virtual {v3, v5, v6, v7}, Ljavax/net/ssl/SSLContext;->init([Ljavax/net/ssl/KeyManager;[Ljavax/net/ssl/TrustManager;Ljava/security/SecureRandom;)V
+
+[False Positive]
+
+

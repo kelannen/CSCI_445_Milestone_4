@@ -1,0 +1,143 @@
+APK: com.commandfusion.droidviewer
+
+Smali File Location: /Users/rjsp3/Documents/CS445/CSCI_445_Milestone_4/com.commandfusion.droidviewer/smali/com/commandfusion/droidviewer
+
+Smali Files with Potential Vulnerabilities
+
+/h/j$a.smali
+=======================
+
+Potential http usage on line 110
+    Line:     const-string v0, "http://"
+
+[True Positive]
+
+
+/h/a.smali
+=======================
+
+Potential http usage on line 1058
+    Line:     const-string v1, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 1077
+    Line:     const-string v2, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 1136
+    Line:     const-string v0, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 1155
+    Line:     const-string v6, "http://"
+
+[False Positive]
+
+
+/d/j.smali
+=======================
+
+Potential http usage on line 7410
+    Line:     const-string v7, "http://"
+
+[False Positive]
+
+Potential http usage on line 7438
+    Line:     const-string v9, "http:"
+
+[False Positive]
+
+
+Potential http usage on line 7507
+    Line:     const-string v9, "http:/"
+
+[False Positive]
+
+
+Potential http usage on line 7527
+    Line:     const-string v9, "http://"
+
+[False Positive]
+
+
+Potential http usage on line 9392
+    Line:     const-string v0, "http://"
+
+[False Positive]
+
+
+/d/p.smali
+=======================
+
+Potential http usage on line 371
+    Line:     const-string v3, "http://xml.org/sax/properties/lexical-handler"
+
+[True Positive]
+
+
+/d/o.smali
+=======================
+
+Potential http usage on line 6591
+    Line:     const-string v3, "http://"
+
+[True Positive]
+
+
+Potential http usage on line 6622
+    Line:     const-string v3, "http://"
+
+[True Positive]
+
+
+Potential http usage on line 6662
+    Line:     const-string v3, "http://"
+
+[True Positive]
+
+
+/d/z.smali
+=======================
+
+Potential http usage on line 559
+    Line:     const-string v2, "http://"
+
+[True Positive]
+
+
+Potential http usage on line 578
+    Line:     const-string v3, "http://"
+
+[True Positive]
+
+
+/d/f.smali
+=======================
+
+Potential http usage on line 229
+    Line:     const-string v1, "http://"
+
+[True Positive]
+
+
+/e/a/a.smali
+=======================
+
+Potential http usage on line 204
+    Line:     const-string v4, "http:"
+
+[True Positive]
+
+
+Potential http usage on line 363
+    Line:     const-string v1, "http:"
+
+[True Positive]
+
+

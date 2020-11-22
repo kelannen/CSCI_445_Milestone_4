@@ -1,0 +1,21 @@
+APK: com.comfortclick.cmclient
+
+Smali File Location: /Users/rjsp3/Documents/CS445/CSCI_445_Milestone_4/com.comfortclick.cmclient/smali/com/comfortclick/cmclient
+
+Smali Files with Potential Vulnerabilities
+
+/WebActivity.smali
+=======================
+
+Potential http usage on line 633
+    Line:     const-string v3, "http://"
+
+[True Positive]
+
+
+Potential http usage on line 1313
+    Line:     const-string v3, "http://"
+
+[False Positive]
+
+

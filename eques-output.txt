@@ -1,0 +1,1239 @@
+Potential dangerous permission combo (broad storage permission and internet)
+    Permissions: android.permission.INTERNET,android.permission.READ_EXTERNAL_STORAGE,android.permission.WRITE_EXTERNAL_STORAGE,
+
+APK: com.eques.plug
+
+AndroidManifest.xml
+=======================
+
+Potential allow backup and restore vulnerability on line 27
+    Line:     <application android:allowBackup="true" android:icon="@drawable/tlogo" android:label="@string/app_name" android:logo="@drawable/tlogo" android:name="com.kankunit.smartknorns.base.BaseApplication" android:screenOrientation="portrait" android:theme="@style/AppTheme">
+
+[True Positive]
+
+
+Potential unprotected broadcast reciever on line 199 and line 205
+    Line:         <receiver android:name="com.avos.avoscloud.AVBroadcastReceiver">
+
+    Line:         </receiver>
+
+[True Positive]
+
+
+Potential unprotected broadcast reciever on line 206 and line 213
+    Line:         <receiver android:name="com.kankunit.smartknorns.push.CustomReceiver">
+
+    Line:         </receiver>
+
+[True Positive]
+
+
+Potential unprotected broadcast reciever on line 214 and line 219
+    Line:         <receiver android:name="com.kankunit.smartknorns.provider.FirstWidgetProvider">
+
+    Line:         </receiver>
+
+[True Positive]
+
+
+Smali File Location: /Users/rjsp3/Documents/CS445/CSCI_445_Milestone_4/com.eques.plug/smali/com/eques/plug
+
+Smali Files with Potential Vulnerabilities
+
+/changemac/MainActivity.smali
+=======================
+
+Potential http usage on line 789
+    Line:     const-string v0, "http://kankunit.com/k2/dep.bin"
+
+[True Postiive]
+
+
+Potential http usage on line 803
+    Line:     const-string v0, "http://www.kankunit.com/k2/minidebug/user2.bin"
+
+[True Positive]
+
+
+Potential http usage on line 814
+    Line:     const-string v0, "http://www.kankunit.com/k2/prodebug/user2.bin"
+
+[True Positive]
+
+
+Potential http usage on line 825
+    Line:     const-string v0, "http://www.kankunit.com/k2/pro.bin"
+
+[True Positive]
+
+
+Potential http usage on line 836
+    Line:     const-string v0, "http://www.kankunit.com/plc/debug/plc.bin"
+
+[True Positive]
+
+
+Potential http usage on line 847
+    Line:     const-string v0, "http://www.kankunit.com/k2/kk-strip/user2.bin"
+
+[True positive]
+
+
+Potential http usage on line 858
+    Line:     const-string v0, "http://www.kankunit.com/k2/w-strip/debug/user2.bin"
+
+[True Positive]
+
+
+Potential http usage on line 869
+    Line:     const-string v0, "http://www.kankunit.com/k2/humidifier/debug/user2.bin"
+
+[True Positive]
+
+
+Potential http usage on line 880
+    Line:     const-string v0, "http://www.kankunit.com/k2/humidifier/humi8002/user1.bin"
+
+[True Positive]
+
+
+/changemac/MainActivity$4.smali
+=======================
+
+Potential http usage on line 148
+    Line:     const-string v4, "http://"
+
+[True Positive]
+
+
+/easemob/chat/EMGroupManager$MucApplyListener.smali
+=======================
+
+Potential http usage on line 56
+    Line:     const-string v1, "http://jabber.org/protocol/muc#user"
+
+[True Positive]
+
+
+/easemob/chat/EMGroupManager$RoomQueryIQ.smali
+=======================
+
+Potential http usage on line 36
+    Line:     const-string v0, "<query xmlns=\"http://jabber.org/protocol/disco#items\" node=\"http://jabber.org/protocol/muc#rooms\"></query>"
+
+[True Positive]
+
+
+/easemob/chat/EMGroupManager.smali
+=======================
+
+Potential http usage on line 24
+    Line: .field public static final MUC_NS_USER:Ljava/lang/String; = "http://jabber.org/protocol/muc#user"
+
+[True Positive]
+
+
+Potential http usage on line 6682
+    Line:     const-string v2, "http://jabber.org/protocol/muc#user"
+
+[True Positive]
+
+
+/easemob/chat/EMMultiUserChatManager$EMMUCPresenceListener.smali
+=======================
+
+Potential http usage on line 28
+    Line: .field public static final MUC_NS_USER:Ljava/lang/String; = "http://jabber.org/protocol/muc#user"
+
+[True Positive]
+
+
+Potential http usage on line 66
+    Line:     const-string v3, "http://jabber.org/protocol/muc#user"
+
+[True Positive]
+
+
+/easemob/chat/core/j.smali
+=======================
+
+Potential http usage on line 26
+    Line: .field private static final j:Ljava/lang/String; = "http://www.easemob.com/easemob/server.xml"
+
+[True Positive]
+
+
+Potential http usage on line 704
+    Line:     const-string v0, "http://www.easemob.com/easemob/server.xml"
+
+[True Positive]
+
+
+/easemob/chat/core/EMConnectionManager.smali
+=======================
+
+Potential http usage on line 275
+    Line:     const-string v1, "http://jabber.org/protocol/disco#items"
+
+[True Positive]
+
+
+Potential http usage on line 285
+    Line:     const-string v1, "http://jabber.org/protocol/disco#info"
+
+[True Positive]
+
+
+Potential http usage on line 325
+    Line:     const-string v1, "http://jabber.org/protocol/disco#items"
+
+[True Positive]
+
+
+Potential http usage on line 335
+    Line:     const-string v1, "http://jabber.org/protocol/disco#info"
+
+[True Positive]
+
+
+Potential http usage on line 349
+    Line:     const-string v2, "http://jabber.org/protocol/chatstates"
+
+[True Positive]
+
+
+Potential http usage on line 355
+    Line:     const-string v2, "http://jabber.org/protocol/chatstates"
+
+[True Positive]
+
+
+Potential http usage on line 361
+    Line:     const-string v2, "http://jabber.org/protocol/chatstates"
+
+[True Positive]
+
+
+Potential http usage on line 367
+    Line:     const-string v2, "http://jabber.org/protocol/chatstates"
+
+[True Positive]
+
+
+Potential http usage on line 373
+    Line:     const-string v2, "http://jabber.org/protocol/chatstates"
+
+[True Positive]
+
+
+Potential http usage on line 387
+    Line:     const-string v1, "http://jabber.org/protocol/muc#user"
+
+[True Positive]
+
+
+Potential http usage on line 397
+    Line:     const-string v1, "http://jabber.org/protocol/muc#admin"
+
+[True Positive]
+
+
+Potential http usage on line 407
+    Line:     const-string v1, "http://jabber.org/protocol/muc#owner"
+
+[True Positive]
+
+
+Potential http usage on line 437
+    Line:     const-string v1, "http://jabber.org/protocol/offline"
+
+[True Positive]
+
+
+Potential http usage on line 447
+    Line:     const-string v1, "http://jabber.org/protocol/offline"
+
+[true Positive]
+
+
+Potential http usage on line 816
+    Line:     const-string v1, "http://jabber.org/protocol/disco#info"
+
+[True Positive]
+
+
+Potential http usage on line 836
+    Line:     const-string v1, "http://jabber.org/protocol/nick"
+
+[True Positive]
+
+
+Potential http usage on line 840
+    Line:     const-string v1, "http://jabber.org/protocol/nick+notify"
+
+[True Positive]
+
+
+Potential http usage on line 844
+    Line:     const-string v1, "http://jabber.org/protocol/muc"
+
+[true Positive]
+
+
+Potential http usage on line 848
+    Line:     const-string v1, "http://jabber.org/protocol/muc#rooms"
+
+[True positive]
+
+
+Potential http usage on line 860
+    Line:     const-string v1, "http://jabber.org/protocol/disco#info"
+
+[true Positive]
+
+
+/easemob/util/EMConstant$EMMultiUserConstant.smali
+=======================
+
+Potential http usage on line 25
+    Line: .field public static final MUC_NS_USER:Ljava/lang/String; = "http://jabber.org/protocol/muc#user"
+
+[true positive]
+
+
+/easemob/cloud/MySSLSocketFactory$1.smali
+=======================
+
+Potential TrustManager usage on line 5
+    Line: .implements Ljavax/net/ssl/X509TrustManager;
+
+[True positive]
+
+
+/easemob/cloud/HttpClientManager.smali
+=======================
+
+Potential AllowAllHostnameVerifier usage on line 200
+    Line:     sget-object v0, Lorg/apache/http/conn/ssl/SSLSocketFactory;->ALLOW_ALL_HOSTNAME_VERIFIER:Lorg/apache/http/conn/ssl/X509HostnameVerifier;
+
+[true Positive]
+
+
+/easemob/cloud/HttpClientConfig.smali
+=======================
+
+Potential http usage on line 49
+    Line:     const-string v0, "http://"
+
+[True Positive]
+
+
+/easemob/cloud/MySSLSocketFactory.smali
+=======================
+
+Potential TrustManager usage on line 8
+    Line: .field tm:Ljavax/net/ssl/TrustManager;
+
+[true positive]
+
+
+Potential TrustManager usage on line 39
+    Line:     iput-object v0, p0, Lcom/easemob/cloud/MySSLSocketFactory;->tm:Ljavax/net/ssl/TrustManager;
+
+[true positive]
+
+
+Potential TrustManager usage on line 45
+    Line:     new-array v1, v1, [Ljavax/net/ssl/TrustManager;
+
+[True positive]
+
+
+Potential TrustManager usage on line 49
+    Line:     iget-object v3, p0, Lcom/easemob/cloud/MySSLSocketFactory;->tm:Ljavax/net/ssl/TrustManager;
+
+[true positive]
+
+
+Potential TrustManager usage on line 53
+    Line:     invoke-virtual {v0, v4, v1, v4}, Ljavax/net/ssl/SSLContext;->init([Ljavax/net/ssl/KeyManager;[Ljavax/net/ssl/TrustManager;Ljava/security/SecureRandom;)V
+
+[true positive]
+
+
+/easemob/analytics/EMActiveCollector$1.smali
+=======================
+
+Potential http usage on line 168
+    Line:     const-string v1, "http://"
+
+[true Positive]
+
+
+/easemob/debug/DebugHelper$1.smali
+=======================
+
+Potential http usage on line 99
+    Line:     const-string v1, "http://"
+
+[true positive]
+
+
+/easemob/debug/DebugHelper$1$1.smali
+=======================
+
+Potential http usage on line 240
+    Line:     const-string v1, "http://"
+
+[true positive]
+
+
+/avos/avospush/push/AVPushRouter.smali
+=======================
+
+Potential http usage on line 11
+    Line: .field private static final CN_ROUTER_SERVICE_FMT:Ljava/lang/String; = "http://router.%s.push.leancloud.cn/v1/route?appId=%s&installationId=%s&secure=1"
+
+[false positive]
+
+
+Potential http usage on line 27
+    Line: .field private static final US_ROUTER_SERVICE_FMT:Ljava/lang/String; = "http://router-%s-push.leancloud.cn/v1/route?appId=%s&installationId=%s&secure=1"
+
+[false positive]
+
+
+Potential http usage on line 57
+    Line:     const-string v0, "http://router.%s.push.leancloud.cn/v1/route?appId=%s&installationId=%s&secure=1"
+
+[false positive]
+
+
+Potential http usage on line 488
+    Line:     const-string v0, "http://router.%s.push.leancloud.cn/v1/route?appId=%s&installationId=%s&secure=1"
+
+[false positive]
+
+
+Potential http usage on line 511
+    Line:     const-string v0, "http://router-%s-push.leancloud.cn/v1/route?appId=%s&installationId=%s&secure=1"
+
+[false positive]
+
+
+/avos/avoscloud/DNSAmendNetwork.smali
+=======================
+
+Potential http usage on line 529
+    Line:     const-string v10, "http://119.29.29.29/d?dn="
+
+[true positive]
+
+
+/avos/avoscloud/QiniuUploader$FileBlockUploadTask.smali
+=======================
+
+Potential http usage on line 99
+    Line:     const-string v6, "http://upload.qiniu.com/mkblk/%d"
+
+[True Positive]
+
+
+Potential http usage on line 364
+    Line:     const-string v14, "http://upload.qiniu.com/bput/%s/%d"
+
+[True Positive]
+
+
+/avos/avoscloud/QiniuUploader.smali
+=======================
+
+Potential http usage on line 31
+    Line: .field private static final QINIU_BRICK_UPLOAD_EP:Ljava/lang/String; = "http://upload.qiniu.com/bput/%s/%d"
+
+[True Positive]
+
+
+Potential http usage on line 33
+    Line: .field private static final QINIU_CREATE_BLOCK_EP:Ljava/lang/String; = "http://upload.qiniu.com/mkblk/%d"
+
+[false positive]
+
+
+Potential http usage on line 35
+    Line: .field private static final QINIU_HOST:Ljava/lang/String; = "http://upload.qiniu.com"
+
+[false positive]
+
+
+Potential http usage on line 37
+    Line: .field private static final QINIU_MKFILE_EP:Ljava/lang/String; = "http://upload.qiniu.com/mkfile/%d/key/%s"
+
+[false positive]
+
+
+Potential http usage on line 468
+    Line:     const-string v6, "http://upload.qiniu.com/mkfile/%d/key/%s"
+
+[true positive]
+
+
+/avos/avoscloud/okhttp/Request$Builder.smali
+=======================
+
+Potential http usage on line 610
+    Line:     const-string v1, "http:"
+
+[false positive]
+
+
+/avos/avoscloud/okhttp/HttpUrl$Builder.smali
+=======================
+
+Potential http usage on line 2594
+    Line:     const-string v6, "http:"
+
+[false positive]
+
+
+Potential http usage on line 2616
+    Line:     const-string v3, "http:"
+
+[false positive]
+
+
+/avos/avoscloud/okhttp/OkHttpClient.smali
+=======================
+
+Potential TrustManager usage on line 463
+    Line:     invoke-virtual {v1, v2, v3, v4}, Ljavax/net/ssl/SSLContext;->init([Ljavax/net/ssl/KeyManager;[Ljavax/net/ssl/TrustManager;Ljava/security/SecureRandom;)V
+
+[true positive]
+
+
+/baidu/location/j.smali
+=======================
+
+Potential http usage on line 198
+    Line:     const-string v0, "http://loc.map.baidu.com/sdk.php"
+
+[false positive]
+
+
+Potential http usage on line 202
+    Line:     const-string v0, "http://loc.map.baidu.com/sdk_ep.php"
+
+[false positive]
+
+
+/baidu/location/LocationClient.smali
+=======================
+
+Potential http usage on line 180
+    Line:     const-string v0, "http://loc.map.baidu.com/sdk.php"
+
+[true positive]
+
+
+Potential http usage on line 298
+    Line:     const-string v0, "http://loc.map.baidu.com/sdk.php"
+
+[false positive]
+
+
+/baidu/mapapi/navi/BaiduMapNavigation.smali
+=======================
+
+Potential http usage on line 329
+    Line:     const-string v1, "http://mo.baidu.com/map/"
+
+[false positive]
+
+
+Potential http usage on line 466
+    Line:     const-string v3, "http://daohang.map.baidu.com/mobile/#navi/naving/start="
+
+[false positive]
+
+
+Potential http usage on line 575
+    Line:     const-string v1, "http://daohang.map.baidu.com/mobile/#search/search/qt=nav&sn=2$$$$$$"
+
+[false positive]
+
+
+/baidu/mapapi/cloud/DetailSearchInfo.smali
+=======================
+
+Potential http usage on line 15
+    Line:     const-string v0, "http://api.map.baidu.com/geosearch/v2/detail/"
+
+[true positive]
+
+
+/baidu/mapapi/cloud/LocalSearchInfo.smali
+=======================
+
+Potential http usage on line 15
+    Line:     const-string v0, "http://api.map.baidu.com/geosearch/v2/local"
+
+[true positive]
+
+
+/baidu/mapapi/cloud/NearbySearchInfo.smali
+=======================
+
+Potential http usage on line 17
+    Line:     const-string v0, "http://api.map.baidu.com/geosearch/v2/nearby"
+
+[true positive]
+
+
+/baidu/mapapi/cloud/BoundSearchInfo.smali
+=======================
+
+Potential http usage on line 15
+    Line:     const-string v0, "http://api.map.baidu.com/geosearch/v2/bound"
+
+[true positive]
+
+
+/baidu/lbsapi/auth/c$b.smali
+=======================
+
+Potential TrustManager usage on line 5
+    Line: .implements Ljavax/net/ssl/X509TrustManager;
+
+[false positive]
+
+
+Potential TrustManager usage on line 22
+    Line: .field b:Ljavax/net/ssl/X509TrustManager;
+
+[false postiive]
+
+
+Potential TrustManager usage on line 55
+    Line:     iput-object v3, p0, Lcom/baidu/lbsapi/auth/c$b;->b:Ljavax/net/ssl/X509TrustManager;
+
+[false positive]
+
+
+Potential TrustManager usage on line 57
+    Line:     invoke-static {}, Ljavax/net/ssl/TrustManagerFactory;->getDefaultAlgorithm()Ljava/lang/String;
+
+[false positive]
+
+
+Potential TrustManager usage on line 61
+    Line:     invoke-static {v0}, Ljavax/net/ssl/TrustManagerFactory;->getInstance(Ljava/lang/String;)Ljavax/net/ssl/TrustManagerFactory;
+
+[false positive]
+
+
+Potential TrustManager usage on line 65
+    Line:     invoke-virtual {v0, p2}, Ljavax/net/ssl/TrustManagerFactory;->init(Ljava/security/KeyStore;)V
+
+[false positive]
+
+
+Potential TrustManager usage on line 67
+    Line:     invoke-virtual {v0}, Ljavax/net/ssl/TrustManagerFactory;->getTrustManagers()[Ljavax/net/ssl/TrustManager;
+
+[false positive]
+
+
+Potential TrustManager usage on line 113
+    Line:     check-cast v0, Ljavax/net/ssl/X509TrustManager;
+
+[false positive]
+
+
+Potential TrustManager usage on line 115
+    Line:     iput-object v0, p0, Lcom/baidu/lbsapi/auth/c$b;->b:Ljavax/net/ssl/X509TrustManager;
+
+[false positive]
+
+
+Potential TrustManager usage on line 121
+    Line:     new-array v1, v1, [Ljavax/net/ssl/TrustManager;
+
+[false positive]
+
+
+Potential TrustManager usage on line 123
+    Line:     iget-object v2, p0, Lcom/baidu/lbsapi/auth/c$b;->b:Ljavax/net/ssl/X509TrustManager;
+
+[false positive]
+
+
+Potential TrustManager usage on line 127
+    Line:     invoke-virtual {v0, v3, v1, v3}, Ljavax/net/ssl/SSLContext;->init([Ljavax/net/ssl/KeyManager;[Ljavax/net/ssl/TrustManager;Ljava/security/SecureRandom;)V
+
+[false positive]
+
+
+Potential TrustManager usage on line 142
+    Line:     iget-object v0, p0, Lcom/baidu/lbsapi/auth/c$b;->b:Ljavax/net/ssl/X509TrustManager;
+
+[false positive]
+
+
+Potential TrustManager usage on line 144
+    Line:     invoke-interface {v0, p1, p2}, Ljavax/net/ssl/X509TrustManager;->checkClientTrusted([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V
+
+[false positive]
+
+
+Potential TrustManager usage on line 175
+    Line:     iget-object v0, p0, Lcom/baidu/lbsapi/auth/c$b;->b:Ljavax/net/ssl/X509TrustManager;
+
+[false positive]
+
+
+Potential TrustManager usage on line 177
+    Line:     invoke-interface {v0, p1, p2}, Ljavax/net/ssl/X509TrustManager;->checkServerTrusted([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V
+
+[false positive]
+
+
+Potential TrustManager usage on line 228
+    Line:     iget-object v0, p0, Lcom/baidu/lbsapi/auth/c$b;->b:Ljavax/net/ssl/X509TrustManager;
+
+[false positive]
+
+
+Potential TrustManager usage on line 230
+    Line:     invoke-interface {v0}, Ljavax/net/ssl/X509TrustManager;->getAcceptedIssuers()[Ljava/security/cert/X509Certificate;
+
+[false positive]
+
+
+/google/android/gms/appindexing/Action.smali
+=======================
+
+Potential http usage on line 15
+    Line: .field public static final STATUS_TYPE_ACTIVE:Ljava/lang/String; = "http://schema.org/ActiveActionStatus"
+
+[false positive]
+
+
+Potential http usage on line 17
+    Line: .field public static final STATUS_TYPE_COMPLETED:Ljava/lang/String; = "http://schema.org/CompletedActionStatus"
+
+[false positive]
+
+
+Potential http usage on line 19
+    Line: .field public static final STATUS_TYPE_FAILED:Ljava/lang/String; = "http://schema.org/FailedActionStatus"
+
+[false positive]
+
+
+Potential http usage on line 21
+    Line: .field public static final TYPE_ACTIVATE:Ljava/lang/String; = "http://schema.org/ActivateAction"
+
+[false positive]
+
+
+Potential http usage on line 23
+    Line: .field public static final TYPE_ADD:Ljava/lang/String; = "http://schema.org/AddAction"
+
+[false positive]
+
+
+Potential http usage on line 25
+    Line: .field public static final TYPE_BOOKMARK:Ljava/lang/String; = "http://schema.org/BookmarkAction"
+
+[false positive]
+
+
+Potential http usage on line 27
+    Line: .field public static final TYPE_COMMUNICATE:Ljava/lang/String; = "http://schema.org/CommunicateAction"
+
+[false positive]
+
+
+Potential http usage on line 29
+    Line: .field public static final TYPE_FILM:Ljava/lang/String; = "http://schema.org/FilmAction"
+
+[false positive]
+
+
+Potential http usage on line 31
+    Line: .field public static final TYPE_LIKE:Ljava/lang/String; = "http://schema.org/LikeAction"
+
+[false positive]
+
+
+Potential http usage on line 33
+    Line: .field public static final TYPE_LISTEN:Ljava/lang/String; = "http://schema.org/ListenAction"
+
+[false positive]
+
+
+Potential http usage on line 35
+    Line: .field public static final TYPE_PHOTOGRAPH:Ljava/lang/String; = "http://schema.org/PhotographAction"
+
+[false positive]
+
+
+Potential http usage on line 37
+    Line: .field public static final TYPE_RESERVE:Ljava/lang/String; = "http://schema.org/ReserveAction"
+
+[false positive]
+
+
+Potential http usage on line 39
+    Line: .field public static final TYPE_SEARCH:Ljava/lang/String; = "http://schema.org/SearchAction"
+
+[false positive]
+
+
+Potential http usage on line 41
+    Line: .field public static final TYPE_VIEW:Ljava/lang/String; = "http://schema.org/ViewAction"
+
+[false positive]
+
+
+Potential http usage on line 43
+    Line: .field public static final TYPE_WANT:Ljava/lang/String; = "http://schema.org/WantAction"
+
+[false positive]
+
+
+Potential http usage on line 45
+    Line: .field public static final TYPE_WATCH:Ljava/lang/String; = "http://schema.org/WatchAction"
+
+[false positive]
+
+
+/google/android/gms/common/internal/zzn.smali
+=======================
+
+Potential http usage on line 15
+    Line:     const-string v0, "http://plus.google.com/"
+
+[false positive]
+
+
+/google/api/client/util/SecurityUtils.smali
+=======================
+
+Potential TrustManager usage on line 329
+    Line: .method public static verify(Ljava/security/Signature;Ljavax/net/ssl/X509TrustManager;Ljava/util/List;[B[B)Ljava/security/cert/X509Certificate;
+
+[false positive]
+
+
+Potential TrustManager usage on line 332
+    Line:     .param p1, "trustManager"    # Ljavax/net/ssl/X509TrustManager;
+
+[false positive]
+
+
+Potential TrustManager usage on line 339
+    Line:             "Ljavax/net/ssl/X509TrustManager;",
+
+[false positive]
+
+
+Potential TrustManager usage on line 499
+    Line:     invoke-interface {p1, v7, v13}, Ljavax/net/ssl/X509TrustManager;->checkServerTrusted([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V
+
+[false positive]
+
+
+/google/api/client/util/SslUtils$1.smali
+=======================
+
+Potential TrustManager usage on line 6
+    Line: .implements Ljavax/net/ssl/X509TrustManager;
+
+[false positive]
+
+
+/google/api/client/util/SslUtils.smali
+=======================
+
+Potential TrustManager usage on line 39
+    Line: .method public static getDefaultTrustManagerFactory()Ljavax/net/ssl/TrustManagerFactory;
+
+[false positive]
+
+
+Potential TrustManager usage on line 49
+    Line:     invoke-static {}, Ljavax/net/ssl/TrustManagerFactory;->getDefaultAlgorithm()Ljava/lang/String;
+
+[false positive]
+
+
+Potential TrustManager usage on line 53
+    Line:     invoke-static {v0}, Ljavax/net/ssl/TrustManagerFactory;->getInstance(Ljava/lang/String;)Ljavax/net/ssl/TrustManagerFactory;
+
+[false positive]
+
+
+Potential TrustManager usage on line 79
+    Line: .method public static getPkixTrustManagerFactory()Ljavax/net/ssl/TrustManagerFactory;
+
+[false positive]
+
+
+Potential TrustManager usage on line 91
+    Line:     invoke-static {v0}, Ljavax/net/ssl/TrustManagerFactory;->getInstance(Ljava/lang/String;)Ljavax/net/ssl/TrustManagerFactory;
+
+[false positive]
+
+
+Potential TrustManager usage on line 136
+    Line: .method public static initSslContext(Ljavax/net/ssl/SSLContext;Ljava/security/KeyStore;Ljavax/net/ssl/TrustManagerFactory;)Ljavax/net/ssl/SSLContext;
+
+[false positive]
+
+
+Potential TrustManager usage on line 140
+    Line:     .param p2, "trustManagerFactory"    # Ljavax/net/ssl/TrustManagerFactory;
+
+[false positive]
+
+
+Potential TrustManager usage on line 151
+    Line:     invoke-virtual {p2, p1}, Ljavax/net/ssl/TrustManagerFactory;->init(Ljava/security/KeyStore;)V
+
+[false positive]
+
+
+Potential TrustManager usage on line 154
+    Line:     invoke-virtual {p2}, Ljavax/net/ssl/TrustManagerFactory;->getTrustManagers()[Ljavax/net/ssl/TrustManager;
+
+[false positive]
+
+
+Potential TrustManager usage on line 158
+    Line:     invoke-virtual {p0, v1, v0, v1}, Ljavax/net/ssl/SSLContext;->init([Ljavax/net/ssl/KeyManager;[Ljavax/net/ssl/TrustManager;Ljava/security/SecureRandom;)V
+
+[false positive]
+
+
+Potential TrustManager usage on line 195
+    Line:     new-array v1, v2, [Ljavax/net/ssl/TrustManager;
+
+[false positive]
+
+
+Potential TrustAllCertificates usage on line 206
+    Line:     .local v1, "trustAllCerts":[Ljavax/net/ssl/TrustManager;
+
+[true positive]
+
+
+Potential TrustManager usage on line 206
+    Line:     .local v1, "trustAllCerts":[Ljavax/net/ssl/TrustManager;
+
+[true positive]
+
+
+Potential TrustManager usage on line 213
+    Line:     invoke-virtual {v0, v4, v1, v4}, Ljavax/net/ssl/SSLContext;->init([Ljavax/net/ssl/KeyManager;[Ljavax/net/ssl/TrustManager;Ljava/security/SecureRandom;)V
+
+[false positive]
+
+
+/google/api/client/testing/json/webtoken/TestCertificates$CertData.smali
+=======================
+
+Potential TrustManager usage on line 126
+    Line: .method public getTrustManager()Ljavax/net/ssl/X509TrustManager;
+
+[false positive]
+
+
+Potential TrustManager usage on line 161
+    Line:     invoke-static {}, Ljavax/net/ssl/TrustManagerFactory;->getDefaultAlgorithm()Ljava/lang/String;
+
+[false positive]
+
+
+Potential TrustManager usage on line 165
+    Line:     invoke-static {v2}, Ljavax/net/ssl/TrustManagerFactory;->getInstance(Ljava/lang/String;)Ljavax/net/ssl/TrustManagerFactory;
+
+[false positive]
+
+
+Potential TrustManager usage on line 170
+    Line:     .local v1, "trustManagerFactory":Ljavax/net/ssl/TrustManagerFactory;
+
+[false positive]
+
+
+Potential TrustManager usage on line 171
+    Line:     invoke-virtual {v1, v0}, Ljavax/net/ssl/TrustManagerFactory;->init(Ljava/security/KeyStore;)V
+
+[false positive]
+
+
+Potential TrustManager usage on line 174
+    Line:     invoke-virtual {v1}, Ljavax/net/ssl/TrustManagerFactory;->getTrustManagers()[Ljavax/net/ssl/TrustManager;
+
+[false positive]
+
+
+Potential TrustManager usage on line 182
+    Line:     check-cast v2, Ljavax/net/ssl/X509TrustManager;
+
+[false positive]
+
+
+/google/api/client/testing/http/HttpTesting.smali
+=======================
+
+Potential http usage on line 14
+    Line: .field public static final SIMPLE_URL:Ljava/lang/String; = "http://google.com/"
+
+[false positive]
+
+
+Potential http usage on line 25
+    Line:     const-string v1, "http://google.com/"
+
+[false positive]
+
+
+/google/api/client/json/webtoken/JsonWebSignature.smali
+=======================
+
+Potential TrustManager usage on line 55
+    Line: .method private static getDefaultX509TrustManager()Ljavax/net/ssl/X509TrustManager;
+
+[false positive]
+
+
+Potential TrustManager usage on line 63
+    Line:     invoke-static {}, Ljavax/net/ssl/TrustManagerFactory;->getDefaultAlgorithm()Ljava/lang/String;
+
+[false positive]
+
+
+Potential TrustManager usage on line 67
+    Line:     invoke-static {v6}, Ljavax/net/ssl/TrustManagerFactory;->getInstance(Ljava/lang/String;)Ljavax/net/ssl/TrustManagerFactory;
+
+[false positive]
+
+
+Potential TrustManager usage on line 72
+    Line:     .local v2, "factory":Ljavax/net/ssl/TrustManagerFactory;
+
+[false positive]
+
+
+Potential TrustManager usage on line 77
+    Line:     invoke-virtual {v2, v6}, Ljavax/net/ssl/TrustManagerFactory;->init(Ljava/security/KeyStore;)V
+
+[false positive]
+
+
+Potential TrustManager usage on line 80
+    Line:     invoke-virtual {v2}, Ljavax/net/ssl/TrustManagerFactory;->getTrustManagers()[Ljavax/net/ssl/TrustManager;
+
+[false positive]
+
+
+Potential TrustManager usage on line 84
+    Line:     .local v0, "arr$":[Ljavax/net/ssl/TrustManager;
+
+[false positive]
+
+
+Potential TrustManager usage on line 97
+    Line:     .local v5, "manager":Ljavax/net/ssl/TrustManager;
+
+[false positive]
+
+
+Potential TrustManager usage on line 98
+    Line:     instance-of v6, v5, Ljavax/net/ssl/X509TrustManager;
+
+[false positive]
+
+
+Potential TrustManager usage on line 103
+    Line:     check-cast v5, Ljavax/net/ssl/X509TrustManager;
+
+[false positive]
+
+
+Potential TrustManager usage on line 109
+    Line:     .end local v0    # "arr$":[Ljavax/net/ssl/TrustManager;
+
+[false positive]
+
+
+Potential TrustManager usage on line 112
+    Line:     .end local v5    # "manager":Ljavax/net/ssl/TrustManager;
+
+[false positive]
+
+
+Potential TrustManager usage on line 117
+    Line:     .restart local v0    # "arr$":[Ljavax/net/ssl/TrustManager;
+
+[false positive]
+
+
+Potential TrustManager usage on line 120
+    Line:     .restart local v5    # "manager":Ljavax/net/ssl/TrustManager;
+
+[false positive]
+
+
+Potential TrustManager usage on line 126
+    Line:     .end local v5    # "manager":Ljavax/net/ssl/TrustManager;
+
+[false positive]
+
+
+Potential TrustManager usage on line 134
+    Line:     .end local v0    # "arr$":[Ljavax/net/ssl/TrustManager;
+
+[false positive]
+
+
+Potential TrustManager usage on line 411
+    Line:     invoke-static {}, Lcom/google/api/client/json/webtoken/JsonWebSignature;->getDefaultX509TrustManager()Ljavax/net/ssl/X509TrustManager;
+
+[false positive]
+
+
+Potential TrustManager usage on line 416
+    Line:     .local v0, "trustManager":Ljavax/net/ssl/X509TrustManager;
+
+[false positive]
+
+
+Potential TrustManager usage on line 427
+    Line:     invoke-virtual {p0, v0}, Lcom/google/api/client/json/webtoken/JsonWebSignature;->verifySignature(Ljavax/net/ssl/X509TrustManager;)Ljava/security/cert/X509Certificate;
+
+[false positive]
+
+
+Potential TrustManager usage on line 434
+    Line: .method public final verifySignature(Ljavax/net/ssl/X509TrustManager;)Ljava/security/cert/X509Certificate;
+
+[false positive]
+
+
+Potential TrustManager usage on line 436
+    Line:     .param p1, "trustManager"    # Ljavax/net/ssl/X509TrustManager;
+
+[false positive]
+
+
+Potential TrustManager usage on line 507
+    Line:     invoke-static {v1, p1, v2, v3, v4}, Lcom/google/api/client/util/SecurityUtils;->verify(Ljava/security/Signature;Ljavax/net/ssl/X509TrustManager;Ljava/util/List;[B[B)Ljava/security/cert/X509Certificate;
+
+[false positive]
+
+
+/google/api/client/http/UriTemplate.smali
+=======================
+
+Potential http usage on line 675
+    Line:     const-string v2, "http://"
+
+[true positive]
+
+
+/google/api/client/http/javanet/NetHttpTransport$Builder.smali
+=======================
+
+Potential TrustManager usage on line 195
+    Line:     invoke-static {}, Lcom/google/api/client/util/SslUtils;->getPkixTrustManagerFactory()Ljavax/net/ssl/TrustManagerFactory;
+
+[true positive]
+
+
+Potential TrustManager usage on line 199
+    Line:     invoke-static {v0, p1, v1}, Lcom/google/api/client/util/SslUtils;->initSslContext(Ljavax/net/ssl/SSLContext;Ljava/security/KeyStore;Ljavax/net/ssl/TrustManagerFactory;)Ljavax/net/ssl/SSLContext;
+
+[true positive]
+
+
+/google/api/client/http/apache/ApacheHttpTransport$Builder.smali
+=======================
+
+Potential AllowAllHostnameVerifier usage on line 107
+    Line:     sget-object v1, Lorg/apache/http/conn/ssl/SSLSocketFactory;->ALLOW_ALL_HOSTNAME_VERIFIER:Lorg/apache/http/conn/ssl/X509HostnameVerifier;
+
+[true positive]
+
+
+Potential TrustManager usage on line 216
+    Line:     invoke-static {}, Lcom/google/api/client/util/SslUtils;->getPkixTrustManagerFactory()Ljavax/net/ssl/TrustManagerFactory;
+
+[false positive]
+
+
+Potential TrustManager usage on line 220
+    Line:     invoke-static {v0, p1, v1}, Lcom/google/api/client/util/SslUtils;->initSslContext(Ljavax/net/ssl/SSLContext;Ljava/security/KeyStore;Ljavax/net/ssl/TrustManagerFactory;)Ljavax/net/ssl/SSLContext;
+
+[false positive]
+
+
+/google/api/client/googleapis/auth/oauth2/OAuth2Utils.smali
+=======================
+
+Potential http usage on line 14
+    Line: .field private static final DEFAULT_METADATA_SERVER_URL:Ljava/lang/String; = "http://169.254.169.254"
+
+[false positive]
+
+
+Potential http usage on line 116
+    Line:     const-string v2, "http://"
+
+[true positive]
+
+
+Potential http usage on line 146
+    Line:     const-string v1, "http://169.254.169.254"
+
+[true positive]
+
+
+/google/api/client/googleapis/batch/BatchUnparsedResponse.smali
+=======================
+
+Potential http usage on line 207
+    Line:     const-string v3, "http://google.com/"
+
+[true positive]
+
+
+/alimama/mobile/csdk/umupdate/b/a.smali
+=======================
+
+Potential http usage on line 7
+    Line: .field public static final a:Ljava/lang/String; = "http://w.m.taobao.com/"
+
+[false positive]
+
+
+Potential http usage on line 9
+    Line: .field public static final b:Ljava/lang/String; = "http://w.m.taobao.com/api/"
+
+[false positive]
+
+
+Potential http usage on line 28
+    Line:     const-string v1, "http://w.m.taobao.com/api/q?"
+
+[false positive]
+
+
+Potential http usage on line 37
+    Line:     const-string v1, "http://w.m.taobao.com/api/r?"
+
+[false positive]
+
+
