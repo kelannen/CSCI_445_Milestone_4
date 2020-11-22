@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <include layout="@layout/toolbar" />
-    <TextView android:textStyle="bold" android:gravity="center" android:id="@id/tvButtonName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="ButtonName" />
-    <Button android:textSize="@dimen/NormalText" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/btnLearn" android:background="@drawable/mybutton" android:padding="@dimen/Size5" android:layout_width="@dimen/login_btn_width" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="Learn" android:layout_centerHorizontal="true" android:textAllCaps="false" />
-    <TextView android:textStyle="bold" android:textColor="@color/orange" android:gravity="center" android:id="@id/tvResult" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="Done" />
-</LinearLayout>

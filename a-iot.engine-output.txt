@@ -1,0 +1,139 @@
+Potential dangerous permission combo (broad storage permission and internet)
+    Permissions: android.permission.READ_EXTERNAL_STORAGE,android.permission.INTERNET,android.permission.WRITE_EXTERNAL_STORAGE,
+
+APK: com.iot.engine
+
+AndroidManifest.xml
+=======================
+
+Potential allow backup and restore vulnerability on line 19
+    Line:     <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="app.AppController" android:supportsRtl="true" android:theme="@style/Base.Theme.Deholtmans">
+    [TRUE POSITIVE]
+
+
+Potential unprotected broadcast reciever on line 94 and line 98
+    Line:         <receiver android:enabled="true" android:name="com.google.android.gms.measurement.AppMeasurementReceiver">
+
+    Line:         </receiver>
+    [TRUE POSITIVE]
+
+
+Smali File Location: /home/ak/Desktop/College/app_security/CSCI_445_Milestone_4/com.iot.engine/smali/com/iot/engine
+
+Smali Files with Potential Vulnerabilities
+
+/Faq.smali
+=======================
+
+Potential http usage on line 150
+    Line:     const-string v1, "http://gsmarthome.com/app/faq.html"
+    [FALSE POSITIVE]
+
+
+/AboutUs.smali
+=======================
+
+Potential http usage on line 170
+    Line:     const-string v1, "http://gsmarthome.com/"
+    [FALSE POSITIVE]
+
+
+/LivingRoom.smali
+=======================
+
+Potential http usage on line 933
+    Line:     const-string v6, "http://odoo.trynoise.com:65000/share/mklsdhufnkjf34nckjsklnckldnkkjnculsdkkcnd/"
+    [TRUE POSITIVE]
+
+
+Potential http usage on line 1069
+    Line:     const-string v6, "http://odoo.trynoise.com:65000/share/mklsdhufnkjf34nckjsklnckldnkkjnculsdkkcnd/"
+    [TRUE POSITIVE]
+
+
+/UserProfileNew$AsyncUserDataTask.smali
+=======================
+
+Potential http usage on line 265
+    Line:     const-string v5, "http://"
+    [TRUE POSITIVE]
+
+
+/UserProfileNew.smali
+=======================
+
+Potential http usage on line 1177
+    Line:     const-string v5, "http://odoo.trynoise.com:65000/share/mklsdhufnkjf34nckjsklnckldnkkjnculsdkkcnd/"
+    [TRUE POSITIVE]
+
+
+Potential http usage on line 1208
+    Line:     const-string v5, "http://odoo.trynoise.com:65000/share/mklsdhufnkjf34nckjsklnckldnkkjnculsdkkcnd/"
+    [TRUE POSITIVE]
+
+
+Potential http usage on line 1472
+    Line:     const-string v3, "http://odoo.trynoise.com:65000/share/mklsdhufnkjf34nckjsklnckldnkkjnculsdkkcnd/"
+    [TRUE POSITIVE]
+
+
+/BlankScreen$AsyncUserDataTask.smali
+=======================
+
+Potential http usage on line 353
+    Line:     const-string v7, "http://"
+    [TRUE POSITIVE]
+
+
+/BlankScreen$AsyncHubIP.smali
+=======================
+
+Potential http usage on line 217
+    Line:     const-string v16, "http://www.macvendorlookup.com/api/v2/"
+    [TRUE POSITIVE]
+
+
+/MainActivity.smali
+=======================
+
+Potential http usage on line 5282
+    Line:     const-string v3, "http://odoo.trynoise.com:65000/share/mklsdhufnkjf34nckjsklnckldnkkjnculsdkkcnd/"
+    [TRUE POSITIVE]
+
+
+Potential http usage on line 6272
+    Line:     const-string v5, "http://play.google.com/store/apps/details?id=com.iot.engine"
+    [TRUE POSITIVE]
+
+
+Potential http usage on line 6614
+    Line:     const-string v4, "http://"
+    [TRUE POSITIVE]
+
+
+/MainActivity$AsyncCheckHubNew.smali
+=======================
+
+Potential http usage on line 103
+    Line:     const-string v5, "http://"
+    [TRUE POSITIVE]
+
+
+Potential http usage on line 435
+    Line:     const-string v2, "http://"
+    [TRUE POSITIVE]
+
+
+/GoVideoPlayer/CameraVideoPlayActivity.smali
+=======================
+
+Potential http usage on line 216
+    Line:     const-string v4, "http://"
+    [TRUE POSITIVE]
+
+
+Potential http usage on line 487
+    Line:     const-string v4, "http://"
+    [TRUE POSITIVE]
+
+

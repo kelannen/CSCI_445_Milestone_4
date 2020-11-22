@@ -1,0 +1,117 @@
+APK: com.iotwear.wear
+
+AndroidManifest.xml
+=======================
+
+Potential allow backup and restore vulnerability on line 6
+    Line:     <application android:allowBackup="true" android:icon="@drawable/logo_icon" android:label="@string/app_name" android:name="LedApplication" android:theme="@android:style/Theme.NoTitleBar">
+    [TRUE POSITIVE]
+
+
+Smali File Location: /home/ak/Desktop/College/app_security/CSCI_445_Milestone_4/com.iotwear.wear/smali/com/iotwear/wear
+
+Smali Files with Potential Vulnerabilities
+
+/gui/DMXControlActivity$SendToDMX.smali
+=======================
+
+Potential http usage on line 86
+    Line:     const-string v8, "http://"
+    [TRUE POSITIVE]
+
+
+/gui/ShowDevicesInfoActivity$DeviceInfoListAdapter$CheckStatusAsyncTask.smali
+=======================
+
+Potential http usage on line 158
+    Line:     const-string v9, "http://"
+    [FALSE POSITIVE]
+
+
+/gui/LaunchActivity.smali
+=======================
+
+Potential http usage on line 821
+    Line:     const-string v2, "http://1"
+    [TRUE POSITIVE]
+
+
+/task/SendDataToPi.smali
+=======================
+
+Potential http usage on line 213
+    Line:     const-string v9, "http://"
+    [FALSE POSITIVE]
+
+
+/task/SendSaveState.smali
+=======================
+
+Potential http usage on line 66
+    Line:     const-string v7, "http://"
+    [FALSE POSITIVE]
+
+
+/task/SendToLamp.smali
+=======================
+
+Potential http usage on line 86
+    Line:     const-string v8, "http://"
+    [FALSE POSITIVE]
+
+
+Potential http usage on line 150
+    Line:     const-string v8, "http://"
+    [FALSE POSITIVE]
+
+
+Potential http usage on line 215
+    Line:     const-string v8, "http://"
+    [FALSE POSITIVE]
+
+
+/task/GetDeviceListFromMaster.smali
+=======================
+
+Potential http usage on line 281
+    Line:     const-string v16, "http://"
+    [TRUE POSITIVE]
+
+
+/task/SendDeviceListToMaster.smali
+=======================
+
+Potential http usage on line 96
+    Line:     const-string v10, "http://"
+    [FALSE POSITIVE]
+
+
+/task/SearchControllersTask.smali
+=======================
+
+Potential http usage on line 216
+    Line:     const-string v7, "http://"
+    [TRUE POSITIVE]
+
+
+/task/SendAlarm.smali
+=======================
+
+Potential http usage on line 446
+    Line:     const-string v9, "http://"
+    [FALSE POSITIVE]
+
+
+Potential http usage on line 541
+    Line:     const-string v8, "http://"
+    [FALSE POSITIVE]
+
+
+/task/led/SetAnimationTask.smali
+=======================
+
+Potential http usage on line 74
+    Line:     const-string v7, "http://"
+    [FALSE POSITIVE]
+
+
