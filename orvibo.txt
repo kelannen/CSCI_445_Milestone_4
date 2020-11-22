@@ -1,5 +1,6 @@
 Potential dangerous permission combo (broad storage permission and internet)
     Permissions: android.permission.INTERNET,android.permission.WRITE_EXTERNAL_STORAGE,android.permission.READ_EXTERNAL_STORAGE,
+    True Positive
 
 APK: com.orvibo.rf.activitys
 
@@ -8,7 +9,7 @@ AndroidManifest.xml
 
 Potential allow backup and restore vulnerability on line 14
     Line:     <application android:allowBackup="true" android:icon="@drawable/icon" android:label="@string/app_name" android:name="com.orvibo.rf.application.OrviboApplication" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
-
+    True Positive
 
 Smali File Location: C:\Users\User\Documents\WM_Classes\CSCI445\Homework_5\CSCI_445_Milestone_4\com.orvibo.rf.activitys\smali\com\orvibo\rf\activitys
 
@@ -19,6 +20,7 @@ Smali Files with Potential Vulnerabilities
 
 Potential http usage on line 71
     Line:     const-string v2, "http://wifisocket.orvibo.com/jsp/errormsg.jsp"
+    True Positive
 
 
 \CrashActivity.smali
@@ -26,5 +28,6 @@ Potential http usage on line 71
 
 Potential http usage on line 56
     Line:     const-string v0, "http://wifisocket.orvibo.com/jsp/errormsg.jsp"
+    True Positive
 
 

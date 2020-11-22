@@ -9,6 +9,7 @@ Smali Files with Potential Vulnerabilities
 
 Potential http usage on line 34
     Line:     const-string v3, "http://market.android.com/details?id="
+    True Positive
 
 
 \ChessDroidActivity.smali
@@ -16,17 +17,21 @@ Potential http usage on line 34
 
 Potential http usage on line 134
     Line:     const-string v2, "http://www.mobialia.com/chess/"
+    True Positive
 
 
 Potential http usage on line 166
     Line:     const-string v2, "http://play.google.com/store/apps/details?id=com.chessclub.android"
+    True Positive
 
 
 Potential http usage on line 318
     Line:     const-string v2, "http://play.google.com/store/apps/details?id=com.alonsoruibal.chessdroid"
+    False Positive (was not called anywhere)
 
 
 Potential http usage on line 583
     Line:     const-string v2, "http://www.freechess.org/Register/index.html"
+    False Positive (was not called anywhere)
 
 

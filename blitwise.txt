@@ -7,6 +7,7 @@ Potential unprotected broadcast reciever on line 16 and line 22
     Line:         <receiver android:name="com.blitwise.engine.googleplay.CPBillingReceiver">
 
     Line:         </receiver>
+    False Positive (has intent filter)
 
 
 Smali File Location: C:\Users\User\Documents\WM_Classes\CSCI445\Homework_5\CSCI_445_Milestone_4\com.blitwise.ptankshd\smali\com\blitwise\ptankshd

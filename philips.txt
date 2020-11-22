@@ -1,5 +1,6 @@
 Potential dangerous permission combo (broad storage permission and internet)
     Permissions: android.permission.READ_EXTERNAL_STORAGE,android.permission.INTERNET,android.permission.WRITE_EXTERNAL_STORAGE,
+    True Positive
 
 APK: com.philips.hueswitcher.quickstart
 
@@ -8,6 +9,7 @@ AndroidManifest.xml
 
 Potential allow backup and restore vulnerability on line 15
     Line:     <application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+    True Positive
 
 
 Smali File Location: C:\Users\User\Documents\WM_Classes\CSCI445\Homework_5\CSCI_445_Milestone_4\com.philips.hueswitcher.quickstart\smali\com\philips\hueswitcher\quickstart
@@ -19,6 +21,7 @@ Smali Files with Potential Vulnerabilities
 
 Potential http usage on line 50
     Line:     const-string v2, "http://iotswitcher.weebly.com/uploads/9/4/0/6/94063013/xy-color-space_orig.png"
+    False Positive
 
 
 \NewSwitchThree$5$1$2.smali
@@ -26,6 +29,7 @@ Potential http usage on line 50
 
 Potential http usage on line 50
     Line:     const-string v2, "http://iotswitcher.weebly.com/uploads/9/4/0/6/94063013/xy-color-space_orig.png"
+    False Positive
 
 
 \ProgramDaylightSensorFragment$2$2$2$4$3$1.smali
@@ -33,6 +37,7 @@ Potential http usage on line 50
 
 Potential http usage on line 72
     Line:     const-string v6, "http://"
+    False Positive
 
 
 \ProgramDaylightSensorFragment$2$2$2$4$3.smali
@@ -40,6 +45,7 @@ Potential http usage on line 72
 
 Potential http usage on line 574
     Line:     const-string v17, "http://"
+    True Positive
 
 
 \ProgramDaylightSensorFragment$2$3$1$4$3$1.smali
@@ -47,6 +53,7 @@ Potential http usage on line 574
 
 Potential http usage on line 72
     Line:     const-string v6, "http://"
+    False Positive
 
 
 \ProgramDaylightSensorFragment$2$3$1$4$3.smali
@@ -54,6 +61,7 @@ Potential http usage on line 72
 
 Potential http usage on line 574
     Line:     const-string v17, "http://"
+    True Positive
 
 
 \ProgramDaylightSensorFragment$3$5$2$1$1$1.smali
@@ -61,6 +69,7 @@ Potential http usage on line 574
 
 Potential http usage on line 53
     Line:     const-string v3, "http://"
+    True Positive
 
 
 \ProgramDaylightSensorFragment$3$5$2$1$2$1.smali
@@ -68,6 +77,7 @@ Potential http usage on line 53
 
 Potential http usage on line 53
     Line:     const-string v3, "http://"
+    False Positive
 
 
 \ProgramDaylightSensorFragment$3$5$2$1$3$1.smali
@@ -75,6 +85,7 @@ Potential http usage on line 53
 
 Potential http usage on line 53
     Line:     const-string v3, "http://"
+    True Positive
 
 
 \ProgramDaylightSensorFragment$3$5$2$1$4$1.smali
@@ -82,6 +93,7 @@ Potential http usage on line 53
 
 Potential http usage on line 53
     Line:     const-string v3, "http://"
+    False Positive
 
 
 \ProgramDaylightSensorFragment$3$5$2$1.smali
@@ -89,18 +101,22 @@ Potential http usage on line 53
 
 Potential http usage on line 460
     Line:     const-string v13, "http://"
+    True Positive
 
 
 Potential http usage on line 1040
     Line:     const-string v13, "http://"
+    True Positive
 
 
 Potential http usage on line 1445
     Line:     const-string v13, "http://"
+    True Positive
 
 
 Potential http usage on line 1826
     Line:     const-string v13, "http://"
+    True Positive
 
 
 \ProgramDaylightSensorFragment$3$6$2$1$1$1.smali
@@ -108,6 +124,7 @@ Potential http usage on line 1826
 
 Potential http usage on line 53
     Line:     const-string v3, "http://"
+    False Positive
 
 
 \ProgramDaylightSensorFragment$3$6$2$1.smali
@@ -115,6 +132,7 @@ Potential http usage on line 53
 
 Potential http usage on line 276
     Line:     const-string v6, "http://"
+    True Positive
 
 
 \ProgramDaylightSensorFragment$3$7$2$1$1$1.smali
@@ -122,6 +140,7 @@ Potential http usage on line 276
 
 Potential http usage on line 53
     Line:     const-string v3, "http://"
+    False Positive
 
 
 \ProgramDaylightSensorFragment$3$7$2$1.smali
@@ -129,6 +148,7 @@ Potential http usage on line 53
 
 Potential http usage on line 292
     Line:     const-string v6, "http://"
+    False Positive
 
 
 \ProgramDaylightSensorFragment$3.smali
@@ -136,6 +156,7 @@ Potential http usage on line 292
 
 Potential http usage on line 490
     Line:     const-string v3, "http://"
+    True Positive
 
 
 \ProgramDaylightSensorFragment$4$5$2$1$1$1.smali
@@ -143,6 +164,7 @@ Potential http usage on line 490
 
 Potential http usage on line 53
     Line:     const-string v3, "http://"
+    False Positive
 
 
 \ProgramDaylightSensorFragment$4$5$2$1$2$1.smali
@@ -150,6 +172,7 @@ Potential http usage on line 53
 
 Potential http usage on line 53
     Line:     const-string v3, "http://"
+    True Positive
 
 
 \ProgramDaylightSensorFragment$4$5$2$1$3$1.smali
@@ -157,6 +180,7 @@ Potential http usage on line 53
 
 Potential http usage on line 53
     Line:     const-string v3, "http://"
+    True Positive
 
 
 \ProgramDaylightSensorFragment$4$5$2$1$4$1.smali
@@ -164,6 +188,7 @@ Potential http usage on line 53
 
 Potential http usage on line 53
     Line:     const-string v3, "http://"
+    False Positive
 
 
 \ProgramDaylightSensorFragment$4$5$2$1.smali
@@ -171,18 +196,22 @@ Potential http usage on line 53
 
 Potential http usage on line 460
     Line:     const-string v13, "http://"
+    True Positive
 
 
 Potential http usage on line 1040
     Line:     const-string v13, "http://"
+    True Positive
 
 
 Potential http usage on line 1445
     Line:     const-string v13, "http://"
+    True Positive
 
 
 Potential http usage on line 1826
     Line:     const-string v13, "http://"
+    True Positive
 
 
 \ProgramDaylightSensorFragment$4$6$2$1$1$1.smali
@@ -190,6 +219,7 @@ Potential http usage on line 1826
 
 Potential http usage on line 53
     Line:     const-string v3, "http://"
+    False Positive
 
 
 \ProgramDaylightSensorFragment$4$6$2$1.smali
@@ -197,6 +227,7 @@ Potential http usage on line 53
 
 Potential http usage on line 276
     Line:     const-string v6, "http://"
+    True Positive
 
 
 \ProgramDaylightSensorFragment$4$7$2$1$1$1.smali
@@ -204,6 +235,7 @@ Potential http usage on line 276
 
 Potential http usage on line 53
     Line:     const-string v3, "http://"
+    False Positive
 
 
 \ProgramDaylightSensorFragment$4$7$2$1.smali
@@ -211,6 +243,7 @@ Potential http usage on line 53
 
 Potential http usage on line 292
     Line:     const-string v6, "http://"
+    True Positive
 
 
 \ProgramDaylightSensorFragment$4.smali
@@ -218,6 +251,7 @@ Potential http usage on line 292
 
 Potential http usage on line 535
     Line:     const-string v3, "http://"
+    True Positive
 
 
 \ProgramDaylightSensorFragment$5$1$1$2$3$1$1$1.smali
@@ -225,6 +259,7 @@ Potential http usage on line 535
 
 Potential http usage on line 524
     Line:     const-string v6, "http://"
+    False Positive
 
 
 \ProgramDaylightSensorFragment$5$1$1$2$3$1.smali
@@ -232,6 +267,7 @@ Potential http usage on line 524
 
 Potential http usage on line 150
     Line:     const-string v3, "http://"
+    True Positive
 
 
 \ProgramDaylightSensorFragment$5$1$1$2$4$1$1$1.smali
@@ -239,6 +275,7 @@ Potential http usage on line 150
 
 Potential http usage on line 524
     Line:     const-string v7, "http://"
+    True Positive
 
 
 \ProgramDaylightSensorFragment$5$1$1$2$4$1.smali
@@ -246,6 +283,7 @@ Potential http usage on line 524
 
 Potential http usage on line 150
     Line:     const-string v3, "http://"
+    True Positive
 
 
 \ProgramDaylightSensorFragment$5.smali
@@ -253,6 +291,7 @@ Potential http usage on line 150
 
 Potential http usage on line 102
     Line:     const-string v2, "http://"
+    True Positive
 
 
 \ProgramDaylightSensorFragment$8$3$1.smali
@@ -260,6 +299,7 @@ Potential http usage on line 102
 
 Potential http usage on line 72
     Line:     const-string v6, "http://"
+    False Positive
 
 
 \ProgramDaylightSensorFragment$8$3.smali
@@ -267,6 +307,7 @@ Potential http usage on line 72
 
 Potential http usage on line 376
     Line:     const-string v17, "http://"
+    True Positive
 
 
 \ProgramDaylightSensorFragment.smali
@@ -274,6 +315,7 @@ Potential http usage on line 376
 
 Potential http usage on line 13147
     Line:     const-string v27, "http://"
+    False Positive
 
 
 \ProgramDimmerSwitchFragment$10$1$1$1$1$1$1$1$1$1.smali
@@ -281,6 +323,7 @@ Potential http usage on line 13147
 
 Potential http usage on line 49
     Line:     const-string v3, "http://"
+    False Positive
 
 
 \ProgramDimmerSwitchFragment$10$1$1$1$1$1$1$1.smali
@@ -288,6 +331,7 @@ Potential http usage on line 49
 
 Potential http usage on line 49
     Line:     const-string v3, "http://"
+    True Positive
 
 
 \ProgramDimmerSwitchFragment$10$1$1$1$1$1.smali
@@ -295,6 +339,7 @@ Potential http usage on line 49
 
 Potential http usage on line 49
     Line:     const-string v3, "http://"
+    False Positive
 
 
 \ProgramDimmerSwitchFragment$10$1$1$1.smali
@@ -302,6 +347,7 @@ Potential http usage on line 49
 
 Potential http usage on line 74
     Line:     const-string v5, "http://"
+    True Positive
 
 
 \ProgramDimmerSwitchFragment$10$1.smali
@@ -309,6 +355,7 @@ Potential http usage on line 74
 
 Potential http usage on line 81
     Line:     const-string v5, "http://"
+    True Positive
 
 
 \ProgramDimmerSwitchFragment$11$1$1$1$1$1$1$1$1$1$1$1.smali
@@ -316,6 +363,7 @@ Potential http usage on line 81
 
 Potential http usage on line 49
     Line:     const-string v3, "http://"
+    True Positive
 
 
 \ProgramDimmerSwitchFragment$11$1$1$1$1$1$1$1$1$1.smali
@@ -323,6 +371,7 @@ Potential http usage on line 49
 
 Potential http usage on line 49
     Line:     const-string v3, "http://"
+    True Positive
 
 
 \ProgramDimmerSwitchFragment$11$1$1$1$1$1$1$1.smali
@@ -330,6 +379,7 @@ Potential http usage on line 49
 
 Potential http usage on line 49
     Line:     const-string v3, "http://"
+    True Positive
 
 
 \ProgramDimmerSwitchFragment$11$1$1$1$1$1.smali
@@ -337,6 +387,7 @@ Potential http usage on line 49
 
 Potential http usage on line 49
     Line:     const-string v3, "http://"
+    True Positive
 
 
 \ProgramDimmerSwitchFragment$11$1$1$1.smali
@@ -344,6 +395,7 @@ Potential http usage on line 49
 
 Potential http usage on line 74
     Line:     const-string v5, "http://"
+    True Positive
 
 
 \ProgramDimmerSwitchFragment$11$1.smali
@@ -351,6 +403,7 @@ Potential http usage on line 74
 
 Potential http usage on line 81
     Line:     const-string v5, "http://"
+    True Positive
 
 
 \ProgramDimmerSwitchFragment$12$1$1$1$1$1$1$1$1$1$1$1$1$1.smali
@@ -358,6 +411,7 @@ Potential http usage on line 81
 
 Potential http usage on line 49
     Line:     const-string v3, "http://"
+    False Positive
 
 
 \ProgramDimmerSwitchFragment$12$1$1$1$1$1$1$1$1$1$1$1.smali
@@ -365,6 +419,7 @@ Potential http usage on line 49
 
 Potential http usage on line 49
     Line:     const-string v3, "http://"
+    False Positive
 
 
 \ProgramDimmerSwitchFragment$12$1$1$1$1$1$1$1$1$1.smali
@@ -372,6 +427,7 @@ Potential http usage on line 49
 
 Potential http usage on line 49
     Line:     const-string v3, "http://"
+    True Positive
 
 
 \ProgramDimmerSwitchFragment$12$1$1$1$1$1$1$1.smali
@@ -379,6 +435,7 @@ Potential http usage on line 49
 
 Potential http usage on line 49
     Line:     const-string v3, "http://"
+    True Positive
 
 
 \ProgramDimmerSwitchFragment$12$1$1$1$1$1.smali
@@ -386,6 +443,7 @@ Potential http usage on line 49
 
 Potential http usage on line 49
     Line:     const-string v3, "http://"
+    True Positive
 
 
 \ProgramDimmerSwitchFragment$12$1$1$1.smali
@@ -393,6 +451,7 @@ Potential http usage on line 49
 
 Potential http usage on line 74
     Line:     const-string v5, "http://"
+    True Positive
 
 
 \ProgramDimmerSwitchFragment$12$1.smali
@@ -400,6 +459,7 @@ Potential http usage on line 74
 
 Potential http usage on line 81
     Line:     const-string v5, "http://"
+    False Positive
 
 
 \ProgramDimmerSwitchFragment$2$23$1.smali
@@ -407,6 +467,7 @@ Potential http usage on line 81
 
 Potential http usage on line 826
     Line:     const-string v3, "http://"
+    True Positive
 
 
 \ProgramDimmerSwitchFragment$3$5$1$1$1.smali
@@ -414,6 +475,7 @@ Potential http usage on line 826
 
 Potential http usage on line 246
     Line:     const-string v3, "http://"
+    True Positive
 
 
 \ProgramDimmerSwitchFragment$3$5$1$1.smali
@@ -421,6 +483,7 @@ Potential http usage on line 246
 
 Potential http usage on line 572
     Line:     const-string v11, "http://"
+    False Positive
 
 
 \ProgramDimmerSwitchFragment$3$5.smali
@@ -428,6 +491,7 @@ Potential http usage on line 572
 
 Potential http usage on line 686
     Line:     const-string v7, "http://"
+    True Positive
 
 
 \ProgramDimmerSwitchFragment$4$5$1$1$1.smali
@@ -435,6 +499,7 @@ Potential http usage on line 686
 
 Potential http usage on line 246
     Line:     const-string v3, "http://"
+    True Positive
 
 
 \ProgramDimmerSwitchFragment$4$5$1$1.smali
@@ -442,6 +507,7 @@ Potential http usage on line 246
 
 Potential http usage on line 572
     Line:     const-string v11, "http://"
+    True Positive
 
 
 \ProgramDimmerSwitchFragment$4$5.smali
@@ -449,6 +515,7 @@ Potential http usage on line 572
 
 Potential http usage on line 686
     Line:     const-string v7, "http://"
+    True Positive
 
 
 \ProgramDimmerSwitchFragment$5$5$1$1$1.smali
@@ -456,6 +523,7 @@ Potential http usage on line 686
 
 Potential http usage on line 246
     Line:     const-string v3, "http://"
+    False Positive
 
 
 \ProgramDimmerSwitchFragment$5$5$1$1.smali
@@ -463,6 +531,7 @@ Potential http usage on line 246
 
 Potential http usage on line 572
     Line:     const-string v11, "http://"
+    False Positive
 
 
 \ProgramDimmerSwitchFragment$5$5.smali
@@ -470,6 +539,7 @@ Potential http usage on line 572
 
 Potential http usage on line 686
     Line:     const-string v7, "http://"
+    True Positive
 
 
 \ProgramDimmerSwitchFragment$6$1.smali
@@ -477,6 +547,7 @@ Potential http usage on line 686
 
 Potential http usage on line 122
     Line:     const-string v3, "http://"
+    True Positive
 
 
 \ProgramDimmerSwitchFragment$7$1$1$2$3$1$1$1.smali
@@ -484,6 +555,7 @@ Potential http usage on line 122
 
 Potential http usage on line 524
     Line:     const-string v6, "http://"
+    True Positive
 
 
 \ProgramDimmerSwitchFragment$7$1$1$2$3$1.smali
@@ -491,6 +563,7 @@ Potential http usage on line 524
 
 Potential http usage on line 150
     Line:     const-string v3, "http://"
+    True Positive
 
 
 \ProgramDimmerSwitchFragment$7$1$1$2$4$1$1$1.smali
@@ -498,6 +571,7 @@ Potential http usage on line 150
 
 Potential http usage on line 524
     Line:     const-string v6, "http://"
+    True Positive
 
 
 \ProgramDimmerSwitchFragment$7$1$1$2$4$1.smali
@@ -505,6 +579,7 @@ Potential http usage on line 524
 
 Potential http usage on line 150
     Line:     const-string v3, "http://"
+    False Positive
 
 
 \ProgramDimmerSwitchFragment$7.smali
@@ -512,6 +587,7 @@ Potential http usage on line 150
 
 Potential http usage on line 102
     Line:     const-string v2, "http://"
+    False Positive
 
 
 \ProgramDimmerSwitchFragment$9$1$1$1$1$1$1$1.smali
@@ -519,6 +595,7 @@ Potential http usage on line 102
 
 Potential http usage on line 49
     Line:     const-string v3, "http://"
+    True Positive
 
 
 \ProgramDimmerSwitchFragment$9$1$1$1$1$1.smali
@@ -526,6 +603,7 @@ Potential http usage on line 49
 
 Potential http usage on line 49
     Line:     const-string v3, "http://"
+    True Positive
 
 
 \ProgramDimmerSwitchFragment$9$1$1$1.smali
@@ -533,6 +611,7 @@ Potential http usage on line 49
 
 Potential http usage on line 74
     Line:     const-string v5, "http://"
+    False Positive
 
 
 \ProgramDimmerSwitchFragment$9$1.smali
@@ -540,6 +619,7 @@ Potential http usage on line 74
 
 Potential http usage on line 81
     Line:     const-string v5, "http://"
+    False Positive
 
 
 \ProgramDimmerSwitchFragment.smali
@@ -547,22 +627,27 @@ Potential http usage on line 81
 
 Potential http usage on line 17656
     Line:     const-string v3, "http://"
+    True Positive
 
 
 Potential http usage on line 17933
     Line:     const-string v3, "http://"
+    True Positive
 
 
 Potential http usage on line 18207
     Line:     const-string v3, "http://"
+    True Positive
 
 
 Potential http usage on line 18541
     Line:     const-string v3, "http://"
+    True Positive
 
 
 Potential http usage on line 18885
     Line:     const-string v3, "http://"
+    True Positive
 
 
 \ProgramHueTapFragment$10$1$1$1$1$1$1$1$1$1.smali
@@ -570,6 +655,7 @@ Potential http usage on line 18885
 
 Potential http usage on line 49
     Line:     const-string v3, "http://"
+    False Positive
 
 
 \ProgramHueTapFragment$10$1$1$1$1$1$1$1.smali
@@ -577,6 +663,7 @@ Potential http usage on line 49
 
 Potential http usage on line 49
     Line:     const-string v3, "http://"
+    False Positive
 
 
 \ProgramHueTapFragment$10$1$1$1$1$1.smali
@@ -584,6 +671,7 @@ Potential http usage on line 49
 
 Potential http usage on line 49
     Line:     const-string v3, "http://"
+    False Positive
 
 
 \ProgramHueTapFragment$10$1$1$1.smali
@@ -591,6 +679,7 @@ Potential http usage on line 49
 
 Potential http usage on line 74
     Line:     const-string v5, "http://"
+    True Positive
 
 
 \ProgramHueTapFragment$10$1.smali
@@ -598,6 +687,7 @@ Potential http usage on line 74
 
 Potential http usage on line 81
     Line:     const-string v5, "http://"
+    True Positive
 
 
 \ProgramHueTapFragment$11$1$1$1$1$1$1$1$1$1$1$1.smali
@@ -605,6 +695,7 @@ Potential http usage on line 81
 
 Potential http usage on line 49
     Line:     const-string v3, "http://"
+    False Positive
 
 
 \ProgramHueTapFragment$11$1$1$1$1$1$1$1$1$1.smali
@@ -612,6 +703,7 @@ Potential http usage on line 49
 
 Potential http usage on line 49
     Line:     const-string v3, "http://"
+    True Positive
 
 
 \ProgramHueTapFragment$11$1$1$1$1$1$1$1.smali
@@ -619,6 +711,7 @@ Potential http usage on line 49
 
 Potential http usage on line 49
     Line:     const-string v3, "http://"
+    True Positive
 
 
 \ProgramHueTapFragment$11$1$1$1$1$1.smali
@@ -626,6 +719,7 @@ Potential http usage on line 49
 
 Potential http usage on line 49
     Line:     const-string v3, "http://"
+    False Positive
 
 
 \ProgramHueTapFragment$11$1$1$1.smali
@@ -633,6 +727,7 @@ Potential http usage on line 49
 
 Potential http usage on line 74
     Line:     const-string v5, "http://"
+    True Positive
 
 
 \ProgramHueTapFragment$11$1.smali
@@ -640,6 +735,7 @@ Potential http usage on line 74
 
 Potential http usage on line 81
     Line:     const-string v5, "http://"
+    True Positive
 
 
 \ProgramHueTapFragment$12$1$1$1$1$1$1$1$1$1$1$1$1$1.smali
@@ -647,6 +743,7 @@ Potential http usage on line 81
 
 Potential http usage on line 49
     Line:     const-string v3, "http://"
+    False Positive
 
 
 \ProgramHueTapFragment$12$1$1$1$1$1$1$1$1$1$1$1.smali
@@ -654,6 +751,7 @@ Potential http usage on line 49
 
 Potential http usage on line 49
     Line:     const-string v3, "http://"
+    True Positive
 
 
 \ProgramHueTapFragment$12$1$1$1$1$1$1$1$1$1.smali
@@ -661,6 +759,7 @@ Potential http usage on line 49
 
 Potential http usage on line 49
     Line:     const-string v3, "http://"
+    True Positive
 
 
 \ProgramHueTapFragment$12$1$1$1$1$1$1$1.smali
@@ -668,6 +767,7 @@ Potential http usage on line 49
 
 Potential http usage on line 49
     Line:     const-string v3, "http://"
+    True Positive
 
 
 \ProgramHueTapFragment$12$1$1$1$1$1.smali
@@ -675,6 +775,7 @@ Potential http usage on line 49
 
 Potential http usage on line 49
     Line:     const-string v3, "http://"
+    True Positive
 
 
 \ProgramHueTapFragment$12$1$1$1.smali
@@ -682,6 +783,7 @@ Potential http usage on line 49
 
 Potential http usage on line 74
     Line:     const-string v5, "http://"
+    True Positive
 
 
 \ProgramHueTapFragment$12$1.smali
@@ -689,6 +791,7 @@ Potential http usage on line 74
 
 Potential http usage on line 81
     Line:     const-string v5, "http://"
+    True Positive
 
 
 \ProgramHueTapFragment$2$23$1.smali
@@ -696,6 +799,7 @@ Potential http usage on line 81
 
 Potential http usage on line 826
     Line:     const-string v3, "http://"
+    False Positive
 
 
 \ProgramHueTapFragment$3$5$1$1$1.smali
@@ -703,6 +807,7 @@ Potential http usage on line 826
 
 Potential http usage on line 246
     Line:     const-string v3, "http://"
+    True Positive
 
 
 \ProgramHueTapFragment$3$5$1$1.smali
@@ -710,6 +815,7 @@ Potential http usage on line 246
 
 Potential http usage on line 496
     Line:     const-string v11, "http://"
+    True Positive
 
 
 \ProgramHueTapFragment$3$5.smali
@@ -717,6 +823,7 @@ Potential http usage on line 496
 
 Potential http usage on line 686
     Line:     const-string v7, "http://"
+    True Positive
 
 
 \ProgramHueTapFragment$4$5$1$1$1.smali
@@ -724,6 +831,7 @@ Potential http usage on line 686
 
 Potential http usage on line 246
     Line:     const-string v3, "http://"
+    False Positive
 
 
 \ProgramHueTapFragment$4$5$1$1.smali
@@ -731,6 +839,7 @@ Potential http usage on line 246
 
 Potential http usage on line 496
     Line:     const-string v11, "http://"
+    False Positive
 
 
 \ProgramHueTapFragment$4$5.smali
@@ -738,6 +847,7 @@ Potential http usage on line 496
 
 Potential http usage on line 686
     Line:     const-string v7, "http://"
+    True Positive
 
 
 \ProgramHueTapFragment$5$5$1$1$1.smali
@@ -745,6 +855,7 @@ Potential http usage on line 686
 
 Potential http usage on line 246
     Line:     const-string v3, "http://"
+    True Positive
 
 
 \ProgramHueTapFragment$5$5$1$1.smali
@@ -752,6 +863,7 @@ Potential http usage on line 246
 
 Potential http usage on line 496
     Line:     const-string v11, "http://"
+    True Positive
 
 
 \ProgramHueTapFragment$5$5.smali
@@ -759,6 +871,7 @@ Potential http usage on line 496
 
 Potential http usage on line 686
     Line:     const-string v7, "http://"
+    True Positive
 
 
 \ProgramHueTapFragment$6$1.smali
@@ -766,6 +879,7 @@ Potential http usage on line 686
 
 Potential http usage on line 122
     Line:     const-string v3, "http://"
+    True Positive
 
 
 \ProgramHueTapFragment$7$1$1$2$3$1$1$1.smali
@@ -773,6 +887,7 @@ Potential http usage on line 122
 
 Potential http usage on line 524
     Line:     const-string v6, "http://"
+    True Positive
 
 
 \ProgramHueTapFragment$7$1$1$2$3$1.smali
@@ -780,6 +895,7 @@ Potential http usage on line 524
 
 Potential http usage on line 150
     Line:     const-string v3, "http://"
+    True Positive
 
 
 \ProgramHueTapFragment$7$1$1$2$4$1$1$1.smali
@@ -787,6 +903,7 @@ Potential http usage on line 150
 
 Potential http usage on line 524
     Line:     const-string v6, "http://"
+    False Positive
 
 
 \ProgramHueTapFragment$7$1$1$2$4$1.smali
@@ -794,6 +911,7 @@ Potential http usage on line 524
 
 Potential http usage on line 150
     Line:     const-string v3, "http://"
+    False Positive
 
 
 \ProgramHueTapFragment$7.smali
@@ -801,6 +919,7 @@ Potential http usage on line 150
 
 Potential http usage on line 102
     Line:     const-string v2, "http://"
+    False Positive
 
 
 \ProgramHueTapFragment$9$1$1$1$1$1$1$1.smali
@@ -808,6 +927,7 @@ Potential http usage on line 102
 
 Potential http usage on line 49
     Line:     const-string v3, "http://"
+    True Positive
 
 
 \ProgramHueTapFragment$9$1$1$1$1$1.smali
@@ -815,6 +935,7 @@ Potential http usage on line 49
 
 Potential http usage on line 49
     Line:     const-string v3, "http://"
+    False Positive
 
 
 \ProgramHueTapFragment$9$1$1$1.smali
@@ -822,6 +943,7 @@ Potential http usage on line 49
 
 Potential http usage on line 74
     Line:     const-string v5, "http://"
+    True Positive
 
 
 \ProgramHueTapFragment$9$1.smali
@@ -829,6 +951,7 @@ Potential http usage on line 74
 
 Potential http usage on line 81
     Line:     const-string v5, "http://"
+    True Positive
 
 
 \ProgramHueTapFragment.smali
@@ -836,22 +959,27 @@ Potential http usage on line 81
 
 Potential http usage on line 17533
     Line:     const-string v3, "http://"
+    True Positive
 
 
 Potential http usage on line 17810
     Line:     const-string v3, "http://"
+    True Positive
 
 
 Potential http usage on line 18084
     Line:     const-string v3, "http://"
+    True Positive
 
 
 Potential http usage on line 18418
     Line:     const-string v3, "http://"
+    True Positive
 
 
 Potential http usage on line 18762
     Line:     const-string v3, "http://"
+    True Positive
 
 
 \ProgramMotionSensorFragment$2$3$1$1.smali
@@ -859,6 +987,7 @@ Potential http usage on line 18762
 
 Potential http usage on line 49
     Line:     const-string v3, "http://"
+    True Positive
 
 
 \ProgramMotionSensorFragment$2$3.smali
@@ -866,6 +995,7 @@ Potential http usage on line 49
 
 Potential http usage on line 122
     Line:     const-string v3, "http://"
+    True Positive
 
 
 \ProgramMotionSensorFragment$2.smali
@@ -873,6 +1003,7 @@ Potential http usage on line 122
 
 Potential http usage on line 325
     Line:     const-string v10, "http://"
+    True Positive
 
 
 \ProgramMotionSensorFragment$3$1$1$2$3$1$1$1.smali
@@ -880,6 +1011,7 @@ Potential http usage on line 325
 
 Potential http usage on line 524
     Line:     const-string v6, "http://"
+    True Positive
 
 
 \ProgramMotionSensorFragment$3$1$1$2$3$1.smali
@@ -887,6 +1019,7 @@ Potential http usage on line 524
 
 Potential http usage on line 150
     Line:     const-string v3, "http://"
+    True Positive
 
 
 \ProgramMotionSensorFragment$3$1$1$2$4$1$1$1.smali
@@ -894,6 +1027,7 @@ Potential http usage on line 150
 
 Potential http usage on line 524
     Line:     const-string v6, "http://"
+    False Positive
 
 
 \ProgramMotionSensorFragment$3$1$1$2$4$1.smali
@@ -901,6 +1035,7 @@ Potential http usage on line 524
 
 Potential http usage on line 150
     Line:     const-string v3, "http://"
+    True Positive
 
 
 \ProgramMotionSensorFragment$3.smali
@@ -908,6 +1043,7 @@ Potential http usage on line 150
 
 Potential http usage on line 102
     Line:     const-string v2, "http://"
+    True Positive
 
 
 \ProgramMotionSensorFragment$4$7$2$1.smali
@@ -915,34 +1051,42 @@ Potential http usage on line 102
 
 Potential http usage on line 394
     Line:     const-string v13, "http://"
+    False Positive
 
 
 Potential http usage on line 770
     Line:     const-string v13, "http://"
+    False Positive
 
 
 Potential http usage on line 1213
     Line:     const-string v13, "http://"
+    False Positive
 
 
 Potential http usage on line 1590
     Line:     const-string v13, "http://"
+    False Positive
 
 
 Potential http usage on line 1936
     Line:     const-string v13, "http://"
+    False Positive
 
 
 Potential http usage on line 2155
     Line:     const-string v13, "http://"
+    False Positive
 
 
 Potential http usage on line 2478
     Line:     const-string v13, "http://"
+    False Positive
 
 
 Potential http usage on line 2659
     Line:     const-string v13, "http://"
+    False Positive
 
 
 \ProgramMotionSensorFragment$4$8$2$1.smali
@@ -950,10 +1094,12 @@ Potential http usage on line 2659
 
 Potential http usage on line 217
     Line:     const-string v5, "http://"
+    False Positive
 
 
 Potential http usage on line 422
     Line:     const-string v5, "http://"
+    False Positive
 
 
 \ProgramMotionSensorFragment$4$9$2$1.smali
@@ -961,10 +1107,12 @@ Potential http usage on line 422
 
 Potential http usage on line 232
     Line:     const-string v5, "http://"
+    True Positive
 
 
 Potential http usage on line 438
     Line:     const-string v5, "http://"
+    True Positive
 
 
 \ProgramMotionSensorFragment$5$5$2$1.smali
@@ -972,18 +1120,22 @@ Potential http usage on line 438
 
 Potential http usage on line 403
     Line:     const-string v9, "http://"
+    True Positive
 
 
 Potential http usage on line 700
     Line:     const-string v9, "http://"
+    True Positive
 
 
 Potential http usage on line 1095
     Line:     const-string v9, "http://"
+    True Positive
 
 
 Potential http usage on line 1356
     Line:     const-string v9, "http://"
+    True Positive
 
 
 \ProgramMotionSensorFragment$5$6$2$1.smali
@@ -991,10 +1143,12 @@ Potential http usage on line 1356
 
 Potential http usage on line 225
     Line:     const-string v5, "http://"
+    True Positive
 
 
 Potential http usage on line 482
     Line:     const-string v5, "http://"
+    True Positive
 
 
 \ProgramSwitchesFragment$1$3$1$2$3$1$1$1.smali
@@ -1002,6 +1156,7 @@ Potential http usage on line 482
 
 Potential http usage on line 524
     Line:     const-string v6, "http://"
+    False Positive
 
 
 \ProgramSwitchesFragment$1$3$1$2$3$1.smali
@@ -1009,6 +1164,7 @@ Potential http usage on line 524
 
 Potential http usage on line 150
     Line:     const-string v3, "http://"
+    True Positive
 
 
 \ProgramSwitchesFragment$1$3$1$2$4$1$1$1.smali
@@ -1016,6 +1172,7 @@ Potential http usage on line 150
 
 Potential http usage on line 524
     Line:     const-string v6, "http://"
+    True Positive
 
 
 \ProgramSwitchesFragment$1$3$1$2$4$1.smali
@@ -1023,6 +1180,7 @@ Potential http usage on line 524
 
 Potential http usage on line 150
     Line:     const-string v3, "http://"
+    True Positive
 
 
 \ProgramSwitchesFragment$1.smali
@@ -1030,10 +1188,12 @@ Potential http usage on line 150
 
 Potential http usage on line 304
     Line:     const-string v11, "http://"
+    True Positive
 
 
 Potential http usage on line 385
     Line:     const-string v11, "http://"
+    True Positive
 
 
 \ProgramSwitchesFragment$3$3$1$2$3$1$1$1.smali
@@ -1041,6 +1201,7 @@ Potential http usage on line 385
 
 Potential http usage on line 524
     Line:     const-string v6, "http://"
+    True Positive
 
 
 \ProgramSwitchesFragment$3$3$1$2$3$1.smali
@@ -1048,6 +1209,7 @@ Potential http usage on line 524
 
 Potential http usage on line 150
     Line:     const-string v3, "http://"
+    True Positive
 
 
 \ProgramSwitchesFragment$3$3$1$2$4$1$1$1.smali
@@ -1055,6 +1217,7 @@ Potential http usage on line 150
 
 Potential http usage on line 524
     Line:     const-string v6, "http://"
+    False Positive
 
 
 \ProgramSwitchesFragment$3$3$1$2$4$1.smali
@@ -1062,6 +1225,7 @@ Potential http usage on line 524
 
 Potential http usage on line 150
     Line:     const-string v3, "http://"
+    False Positive
 
 
 \ProgramSwitchesFragment$3.smali
@@ -1069,5 +1233,6 @@ Potential http usage on line 150
 
 Potential http usage on line 1183
     Line:     const-string v16, "http://"
+    True Positive
 
 

@@ -1,5 +1,6 @@
 Potential dangerous permission combo (broad storage permission and internet)
     Permissions: android.permission.READ_EXTERNAL_STORAGE,android.permission.WRITE_EXTERNAL_STORAGE,android.permission.INTERNET,
+    True Positive
 
 APK: com.nxcontrol.remotemini
 
@@ -8,12 +9,14 @@ AndroidManifest.xml
 
 Potential allow backup and restore vulnerability on line 20
     Line:     <application android:allowBackup="true" android:icon="@drawable/nxremote_icon" android:label="@string/app_name" android:name="com.nxcontrol.remote.web.AppController">
+    True Positive
 
 
 Potential unprotected broadcast reciever on line 72 and line 79
     Line:         <receiver android:name="com.nxcontrol.remote.receiver.CallReceiver">
 
     Line:         </receiver>
+    False Positive (has an intent filter)
 
 
 Smali File Location: C:\Users\User\Documents\WM_Classes\CSCI445\Homework_5\CSCI_445_Milestone_4\com.nxcontrol.remotemini\smali\com\nxcontrol\remotemini
@@ -25,6 +28,7 @@ Smali Files with Potential Vulnerabilities
 
 Potential http usage on line 835
     Line:     const-string v3, "http://www.youtube.com/watch?v="
+    True Positive
 
 
 \remote\controller\MiniConnectionNoCleanWifiActivity$3.smali
@@ -32,6 +36,7 @@ Potential http usage on line 835
 
 Potential http usage on line 1085
     Line:     const-string v23, "http://192.168.0.1:8080/api"
+    True Positive
 
 
 \remote\controller\MiniConnectionNoCleanWifiActivity.smali
@@ -39,6 +44,7 @@ Potential http usage on line 1085
 
 Potential http usage on line 32
     Line: .field private static final MINI_URL:Ljava/lang/String; = "http://192.168.0.1:8080/api"
+    False Positive
 
 
 \remote\ipscan\IpScanUtils.smali
@@ -46,6 +52,7 @@ Potential http usage on line 32
 
 Potential http usage on line 204
     Line:     const-string v8, "http://"
+    True Positive
 
 
 \remote\mqtt\AllCertificatesAndHostsTruster.smali
@@ -53,38 +60,47 @@ Potential http usage on line 204
 
 Potential TrustManager usage on line 6
     Line: .implements Ljavax/net/ssl/TrustManager;
+    True Positive
 
 
 Potential TrustManager usage on line 7
     Line: .implements Ljavax/net/ssl/X509TrustManager;
+    True Positive
 
 
 Potential TrustManager usage on line 28
     Line:     new-array v0, v1, [Ljavax/net/ssl/TrustManager;
+    True Positive
 
 
 Potential TrustAllCertificates usage on line 39
     Line:     .local v0, "trustAllCerts":[Ljavax/net/ssl/TrustManager;
+    True Positive
 
 
 Potential TrustManager usage on line 39
     Line:     .local v0, "trustAllCerts":[Ljavax/net/ssl/TrustManager;
+    True Positive
 
 
 Potential TrustManager usage on line 64
     Line:     new-array v2, v4, [Ljavax/net/ssl/TrustManager;
+    True Positive
 
 
 Potential TrustAllCertificates usage on line 75
     Line:     .local v2, "trustAllCerts":[Ljavax/net/ssl/TrustManager;
+    True Positive
 
 
 Potential TrustManager usage on line 75
     Line:     .local v2, "trustAllCerts":[Ljavax/net/ssl/TrustManager;
+    True Positive
 
 
 Potential TrustManager usage on line 91
     Line:     invoke-virtual {v0, v4, v2, v5}, Ljavax/net/ssl/SSLContext;->init([Ljavax/net/ssl/KeyManager;[Ljavax/net/ssl/TrustManager;Ljava/security/SecureRandom;)V
+    True Positive
 
 
 \remote\mqtt\LocalTask.smali
@@ -92,6 +108,7 @@ Potential TrustManager usage on line 91
 
 Potential http usage on line 241
     Line:     const-string v5, "http://"
+    True Positive
 
 
 \remote\mqtt\MqttClientService.smali
@@ -99,10 +116,12 @@ Potential http usage on line 241
 
 Potential http usage on line 913
     Line:     const-string v4, "http://"
+    True Positive
 
 
 Potential http usage on line 1875
     Line:     const-string v5, "http://"
+    True Positive
 
 
 \remote\mqtt\SslUtil.smali
@@ -110,30 +129,37 @@ Potential http usage on line 1875
 
 Potential TrustManager usage on line 76
     Line:     .local v12, "trustManagers":[Ljavax/net/ssl/TrustManager;
+    False Positive
 
 
 Potential TrustManager usage on line 98
     Line:     invoke-static {v14}, Ljavax/net/ssl/TrustManagerFactory;->getInstance(Ljava/lang/String;)Ljavax/net/ssl/TrustManagerFactory;
+    False Positive
 
 
 Potential TrustManager usage on line 103
     Line:     .local v11, "tmf":Ljavax/net/ssl/TrustManagerFactory;
+    False Positive
 
 
 Potential TrustManager usage on line 104
     Line:     invoke-virtual {v11, v13}, Ljavax/net/ssl/TrustManagerFactory;->init(Ljava/security/KeyStore;)V
+    False Positive
 
 
 Potential TrustManager usage on line 107
     Line:     invoke-virtual {v11}, Ljavax/net/ssl/TrustManagerFactory;->getTrustManagers()[Ljavax/net/ssl/TrustManager;
+    False Positive
 
 
 Potential TrustManager usage on line 119
     Line:     .end local v11    # "tmf":Ljavax/net/ssl/TrustManagerFactory;
+    False Positive (comment)
 
 
 Potential TrustManager usage on line 188
     Line:     invoke-virtual {v10, v14, v12, v15}, Ljavax/net/ssl/SSLContext;->init([Ljavax/net/ssl/KeyManager;[Ljavax/net/ssl/TrustManager;Ljava/security/SecureRandom;)V
+    False Positive
 
 
 \remote\web\AppController.smali
@@ -141,17 +167,21 @@ Potential TrustManager usage on line 188
 
 Potential TrustManager usage on line 194
     Line:     new-array v1, v2, [Ljavax/net/ssl/TrustManager;
+    True Positive
 
 
 Potential TrustAllCertificates usage on line 205
     Line:     .local v1, "trustAllCerts":[Ljavax/net/ssl/TrustManager;
+    True Positive
 
 
 Potential TrustManager usage on line 205
     Line:     .local v1, "trustAllCerts":[Ljavax/net/ssl/TrustManager;
+    True Positive
 
 
 Potential TrustManager usage on line 214
     Line:     invoke-virtual {v0, v4, v1, v4}, Ljavax/net/ssl/SSLContext;->init([Ljavax/net/ssl/KeyManager;[Ljavax/net/ssl/TrustManager;Ljava/security/SecureRandom;)V
+    True Positive
 
 

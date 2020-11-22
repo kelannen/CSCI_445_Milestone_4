@@ -7,48 +7,56 @@ Potential unprotected broadcast reciever on line 127 and line 132
     Line:         <receiver android:enabled="true" android:exported="true" android:label="@string/widget_name_small" android:name=".background.WidgetCameraProviderSmall">
 
     Line:         </receiver>
+    False Positive (has intent filter)
 
 
 Potential unprotected broadcast reciever on line 133 and line 138
     Line:         <receiver android:enabled="true" android:exported="true" android:label="@string/widget_name_medium" android:name=".background.WidgetCameraProviderMedium">
 
     Line:         </receiver>
+    False Positive (has intent filter)
 
 
 Potential unprotected broadcast reciever on line 139 and line 144
     Line:         <receiver android:enabled="true" android:exported="true" android:label="@string/widget_name_medium_tall" android:name=".background.WidgetCameraProviderMediumTall">
 
     Line:         </receiver>
+    False Positive (has intent filter)
 
 
 Potential unprotected broadcast reciever on line 145 and line 150
     Line:         <receiver android:enabled="true" android:exported="true" android:label="@string/widget_name_medium_narrow" android:name=".background.WidgetCameraProviderMediumNarrow">
 
     Line:         </receiver>
+    False Positive (has intent filter)
 
 
 Potential unprotected broadcast reciever on line 151 and line 156
     Line:         <receiver android:enabled="true" android:exported="true" android:label="@string/widget_name_small_tall" android:name=".background.WidgetCameraProviderSmallTall">
 
     Line:         </receiver>
+    False Positive (has intent filter)
 
 
 Potential unprotected broadcast reciever on line 157 and line 167
     Line:         <receiver android:enabled="true" android:exported="true" android:label="@string/app_name" android:name=".background.OnOffReceiver">
 
     Line:         </receiver>
+    False Positive (has intent filter)
 
 
 Potential unprotected broadcast reciever on line 171 and line 179
     Line:         <receiver android:enabled="true" android:name=".wear.WearBroadcastReceiver">
 
     Line:         </receiver>
+    False Positive (has intent filter)
 
 
 Potential unprotected broadcast reciever on line 182 and line 188
     Line:         <receiver android:name="com.rcreations.inappbilling.Bi11ingReceiver">
 
     Line:         </receiver>
+    False Positive (has intent filter)
 
 
 Smali File Location: C:\Users\User\Documents\WM_Classes\CSCI445\Homework_5\CSCI_445_Milestone_4\com.rcreations.ipcamviewerBasic\smali\com\rcreations\ipcamviewerBasic
@@ -60,6 +68,7 @@ Smali Files with Potential Vulnerabilities
 
 Potential http usage on line 435
     Line:     const-string v5, "http://"
+    True Positive
 
 
 \EditCameraActivity.smali
@@ -67,14 +76,17 @@ Potential http usage on line 435
 
 Potential http usage on line 2380
     Line:     const-string v28, "http:"
+    True Positive
 
 
 Potential http usage on line 2565
     Line:     const-string v28, "http://"
+    True Positive
 
 
 Potential http usage on line 2581
     Line:     const-string v28, "http:"
+    True Positive
 
 
 \ImportActivity.smali
@@ -82,6 +94,7 @@ Potential http usage on line 2581
 
 Potential http usage on line 441
     Line:     const-string v5, "http://"
+    True Positive
 
 
 \Tests.smali
@@ -89,6 +102,7 @@ Potential http usage on line 441
 
 Potential http usage on line 47
     Line:     const-string v3, "http://www.google.com"
+    False Positive
 
 
 \WebActivity$1.smali
@@ -96,6 +110,7 @@ Potential http usage on line 47
 
 Potential http usage on line 273
     Line:     const-string v3, "http://"
+    True Positive
 
 
 \ssl\AcceptAllTrustManager.smali
@@ -103,30 +118,37 @@ Potential http usage on line 273
 
 Potential AcceptAllTrustM usage on line 1
     Line: .class public Lcom/rcreations/ipcamviewerBasic/ssl/AcceptAllTrustManager;
+    True Positive
 
 
 Potential AllTrustM usage on line 1
     Line: .class public Lcom/rcreations/ipcamviewerBasic/ssl/AcceptAllTrustManager;
+    Repeated (so no new alarm)
 
 
 Potential TrustManager usage on line 1
     Line: .class public Lcom/rcreations/ipcamviewerBasic/ssl/AcceptAllTrustManager;
+    Repeated (so no new alarm)
 
 
 Potential AcceptAllTrustM usage on line 3
     Line: .source "AcceptAllTrustManager.java"
+    True Positive
 
 
 Potential AllTrustM usage on line 3
     Line: .source "AcceptAllTrustManager.java"
+    Repeated (so no new alarm)
 
 
 Potential TrustManager usage on line 3
     Line: .source "AcceptAllTrustManager.java"
+    Repeated (so no new alarm)
 
 
 Potential TrustManager usage on line 6
     Line: .implements Ljavax/net/ssl/X509TrustManager;
+    True Positive
 
 
 \ssl\IgnoreCertApacheSslSocketFactory.smali
@@ -134,38 +156,47 @@ Potential TrustManager usage on line 6
 
 Potential AcceptAllTrustM usage on line 30
     Line:     new-instance v0, Lcom/rcreations/ipcamviewerBasic/ssl/AcceptAllTrustManager;
+    True Positive
 
 
 Potential AllTrustM usage on line 30
     Line:     new-instance v0, Lcom/rcreations/ipcamviewerBasic/ssl/AcceptAllTrustManager;
+    Repeated (so no new alaram)
 
 
 Potential TrustManager usage on line 30
     Line:     new-instance v0, Lcom/rcreations/ipcamviewerBasic/ssl/AcceptAllTrustManager;
+    Repeated (so no new alarm)
 
 
 Potential AcceptAllTrustM usage on line 32
     Line:     invoke-direct {v0}, Lcom/rcreations/ipcamviewerBasic/ssl/AcceptAllTrustManager;-><init>()V
+    True Positive
 
 
 Potential AllTrustM usage on line 32
     Line:     invoke-direct {v0}, Lcom/rcreations/ipcamviewerBasic/ssl/AcceptAllTrustManager;-><init>()V
+    Repeated (so no new alarm)
 
 
 Potential TrustManager usage on line 32
     Line:     invoke-direct {v0}, Lcom/rcreations/ipcamviewerBasic/ssl/AcceptAllTrustManager;-><init>()V
+    Repeated (so no new alarm)
 
 
 Potential TrustManager usage on line 35
     Line:     .local v0, "easyTrustManager":Ljavax/net/ssl/TrustManager;
+    True Positive
 
 
 Potential TrustManager usage on line 46
     Line:     new-array v2, v2, [Ljavax/net/ssl/TrustManager;
+    Repeated (so no new alarm)
 
 
 Potential TrustManager usage on line 52
     Line:     invoke-virtual {v1, v4, v2, v4}, Ljavax/net/ssl/SSLContext;->init([Ljavax/net/ssl/KeyManager;[Ljavax/net/ssl/TrustManager;Ljava/security/SecureRandom;)V
+    True Positive
 
 
 \webserver\cgiactions\GetSetCameraDb.smali
@@ -173,5 +204,6 @@ Potential TrustManager usage on line 52
 
 Potential http usage on line 1985
     Line:     const-string v37, "http://"
+    True Positive
 
 

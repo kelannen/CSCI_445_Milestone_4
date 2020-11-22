@@ -5,6 +5,7 @@ AndroidManifest.xml
 
 Potential allow backup and restore vulnerability on line 6
     Line:     <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.baringsprod.numbersAddict.NumbersAddictApplication">
+    True Positive
 
 
 Smali File Location: C:\Users\User\Documents\WM_Classes\CSCI445\Homework_5\CSCI_445_Milestone_4\com.baringsprod.numbersAddict.free.gp\smali\com\baringsprod\numbersAddict\free\gp
@@ -16,6 +17,7 @@ Smali Files with Potential Vulnerabilities
 
 Potential http usage on line 51
     Line:     const-string v3, "http://www.barings-prod.com/getglobalscore.php"
+    True Positive
 
 
 \GameOverActivity.smali
@@ -23,18 +25,22 @@ Potential http usage on line 51
 
 Potential http usage on line 718
     Line:     const-string v2, "http://numbersaddict.com/dynfree.php"
+    True Positive
 
 
 Potential http usage on line 751
     Line:     const-string v5, "http://www.barings-prod.com/na/icon@2x.png"
+    False Positive
 
 
 Potential http usage on line 1000
     Line:     const-string v1, "http://numbersaddict.com/dynfree.php"
+    False Positive
 
 
 Potential http usage on line 1272
     Line:     const-string v3, "http://www.amazon.com/gp/mas/dl/android?p="
+    True Positive
 
 
 \b\a.smali
@@ -42,14 +48,17 @@ Potential http usage on line 1272
 
 Potential http usage on line 100
     Line:     const-string v1, "http://api.twitter.com/oauth/request_token"
+    True Positive
 
 
 Potential http usage on line 103
     Line:     const-string v2, "http://api.twitter.com/oauth/access_token"
+    True Positive
 
 
 Potential http usage on line 106
     Line:     const-string v3, "http://api.twitter.com/oauth/authorize"
+    True Positive
 
 
 \model\g.smali
@@ -57,6 +66,7 @@ Potential http usage on line 106
 
 Potential http usage on line 204
     Line:     const-string v6, "http://www.barings-prod.com/submitscoreglobal.php?score="
+    True Positive
 
 
 \ui\IntroView.smali
@@ -64,5 +74,6 @@ Potential http usage on line 204
 
 Potential http usage on line 1030
     Line:     const-string v3, "http://numbersaddict.com/fbkfan.html"
+    True Positive
 
 
