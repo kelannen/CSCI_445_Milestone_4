@@ -124,7 +124,7 @@ def checkManifest(manifest):
                     out.append("")
                     receiver = []
             elif("<receiver" in line and "android:permission=" not in line):
-                receiver.append("Potential unprotected broadcast reciever on line "+str(line_number))
+                receiver.append("Potential unprotected broadcast receiver on line "+str(line_number))
                 receiver.append("    Line: "+line)
 
             line_number += 1
