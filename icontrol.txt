@@ -1,0 +1,156 @@
+APK: com.icontrol.centurylink
+
+AndroidManifest.xml
+=======================
+
+Potential unprotected broadcast reciever on line 17 and line 21
+    Line:         <receiver android:enabled="true" android:name="com.google.android.gms.analytics.AnalyticsReceiver">
+
+    Line:         </receiver>
+    False Positive (has intent filter)
+
+
+Potential unprotected broadcast reciever on line 28 and line 32
+    Line:         <receiver android:enabled="true" android:name="com.google.android.gms.measurement.AppMeasurementReceiver">
+
+    Line:         </receiver>
+    False Positive (has intent filter)
+
+
+Smali File Location: C:\Users\User\Documents\WM_Classes\CSCI445\Homework_5\CSCI_445_Milestone_4\com.icontrol.centurylink\smali\com\icontrol\centurylink
+
+Smali Files with Potential Vulnerabilities
+
+\a\a\a.smali
+=======================
+
+Potential http usage on line 69
+    Line:     const-string v1, "http://xml.org/sax/features/validation"
+    True Positive
+
+
+Potential http usage on line 83
+    Line:     const-string v1, "http://apache.org/xml/features/nonvalidating/load-dtd-grammar"
+    True Positive
+
+
+Potential http usage on line 97
+    Line:     const-string v1, "http://javax.xml.XMLConstants/feature/secure-processing"
+    True Positive
+
+
+Potential http usage on line 113
+    Line:     const-string v2, "http://apache.org/xml/features/nonvalidating/load-external-dtd"
+    True Positive
+
+
+\c\a\r.smali
+=======================
+
+Potential http usage on line 66
+    Line:     const-string v1, "http://xml.org/sax/features/validation"
+    True Positive
+
+
+Potential http usage on line 80
+    Line:     const-string v1, "http://apache.org/xml/features/nonvalidating/load-dtd-grammar"
+    True Positive
+
+
+Potential http usage on line 94
+    Line:     const-string v1, "http://javax.xml.XMLConstants/feature/secure-processing"
+    True Positive
+
+
+Potential http usage on line 110
+    Line:     const-string v2, "http://apache.org/xml/features/nonvalidating/load-external-dtd"
+    True Positive
+
+
+\module\vpm\a\k.smali
+=======================
+
+Potential TrustManager usage on line 329
+    Line:     invoke-static {}, Ljavax/net/ssl/TrustManagerFactory;->getDefaultAlgorithm()Ljava/lang/String;
+    False Positive
+
+
+Potential TrustManager usage on line 333
+    Line:     invoke-static {v0}, Ljavax/net/ssl/TrustManagerFactory;->getInstance(Ljava/lang/String;)Ljavax/net/ssl/TrustManagerFactory;
+    False Positive
+
+
+Potential TrustManager usage on line 337
+    Line:     invoke-virtual {v0, v1}, Ljavax/net/ssl/TrustManagerFactory;->init(Ljava/security/KeyStore;)V
+    False Positive
+
+
+Potential TrustManager usage on line 347
+    Line:     invoke-virtual {v0}, Ljavax/net/ssl/TrustManagerFactory;->getTrustManagers()[Ljavax/net/ssl/TrustManager;
+    False Positive
+
+
+Potential TrustManager usage on line 353
+    Line:     invoke-virtual {v1, v2, v0, v3}, Ljavax/net/ssl/SSLContext;->init([Ljavax/net/ssl/KeyManager;[Ljavax/net/ssl/TrustManager;Ljava/security/SecureRandom;)V
+    False Positive
+
+
+\module\vpm\utils\a.smali
+=======================
+
+Potential TrustManager usage on line 110
+    Line:     invoke-static {}, Ljavax/net/ssl/TrustManagerFactory;->getDefaultAlgorithm()Ljava/lang/String;
+    False Positive
+
+
+Potential TrustManager usage on line 114
+    Line:     invoke-static {v0}, Ljavax/net/ssl/TrustManagerFactory;->getInstance(Ljava/lang/String;)Ljavax/net/ssl/TrustManagerFactory;
+    False Positive
+
+
+Potential TrustManager usage on line 118
+    Line:     invoke-virtual {v0, v1}, Ljavax/net/ssl/TrustManagerFactory;->init(Ljava/security/KeyStore;)V
+    False Positive
+
+
+Potential TrustManager usage on line 128
+    Line:     invoke-virtual {v0}, Ljavax/net/ssl/TrustManagerFactory;->getTrustManagers()[Ljavax/net/ssl/TrustManager;
+    False Positive
+
+
+Potential TrustManager usage on line 134
+    Line:     invoke-virtual {v1, v2, v0, v3}, Ljavax/net/ssl/SSLContext;->init([Ljavax/net/ssl/KeyManager;[Ljavax/net/ssl/TrustManager;Ljava/security/SecureRandom;)V
+    False Positive
+
+
+\ui\rest\nga\AndroidUIRestService.smali
+=======================
+
+Potential http usage on line 279
+    Line:     const-string v1, "http://192.168.107.1:4370"
+    True Positive
+
+
+\ui\rest\nga\data\bind\DataBinder.smali
+=======================
+
+Potential http usage on line 69
+    Line:     const-string v1, "http://xml.org/sax/features/validation"
+    True Positive
+
+
+Potential http usage on line 83
+    Line:     const-string v1, "http://apache.org/xml/features/nonvalidating/load-dtd-grammar"
+    True Positive
+
+
+Potential http usage on line 97
+    Line:     const-string v1, "http://javax.xml.XMLConstants/feature/secure-processing"
+    True Positive
+
+
+Potential http usage on line 113
+    Line:     const-string v2, "http://apache.org/xml/features/nonvalidating/load-external-dtd"
+    True Positive
+
+

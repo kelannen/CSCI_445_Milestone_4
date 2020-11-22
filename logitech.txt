@@ -1,0 +1,63 @@
+Potential dangerous permission combo (broad storage permission and internet)
+    Permissions: android.permission.INTERNET,android.permission.WRITE_EXTERNAL_STORAGE,android.permission.READ_EXTERNAL_STORAGE,
+    True Positive
+
+APK: com.logitech.circle
+
+AndroidManifest.xml
+=======================
+
+Potential unprotected broadcast reciever on line 69 and line 74
+    Line:         <receiver android:enabled="true" android:exported="false" android:name="com.logitech.circle.data.broadcast_receivers.BootCompleteReceiver">
+
+    Line:         </receiver>
+    True Positive
+
+
+Potential unprotected broadcast reciever on line 75 and line 79
+    Line:         <receiver android:enabled="true" android:exported="false" android:name="com.logitech.circle.data.broadcast_receivers.GcmGeogenceLocationConfChangeReceiver">
+
+    Line:         </receiver>
+    False Positive (has intent filter)
+
+
+Potential unprotected broadcast reciever on line 80 and line 85
+    Line:         <receiver android:name="com.logitech.circle.data.broadcast_receivers.ApplicationUpdateReceiver">
+
+    Line:         </receiver>
+    False Positive (has intent filter)
+
+
+Smali File Location: C:\Users\User\Documents\WM_Classes\CSCI445\Homework_5\CSCI_445_Milestone_4\com.logitech.circle\smali\com\logitech\circle
+
+Smali Files with Potential Vulnerabilities
+
+\data\network\HttpHelper.smali
+=======================
+
+Potential http usage on line 247
+    Line:     const-string v0, "http://"
+    False Positive
+
+
+\data\network\connectivity\ConnectivityManager.smali
+=======================
+
+Potential http usage on line 9
+    Line: .field private static final ENDPOINT:Ljava/lang/String; = "http://connectivitycheck.gstatic.com"
+    True Positive
+
+
+Potential http usage on line 27
+    Line:     const-string v0, "http://connectivitycheck.gstatic.com"
+    True Positive
+
+
+\presentation\h\e\g.smali
+=======================
+
+Potential http usage on line 40
+    Line:     const-string v1, "http://www.logitech.com/pop-home-switch"
+    False Positive
+
+

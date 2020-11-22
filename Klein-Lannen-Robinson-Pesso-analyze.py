@@ -187,7 +187,6 @@ def static_analysis (base_path, input_name, output_name):
                 print("No valid path exists.")
                 found_path = False
                 break
-            print("Path is not valid, trying the level above it.")
             smali_folder_path = smali_folder_path.rsplit(char, 1)[0]  
         if found_path:
             if os.path.isdir(smali_folder_path):

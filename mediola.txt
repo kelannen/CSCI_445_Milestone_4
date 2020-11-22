@@ -1,0 +1,14 @@
+APK: com.mediola.spro
+
+AndroidManifest.xml
+=======================
+
+Potential allow backup and restore vulnerability on line 7
+    Line:     <application android:allowBackup="true" android:debuggable="false" android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar">
+    True Positive
+
+
+Smali File Location: C:\Users\User\Documents\WM_Classes\CSCI445\Homework_5\CSCI_445_Milestone_4\com.mediola.spro\smali\com\mediola\spro
+
+Smali Files with Potential Vulnerabilities
+

@@ -1,0 +1,87 @@
+APK: com.lutron.mmw
+
+AndroidManifest.xml
+=======================
+
+Potential unprotected broadcast reciever on line 132 and line 137
+    Line:         <receiver android:name="com.lutron.mmw.widget.SceneWidgetColumn1">
+
+    Line:         </receiver>
+    False Positive (has intent filter)
+
+
+Potential unprotected broadcast reciever on line 138 and line 143
+    Line:         <receiver android:name="com.lutron.mmw.widget.SceneWidgetColumn2">
+
+    Line:         </receiver>
+    False Positive (has intent filter)
+
+
+Potential unprotected broadcast reciever on line 144 and line 149
+    Line:         <receiver android:name="com.lutron.mmw.widget.SceneWidgetColumn3">
+
+    Line:         </receiver>
+    False Positive (has intent filter)
+
+
+Potential unprotected broadcast reciever on line 150 and line 155
+    Line:         <receiver android:name="com.lutron.mmw.widget.SceneWidgetColumn4">
+
+    Line:         </receiver>
+    False Positive (has intent filter)
+
+
+Potential unprotected broadcast reciever on line 156 and line 164
+    Line:         <receiver android:name="com.lutron.mmw.receiver.DeviceBootAndInstallUpdateCompleteReceiver">
+
+    Line:         </receiver>
+    False Positive (has intent filter)
+
+
+Potential unprotected broadcast reciever on line 165 and line 169
+    Line:         <receiver android:name="com.lutron.mmw.receiver.DeviceUnlockedReceiver">
+
+    Line:         </receiver>
+    False Positive (has intent filter)
+
+
+Potential unprotected broadcast reciever on line 172 and line 179
+    Line:         <receiver android:name="com.lutron.mmw.receiver.LutronPathsenseGeofenceEventReceiver"/>
+
+    Line:         </receiver>
+    True Positive
+
+
+Potential unprotected broadcast reciever on line 182 and line 186
+    Line:         <receiver android:enabled="false" android:name="com.pathsense.locationengine.apklib.LocationEngineServiceHeartbeatBroadcastReceiver">
+
+    Line:         </receiver>
+    True Positive
+
+
+Potential unprotected broadcast reciever on line 187 and line 192
+    Line:         <receiver android:enabled="false" android:name="com.pathsense.android.sdk.location.PathsenseLocationProviderApiBootCompletedReceiver">
+
+    Line:         </receiver>
+    False Positive (has intent filter)
+
+
+Potential unprotected broadcast reciever on line 193 and line 198
+    Line:         <receiver android:name="com.pathsense.android.sdk.location.PathsenseLocationProviderApiPackageUpdatedReceiver">
+
+    Line:         </receiver>
+    True Positive
+
+
+Smali File Location: C:\Users\User\Documents\WM_Classes\CSCI445\Homework_5\CSCI_445_Milestone_4\com.lutron.mmw\smali\com\lutron\mmw
+
+Smali Files with Potential Vulnerabilities
+
+\activity\BaseConnectedActivity.smali
+=======================
+
+Potential http usage on line 1428
+    Line:     const-string v4, "http://play.google.com/store/apps/details?id="
+    False Positive
+
+

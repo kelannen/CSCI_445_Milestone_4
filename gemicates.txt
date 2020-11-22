@@ -1,0 +1,576 @@
+Potential dangerous permission combo (broad storage permission and internet)
+    Permissions: android.permission.WRITE_EXTERNAL_STORAGE,android.permission.READ_EXTERNAL_STORAGE,android.permission.INTERNET,
+    True Positive
+
+APK: com.gemicates.hagway
+
+AndroidManifest.xml
+=======================
+
+Potential allow backup and restore vulnerability on line 14
+    Line:     <application android:allowBackup="true" android:icon="@mipmap/ic_hag" android:label="@string/app_name" android:logo="@mipmap/ic_hag" android:name="com.Gemicates.com.AppController" android:supportsRtl="true" android:theme="@style/AppTheme">
+    True Positive
+
+
+Potential exported components outside of their main activity without limitations vulnerability on line 17 and line 17
+    Line:         <activity android:exported="true" android:label="@string/title_activity_home" android:name="com.Gemicates.com.home" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+    True Positive
+
+
+Potential exported components outside of their main activity without limitations vulnerability on line 23 and line 23
+    Line:         <activity android:exported="true" android:name="com.Gemicates.com.Msensor" android:theme="@style/AppTheme.NoActionBar"/>
+    True Positive
+
+
+Potential exported components outside of their main activity without limitations vulnerability on line 24 and line 24
+    Line:         <activity android:exported="true" android:name="com.Gemicates.com.Settings" android:theme="@style/AppTheme.NoActionBar"/>
+    True Positive
+
+
+Potential unprotected broadcast reciever on line 27 and line 32
+    Line:         <receiver android:enabled="true" android:exported="true" android:name="com.Gemicates.com.BroadcastMyReceiver">
+
+    Line:         </receiver>
+    False Positive (has intent filter)
+
+
+Potential exported components outside of their main activity without limitations vulnerability on line 33 and line 33
+    Line:         <activity android:exported="true" android:name="com.Gemicates.com.Blinds" android:theme="@style/AppTheme.NoActionBar"/>
+    True Positive
+
+
+Potential exported components outside of their main activity without limitations vulnerability on line 40 and line 40
+    Line:         <activity android:exported="true" android:name="com.Gemicates.com.WifiList" android:theme="@style/AppTheme.NoActionBar"/>
+    True Positive
+
+
+Potential exported components outside of their main activity without limitations vulnerability on line 42 and line 42
+    Line:         <activity android:exported="true" android:name="com.Gemicates.com.Security_mode" android:theme="@style/AppTheme.NoActionBar"/>
+    True Positive
+
+
+Potential exported components outside of their main activity without limitations vulnerability on line 46 and line 46
+    Line:         <activity android:exported="true" android:name="com.Gemicates.com.activity_Equipment" android:theme="@style/AppTheme.NoActionBar"/>
+    True Positive
+
+
+Potential exported components outside of their main activity without limitations vulnerability on line 47 and line 47
+    Line:         <activity android:exported="true" android:name="com.Gemicates.com.OtherDevices" android:theme="@style/AppTheme.NoActionBar"/>
+    True Positive
+
+
+Potential exported components outside of their main activity without limitations vulnerability on line 48 and line 48
+    Line:         <activity android:exported="true" android:name="com.Gemicates.com.Help" android:theme="@style/AppTheme.NoActionBar"/>
+    True Positive
+
+
+Potential exported components outside of their main activity without limitations vulnerability on line 49 and line 49
+    Line:         <activity android:exported="true" android:name="com.Gemicates.com.Notifi" android:theme="@style/AppTheme.NoActionBar"/>
+    True Positive
+
+
+Potential exported components outside of their main activity without limitations vulnerability on line 50 and line 50
+    Line:         <activity android:exported="true" android:name="com.Gemicates.com.HagwayList" android:theme="@style/AppTheme.NoActionBar"/>
+    True Positive
+
+
+Potential exported components outside of their main activity without limitations vulnerability on line 51 and line 51
+    Line:         <activity android:exported="true" android:name="com.Gemicates.com.UserProfile" android:theme="@style/AppTheme.NoActionBar"/>
+    True Positive
+
+
+Potential exported components outside of their main activity without limitations vulnerability on line 52 and line 52
+    Line:         <activity android:exported="true" android:name="com.Gemicates.com.Appliances" android:theme="@style/AppTheme.NoActionBar"/>
+    True Positive
+
+
+Potential exported components outside of their main activity without limitations vulnerability on line 53 and line 53
+    Line:         <activity android:exported="true" android:name="com.Gemicates.com.Device_config" android:theme="@style/AppTheme.NoActionBar"/>
+    True Positive
+
+
+Potential exported components outside of their main activity without limitations vulnerability on line 54 and line 54
+    Line:         <activity android:exported="true" android:name="com.Gemicates.com.DoorLock" android:theme="@style/AppTheme.NoActionBar"/>
+    True Positive
+
+
+Potential exported components outside of their main activity without limitations vulnerability on line 55 and line 55
+    Line:         <activity android:exported="true" android:name="com.Gemicates.com.theme" android:theme="@style/AppTheme.NoActionBar"/>
+    True Positive
+
+
+Potential exported components outside of their main activity without limitations vulnerability on line 57 and line 57
+    Line:         <activity android:exported="true" android:name="com.Gemicates.com.ScenesStepsActivity" android:theme="@style/AppTheme.NoActionBar"/>
+    True Positive
+
+
+Potential exported components outside of their main activity without limitations vulnerability on line 58 and line 58
+    Line:         <activity android:exported="true" android:name="com.Gemicates.com.scenes_config" android:theme="@style/AppTheme.NoActionBar"/>
+    True Positive
+
+
+Potential exported components outside of their main activity without limitations vulnerability on line 61 and line 61
+    Line:         <activity android:exported="true" android:name="com.gemicates.hagway.SceneManualActivity" android:theme="@style/AppTheme.NoActionBar"/>
+    True Positive
+
+
+Potential exported components outside of their main activity without limitations vulnerability on line 62 and line 62
+    Line:         <activity android:exported="true" android:name="com.Gemicates.com.RoomMain" android:theme="@style/AppTheme.NoActionBar"/>
+    True Positive
+
+
+Smali File Location: C:\Users\User\Documents\WM_Classes\CSCI445\Homework_5\CSCI_445_Milestone_4\com.gemicates.hagway\smali\com\gemicates\hagway
+
+Smali Files with Potential Vulnerabilities
+
+\com\activity_Equipment.smali
+=======================
+
+Potential http usage on line 1106
+    Line:     const-string v1, "http://"
+    False Positive
+
+
+\com\ak.smali
+=======================
+
+Potential http usage on line 484
+    Line:     const-string v2, "http://"
+    False Positive
+
+
+Potential http usage on line 568
+    Line:     const-string v1, "http://"
+    False Positive
+
+
+\com\Alarms.smali
+=======================
+
+Potential http usage on line 1106
+    Line:     const-string v1, "http://"
+    False Positive
+
+
+\com\ao.smali
+=======================
+
+Potential http usage on line 887
+    Line:     const-string v2, "http://"
+    True Positive
+
+
+\com\Appliances.smali
+=======================
+
+Potential http usage on line 247
+    Line:     const-string v1, "http://"
+    False Positive
+
+
+\com\aq.smali
+=======================
+
+Potential http usage on line 1491
+    Line:     const-string v2, "http://"
+    False Positive
+
+
+\com\BackgroundService.smali
+=======================
+
+Potential http usage on line 1497
+    Line:     const-string v3, "http://"
+    False Positive
+
+
+\com\Blinds.smali
+=======================
+
+Potential http usage on line 1557
+    Line:     const-string v1, "http://"
+    False Positive
+
+
+\com\BroadcastMyReceiver.smali
+=======================
+
+Potential http usage on line 160
+    Line:     const-string v2, "http://"
+    True Positive
+
+
+\com\c.smali
+=======================
+
+Potential http usage on line 1690
+    Line:     const-string v1, "http://"
+    False Positive
+
+
+Potential http usage on line 2812
+    Line:     const-string v1, "http://"
+    False Positive
+
+
+Potential http usage on line 2896
+    Line:     const-string v1, "http://"
+    False Positive
+
+
+Potential http usage on line 3075
+    Line:     const-string v1, "http://"
+    False Positive
+
+
+Potential http usage on line 3159
+    Line:     const-string v1, "http://"
+    False Positive
+
+
+\com\d.smali
+=======================
+
+Potential http usage on line 431
+    Line:     const-string v1, "http://"
+    True Positive
+
+
+Potential http usage on line 531
+    Line:     const-string v1, "http://"
+    True Positive
+
+
+\com\DeviceList_Securitymode.smali
+=======================
+
+Potential http usage on line 415
+    Line:     const-string v1, "http://"
+    False Positive
+
+
+Potential http usage on line 633
+    Line:     const-string v1, "http://"
+    False Positive
+
+
+Potential http usage on line 729
+    Line:     const-string v1, "http://"
+    False Positive
+
+
+Potential http usage on line 815
+    Line:     const-string v1, "http://"
+    False Positive
+
+
+\com\DoorLock.smali
+=======================
+
+Potential http usage on line 1104
+    Line:     const-string v1, "http://"
+    False Positive
+
+
+\com\DoorSensor.smali
+=======================
+
+Potential http usage on line 1291
+    Line:     const-string v1, "http://"
+    False Positive
+
+
+Potential http usage on line 1375
+    Line:     const-string v1, "http://"
+    False Positive
+
+
+\com\e.smali
+=======================
+
+Potential http usage on line 558
+    Line:     const-string v1, "http://"
+    True Positive
+
+
+Potential http usage on line 658
+    Line:     const-string v1, "http://"
+    True Positive
+
+
+\com\f.smali
+=======================
+
+Potential http usage on line 453
+    Line:     const-string v1, "http://"
+    False Positive
+
+
+Potential http usage on line 575
+    Line:     const-string v1, "http://"
+    False Positive
+
+
+\com\HagwayList.smali
+=======================
+
+Potential http usage on line 231
+    Line:     const-string v1, "http://gemicates.com/api/hagway/info?hagway="
+    True Positive
+
+
+Potential http usage on line 294
+    Line:     const-string v1, "http://"
+    True Positive
+
+
+Potential http usage on line 870
+    Line:     const-string v1, "http://"
+    True Positive
+
+
+\com\handheld.smali
+=======================
+
+Potential http usage on line 175
+    Line:     const-string v1, "http://"
+    False Positive
+
+
+\com\Help.smali
+=======================
+
+Potential http usage on line 89
+    Line:     const-string v0, "http://gemicates.com/#contact"
+    True Positive
+
+
+\com\LightList.smali
+=======================
+
+Potential http usage on line 517
+    Line:     const-string v1, "http://"
+    False Positive
+
+
+Potential http usage on line 1696
+    Line:     const-string v1, "http://"
+    False Positive
+
+
+\com\LoginPage$a.smali
+=======================
+
+Potential http usage on line 52
+    Line:     const-string v1, "http://www.gemicates.com"
+    True Positive
+
+
+\com\LoginPage.smali
+=======================
+
+Potential http usage on line 515
+    Line:     const-string v3, "http://"
+    False Positive
+
+
+\com\MainActivity.smali
+=======================
+
+Potential http usage on line 651
+    Line:     const-string v2, "http://"
+    True Positive
+
+
+Potential http usage on line 788
+    Line:     const-string v1, "http://"
+    True Positive
+
+
+Potential http usage on line 1235
+    Line:     const-string v1, "http://"
+    False Positive
+
+
+Potential http usage on line 1414
+    Line:     const-string v1, "http://gemicates.com/api/hagway/info?hagway="
+    True Positive
+
+
+Potential http usage on line 1497
+    Line:     const-string v1, "http://"
+    True Positive
+
+
+Potential http usage on line 1755
+    Line:     const-string v2, "http://"
+    True Positive
+
+
+Potential http usage on line 1936
+    Line:     const-string v2, "http://"
+    False Positive
+
+
+Potential http usage on line 2086
+    Line:     const-string v1, "http://"
+    True Positive
+
+
+Potential http usage on line 2215
+    Line:     const-string v1, "http://"
+    False Positive
+
+
+Potential http usage on line 2356
+    Line:     const-string v2, "http://"
+    False Positive
+
+
+Potential http usage on line 2459
+    Line:     const-string v2, "http://"
+    True Positive
+
+
+Potential http usage on line 2570
+    Line:     const-string v2, "http://"
+    True Positive
+
+
+Potential http usage on line 2689
+    Line:     const-string v1, "http://"
+    False Positive
+
+
+Potential http usage on line 2936
+    Line:     const-string v2, "http://"
+    False Positive
+
+
+\com\Msensor.smali
+=======================
+
+Potential http usage on line 1842
+    Line:     const-string v1, "http://"
+    False Positive
+
+
+Potential http usage on line 1926
+    Line:     const-string v1, "http://"
+    False Positive
+
+
+\com\RoomMain.smali
+=======================
+
+Potential http usage on line 647
+    Line:     const-string v1, "http://"
+    False Positive
+
+
+Potential http usage on line 1373
+    Line:     const-string v1, "http://"
+    False Positive
+
+
+Potential http usage on line 1457
+    Line:     const-string v1, "http://"
+    True Positive
+
+
+Potential http usage on line 1636
+    Line:     const-string v1, "http://"
+    False Positive
+
+
+Potential http usage on line 1750
+    Line:     const-string v2, "http://"
+    True Positive
+
+
+\com\ScenesStepsActivity.smali
+=======================
+
+Potential http usage on line 964
+    Line:     const-string v1, "http://"
+    True Positive
+
+
+Potential http usage on line 1586
+    Line:     const-string v1, "http://"
+    False Positive
+
+
+\com\scenes_config.smali
+=======================
+
+Potential http usage on line 1213
+    Line:     const-string v1, "http://"
+    False Positive
+
+
+Potential http usage on line 1737
+    Line:     const-string v1, "http://"
+    False Positive
+
+
+\com\Security_mode.smali
+=======================
+
+Potential http usage on line 265
+    Line:     const-string v2, "http://"
+    False Positive
+
+
+Potential http usage on line 372
+    Line:     const-string v2, "http://"
+    False Positive
+
+
+\com\Settings.smali
+=======================
+
+Potential http usage on line 143
+    Line:     const-string v1, "http://"
+    False Positive
+
+
+\com\SettingsList.smali
+=======================
+
+Potential http usage on line 1152
+    Line:     const-string v2, "http://"
+    True Positive
+
+
+Potential http usage on line 1233
+    Line:     const-string v1, "http://"
+    True Positive
+
+
+Potential http usage on line 1362
+    Line:     const-string v1, "http://"
+    False Positive
+
+
+Potential http usage on line 1979
+    Line:     const-string v1, "http://"
+    False Positive
+
+
+\com\WifiList$b.smali
+=======================
+
+Potential http usage on line 50
+    Line:     const-string v1, "http://www.gemicates.com"
+    True Positive
+
+
+\com\WifiList.smali
+=======================
+
+Potential http usage on line 231
+    Line:     const-string v2, "http://"
+    True Positive
+
+
