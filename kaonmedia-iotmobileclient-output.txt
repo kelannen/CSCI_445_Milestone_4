@@ -1,0 +1,99 @@
+APK: com.kaonmedia.iotmobileclient
+
+AndroidManifest.xml
+=======================
+
+Potential allow backup and restore vulnerability on line 11
+    Line:     <application android:allowBackup="true" android:icon="@mipmap/ic_launcher_b" android:label="@string/app_name" android:supportsRtl="true" android:theme="@style/Theme.AppCompat.NoActionBar">
+    [TRUE POSITIVE]
+
+
+Potential unprotected broadcast reciever on line 21 and line 25
+    Line:         <receiver android:enabled="true" android:exported="true" android:name="com.kaonmedia.iotmobileclient.BootCompleteReceiver">
+    [TRUE POSITIVE]
+
+    Line:         </receiver>
+
+
+Potential unprotected broadcast reciever on line 35 and line 39
+    Line:         <receiver android:enabled="true" android:name="com.google.android.gms.measurement.AppMeasurementReceiver">
+
+    Line:         </receiver>
+    [TRUE POSITIVE]
+
+
+Smali File Location: /home/ak/Desktop/College/app_security/CSCI_445_Milestone_4/com.kaonmedia.iotmobileclient/smali/com/kaonmedia/iotmobileclient
+
+Smali Files with Potential Vulnerabilities
+
+/DelegateSingleton.smali
+=======================
+
+Potential http usage on line 34
+    Line:     const-string v0, "http://52.27.168.4/quecloud"
+    [TRUE POSITIVE]
+
+
+Potential http usage on line 39
+    Line:     const-string v0, "http://52.27.168.4/quemobileclient"
+    [TRUE POSITIVE]
+
+
+/MainActivity$1.smali
+=======================
+
+Potential http usage on line 159
+    Line:     const-string v5, "http://192.168.43.1:5085"
+    [TRUE POSITIVE]
+
+
+/LoginActivity$4.smali
+=======================
+
+Potential http usage on line 228
+    Line:     const-string v7, "http://testsmartiot.iptime.org"
+    [TRUE POSITIVE]
+
+
+Potential http usage on line 233
+    Line:     const-string v7, "http://testsmartiot.iptime.org"
+    [TRUE POSITIVE]
+
+
+/MainActivity$2.smali
+=======================
+
+Potential http usage on line 65
+    Line:     const-string v2, "http:"
+    [TRUE POSITIVE]
+
+
+/common/HTTPConnectionHelper.smali
+=======================
+
+Potential TrustManager usage on line 608
+    Line:     new-array v2, v3, [Ljavax/net/ssl/TrustManager;
+    [TRUE POSITIVE]
+
+
+Potential TrustAllCertificates usage on line 619
+    Line:     .local v2, "trustAllCerts":[Ljavax/net/ssl/TrustManager;
+    [TRUE POSITIVE]
+
+
+Potential TrustManager usage on line 619
+    Line:     .local v2, "trustAllCerts":[Ljavax/net/ssl/TrustManager;
+    [TRUE POSITIVE]
+
+
+Potential TrustManager usage on line 635
+    Line:     invoke-virtual {v1, v3, v2, v4}, Ljavax/net/ssl/SSLContext;->init([Ljavax/net/ssl/KeyManager;[Ljavax/net/ssl/TrustManager;Ljava/security/SecureRandom;)V
+    [TRUE POSITIVE]
+
+
+/common/HTTPConnectionHelper$1.smali
+=======================
+
+Potential TrustManager usage on line 6
+    Line: .implements Ljavax/net/ssl/X509TrustManager;
+    [TRUE POSITIVE]

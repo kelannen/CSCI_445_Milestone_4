@@ -1,0 +1,19 @@
+APK: com.kaon.android.lepton.hitachi
+
+Smali File Location: /home/ak/Desktop/College/app_security/CSCI_445_Milestone_4/com.kaon.android.lepton.hitachi/smali/com/kaon/android/lepton/hitachi
+
+Smali Files with Potential Vulnerabilities
+
+/Hitachi.smali
+=======================
+
+Potential http usage on line 49
+    Line:     const-string v1, "http://kaoncdn.s3.amazonaws.com/5073770293231616"
+    [TRUE POSITIVE]
+
+
+Potential http usage on line 84
+    Line:     const-string v1, "http://kaoncdn.s3.amazonaws.com/5073770293231616"
+    [TRUE POSITIVE]
+
+

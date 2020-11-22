@@ -1,0 +1,90 @@
+APK: com.ivideon.client
+
+AndroidManifest.xml
+=======================
+
+Potential allow backup and restore vulnerability on line 18
+    Line:     <application android:allowBackup="true" android:icon="@drawable/icon" android:label="@string/appName" android:largeHeap="true" android:name="com.ivideon.client.App" android:theme="@style/Ivideon.Theme">
+    [TRUE POSITIVE]
+
+
+Potential exported components outside of their main activity without limitations vulnerability on line 72 and line 72
+    Line:         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.ivideon.client.ui.AllEventsListController"/>
+    [TRUE POSITIVE]
+
+
+Potential exported components outside of their main activity without limitations vulnerability on line 73 and line 73
+    Line:         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.ivideon.client.ui.AppSettingsController"/>
+    [TRUE POSITIVE]
+
+
+Potential exported components outside of their main activity without limitations vulnerability on line 74 and line 74
+    Line:         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.ivideon.client.ui.VideoQualityAppSettingsController"/>
+    [TRUE POSITIVE]
+
+
+Potential exported components outside of their main activity without limitations vulnerability on line 75 and line 75
+    Line:         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.ivideon.client.ui.HelpController"/>
+    [TRUE POSITIVE]
+
+
+Potential exported components outside of their main activity without limitations vulnerability on line 76 and line 76
+    Line:         <activity android:exported="true" android:name="com.ivideon.client.ui.TutorialController" android:theme="@style/WindowUntitled"/>
+    [TRUE POSITIVE]
+
+
+Potential exported components outside of their main activity without limitations vulnerability on line 77 and line 77
+    Line:         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.ivideon.client.ui.OverlayTutorialController" android:theme="@style/DialogUntitled.Unframed"/>
+    [TRUE POSITIVE]
+
+
+Potential exported components outside of their main activity without limitations vulnerability on line 78 and line 78
+    Line:         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.ivideon.client.ui.CloudArchivePromoController"/>
+    [TRUE POSITIVE]
+
+
+Potential exported components outside of their main activity without limitations vulnerability on line 79 and line 79
+    Line:         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.ivideon.client.ui.LegalController"/>
+    [TRUE POSITIVE]
+
+
+Potential exported components outside of their main activity without limitations vulnerability on line 80 and line 80
+    Line:         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.ivideon.client.ui.WebViewController"/>
+    [TRUE POSITIVE]
+
+
+Potential exported components outside of their main activity without limitations vulnerability on line 102 and line 102
+    Line:         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.ivideon.client.ui.NotificationsOptionsController"/>
+    [TRUE POSITIVE]
+
+
+Potential exported components outside of their main activity without limitations vulnerability on line 103 and line 103
+    Line:         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.ivideon.client.ui.CloudRecordingSettingsController"/>
+    [TRUE POSITIVE]
+
+
+Potential unprotected broadcast reciever on line 126 and line 130
+    Line:         <receiver android:name="com.ivideon.client.networking.ConnectionChangeReceiver">
+
+    Line:         </receiver>
+    [TRUE POSITIVE]
+
+
+Potential unprotected broadcast reciever on line 138 and line 142
+    Line:         <receiver android:enabled="true" android:exported="true" android:name="com.ivideon.client.ivideontv.IvideonTvBroadcastReceiver">
+
+    Line:         </receiver>
+    [TRUE POSITIVE]
+
+
+Potential unprotected broadcast reciever on line 143 and line 148
+    Line:         <receiver android:name="com.ivideon.client.utility.networkstate.NetworkChangeReceiver">
+
+    Line:         </receiver>
+    [TRUE POSITIVE]
+
+
+Smali File Location: /home/ak/Desktop/College/app_security/CSCI_445_Milestone_4/com.ivideon.client/smali/com/ivideon/client
+
+Smali Files with Potential Vulnerabilities
+
