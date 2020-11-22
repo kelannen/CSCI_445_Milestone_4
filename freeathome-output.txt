@@ -1,0 +1,27 @@
+APK: com.abb.freeathome
+
+AndroidManifest.xml
+=======================
+
+Potential unprotected broadcast reciever on line 30 and line 34
+    Line:         <receiver android:name="freeathome.NetworkChangeListener">
+
+    Line:         </receiver>
+
+    [TRUE POSITVE]
+Potential unprotected broadcast reciever on line 53 and line 58
+    Line:         <receiver android:enabled="@bool/appWidgetEnabled" android:name="freeathome.widget.FreeathomeAppWidget" android:process="freeathome.widget.appWidgetService">
+
+    Line:         </receiver>
+
+    [TRUE POSITIVE]
+Potential unprotected broadcast reciever on line 59 and line 63
+    Line:         <receiver android:enabled="false" android:name="freeathome.FHBootReceiver">
+
+    Line:         </receiver>
+
+    [TRUE POSITIVE]
+Smali File Location: /media/psf/Home/CSCI_445_Milestone_4/com.abb.freeathome/smali/com/abb/freeathome
+
+Smali Files with Potential Vulnerabilities
+
