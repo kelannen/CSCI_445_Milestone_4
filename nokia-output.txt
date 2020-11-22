@@ -1,0 +1,16 @@
+Potential dangerous permission combo (broad storage permission and internet)
+    Permissions: android.permission.INTERNET,android.permission.WRITE_EXTERNAL_STORAGE,android.permission.READ_EXTERNAL_STORAGE,
+
+APK: com.nokia.dhbu.smartHome
+
+AndroidManifest.xml
+=======================
+
+Potential exported components outside of their main activity without limitations vulnerability on line 20 and line 25
+    Line:         <activity android:exported="true" android:launchMode="singleTop" android:name="com.gae.scaffolder.plugin.FCMPluginActivity">
+
+    [TRUE POSITIVE]
+Smali File Location: /media/psf/Home/CSCI_445_Milestone_4/com.nokia.dhbu.smartHome/smali/com/nokia/dhbu/smartHome
+
+Smali Files with Potential Vulnerabilities
+
